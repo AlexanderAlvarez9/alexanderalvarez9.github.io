@@ -1,0 +1,369 @@
+body{
+  background: grey;
+}
+
+header {
+  background: pink;
+  color: red;
+  flex-wrap: wrap;
+}
+
+.header {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+}
+
+body {
+  font-family: "Indie Flower", "Comic Sans MS";
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fjalla One";
+  font-weight: 100;
+  /* font-style: italic; */
+}
+
+h1 {
+  color: white;
+  font-size: 2em;
+  letter-spacing: -1px;
+  line-height: 150%;
+  margin: 0;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.project{
+  align-items: center;
+  background: white;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-top-color: red;
+  border-radius: 1.5em;
+  color: blue;
+  display: flex;
+  margin: 1em;
+  margin-bottom: 5px;
+  padding: 15px;
+  font-weight: bold;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-title{
+  font-size: 2em;
+  margin-top: 0;
+  margin: 1em 0;
+}
+
+.project-date,
+.project-url,
+.project-course{
+  margin: 1em;
+}
+
+.project-details {
+  width: 50%;
+  display: inline-block;
+  /* margin: auto; */
+}
+
+.project-imageContainer {
+  width: 50%;
+}
+
+.project-imageContainer img{
+  max-width: 100%;
+}
+
+.menu{
+  height: inherit;
+}
+
+.header ol{
+  display: flex;
+  height: inherit;
+}
+
+.header ol li{
+  height: inherit;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 1em;
+}
+
+
+ol,
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure{
+  margin: 0;
+}
+
+
+.hero {
+  flex-wrap: wrap;
+  height: 300px;
+  /* background-image: url(./imgs/hero.jpg); */
+  background-color: #1b2127;
+  justify-content: space-between;
+  /* background-size: 500px 300px; */
+  /* background-repeat: no-repeat; */
+  /* background-position-x: right; */
+  display: flex;
+  align-items: center;
+}
+
+.hero-img{
+  object-fit: cover;
+}
+
+
+h1 strong{
+  color: green;
+}
+
+.trabajemos{
+  color: white;
+  text-transform: uppercase;
+}
+
+.portfolio{
+  background-color: #626262;
+  padding: 1.5em;
+}
+
+.footer{
+  background: #1b2127;
+  margin: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer p{
+  margin: 0;
+  justify-content: space-between;
+}
+
+.footer img{
+  vertical-align: middle;
+}
+
+h2{
+  color: pink;
+  text-transform: uppercase;
+  font-family: "Fjalla One";
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.event{
+  margin: 1em;
+  width: 300px;
+  flex-shrink: 0;
+  border-radius: 1em;
+  overflow: hidden;
+  background: #f4fbff;
+  justify-content: center;
+}
+
+.eventos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.event img{
+  width: 400px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.event-details{
+  margin: 1.5em 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.event-description{
+  text-align: left;
+}
+
+.event-url{
+  color: #056fff;
+  border: 1px solid;
+  padding: 5px 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.event-list-title{
+  margin-left: 2em;
+  text-align: center;
+}
+
+.contact{
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social-link{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  margin: 0 1em;
+}
+
+.social-link.twitter{
+background-image: url(./imgs/twitter.svg);
+}
+
+.social-link.github{
+background-image: url(./imgs/github.svg);
+}
+
+.social-link.facebook{
+background-image: url(./imgs/facebook.svg);
+}
+
+.social-link.instagram{
+background-image: url(./imgs/instagram.svg);
+}
+
+.trabajemos{
+  font-weight: bold;
+}
+
+.form-email input{
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 5px 1.5em 5px 25px;
+  background-image: url(./imgs/envelope.svg);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button{
+  border-radius: 5px;
+  margin-top: 5px;
+  background: transparent;
+  display: block;
+  color: white;
+  width: 100px;
+  padding: 1em 0;
+  margin-top: 0 1em auto;
+}
+
+.container{
+  max-width: 1000px;
+  /* width: 100% */
+  flex: 1;
+  margin: 0 auto;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    display: block;
+    height: auto;
+  }
+
+  .header ol {
+    display: initial;
+  }
+
+  .header ol li {
+    height: 50px;
+  }
+
+  .header a {
+    justify-content: center;
+  }
+
+  .header .logo {
+    text-align: center;
+  }
+
+  .project-image {
+    width: 50%;
+  }
+
+  .project {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    /* border: 1em solid green; */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  
+}
+
+.asdas {
+  --primary: #3F6AD8;
+  --primary-contrast: #E0F3FF;
+  --primary-hover: #5E79BF99;
+  --default: #000000;
+  --default-contrast: #FFFFFF;
+  --default-hover: #99999999;
+  --error: #F44336;
+  --error-contrast: #FFFFFF;
+  --error-hover: #DB645C99;
+  --success: #3AC47D;
+  --success-contrast: #D4F0E3;
+  --success-hover: #54AB7E99;
+  --warning: #F7B924;
+  --warning-contrast: #FFFFFF;
+  --warning-hover: #DEAE4D99;
+  --information: #16AAFF;
+  --information-contrast: #16FFE0;
+  --information-hover: #42AAE699;
+  --hover-opacity: 0.5;
+}

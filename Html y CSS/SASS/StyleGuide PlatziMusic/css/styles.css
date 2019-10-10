@@ -1,0 +1,70 @@
+/************************************
+        COLORES
+************************************/
+/**
+# BRANDING COLORES
+**/
+/**
+# TEXTURAS
+**/
+/**
+# TIPOGRAFIA
+**/
+/**
+# CONSTANTES
+**/
+/************************************
+        MIXINS
+************************************/
+/************************************
+        BOTONES
+************************************/
+.btn {
+  display: inline-block;
+  color: white;
+  background-color: #ea83ee;
+  line-height: 2.5;
+  border-radius: 5px; }
+
+.btn__icon {
+  font-size: 24px; }
+
+.btn--info {
+  background-color: #42b8dd; }
+
+/************************************
+        FORMULARIOS
+************************************/
+/************************************
+        LINKS
+************************************/
+table tr:hover {
+  background-color: #dbd879; }
+
+/************************************
+        INPUT
+************************************/
+/************************************
+        BOTONES
+************************************/
+/************************************
+        TEXTOS
+************************************/
+section {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: blue;
+  background-color: #bfbfbf;
+  padding: 24px; }
+  @media only screen and (min-width: 800px) {
+    section {
+      background-color: red; } }
+
+.max-width--huge {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+
+header {
+  background-color: #ea83ee; }

@@ -1,0 +1,42 @@
+* {
+    --primary: #3F6AD8;
+    --primary-contrast: #E0F3FF;
+    --primary-hover: #5e79bf;
+    --default: #111111;
+    --default-contrast: #FFFFFF;
+    --default-hover: #444444;
+    --error: #F44336;
+    --error-contrast: #F7E6EB;
+    --error-hover: #db645c;
+    --success: #3AC47D;
+    --success-contrast: #D4F0E3;
+    --success-hover: #54ab7e;
+    --warning: #F7B924;
+    --warning-contrast: #FFFFFF;
+    --warning-hover: #deae4d;
+    --information: #16AAFF;
+    --information-contrast: #16ffe0;
+    --information-hover: #42aae6;
+    --hover-opacity: 0.5;
+
+
+    --primary: #CC6600;
+    --primary-contrast: #FFFFFF;
+    --primary-hover: #CC660099;
+    --default: #999999;
+    --default-contrast: #FFFFFF;
+    --default-hover: #99999999;
+    --error: #F44336;
+    --error-contrast: #FFFFFF;
+    --error-hover: #F4433699;
+    --success: #63AB71;
+    --success-contrast: #FFFFFF;
+    --success-hover: #63AB7199;
+    --warning: #E09B39;
+    --warning-contrast: #FFFFFF;
+    --warning-hover: #E09B3999;
+    --information: #51697C;
+    --information-contrast: #FFFFFF;
+    --information-hover: #51697C;
+    --hover-opacity: 0.5;
+}

@@ -1,0 +1,25 @@
+ .celda { height:30px;
+         width:100%;
+         min-width:300px;
+	 border:1px solid #000;
+	}
+   .celda .naranja { border-right:1px solid #000;
+		     width:25%;
+		     height:100%;
+		     font-weight:bold;
+		     font-size:18px;
+		     background-color:#FF0;
+		     text-align:center;
+		     float:left;
+		     display:block;
+		   }
+     .celda .casilla { border-right:1px solid #000;
+		       width:25%;
+		       height:100%;
+		       text-align:center;
+		       font-weight:bold;
+		       font-size:18px;
+		       float:left;
+		       display:block;
+		       background-color:#FFF;
+		     }

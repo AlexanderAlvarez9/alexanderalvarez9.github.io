@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Peso Extraterrestre</title>
+  </head>
+  <body>
+    <h1>Tu peso Extraterrestre</h1>
+    <p>Calculando el peso en otros planetas</p>
+    <script type="text/javascript">
+      var usuario = prompt("Cual es tu peso")
+      var peso = parseFloat(usuario);
+      var g_tierra = 9.8;
+      var g_marte = 3.7;
+      var g_jupiter = 24.8;
+      pesom = peso * g_marte / g_tierra
+      pesoj = peso * g_jupiter / g_tierra
+
+      pesom = parseFloat(pesom)
+      pesoj = parseFloat(pesoj)
+
+      document.write("Tu peso en Marte es <strong>" + pesom + " Kilos </strong><br/> Tu peso en Marte es <strong>" + pesoj + " Kilos</strong>");
+
+
+    </script>
+  </body>
+</html>

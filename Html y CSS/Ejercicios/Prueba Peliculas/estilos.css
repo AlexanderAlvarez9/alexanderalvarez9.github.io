@@ -1,0 +1,156 @@
+body{
+  background-color: #f9f9fb;
+  margin: 0;
+}
+
+.head{
+  margin: 0;
+  padding: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+
+.head a{
+  text-decoration: none;
+  color: #adb4c7;
+
+}
+
+.superlicula{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+.pelicula{
+  height: 110px;
+  width: 150px;
+  border: 1px solid #e4e4ee;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  justify-content: center;
+  object-fit: cover;
+  box-shadow: 0px 11px 63px -21px black;
+}
+
+.pelicula img{
+  height: 80px;
+  width: 144px;
+  object-fit: cover;
+  padding: 3px;
+}
+
+.pelicula a{
+  color: #adb4c7;
+  /* margin: 30px; */
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  /* border: 1px solid red; */
+  margin: 20px;
+  margin-top: -10px;
+  padding: 0 3px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.container{
+  width: 600px;
+  margin: 0 auto;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+  border: 1px solid #e4e4ee;
+  padding: 10px;
+}
+
+ol,
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #adb4c7;
+  text-transform: full-width;
+}
+
+li{
+  display: inline;
+  margin: 20px;
+}
+
+.hero{
+  /* height: 400px; */
+  padding: 20px;
+  align-items: center;
+  background-color: #f9f9fb;
+  margin: 0;
+  text-align: center;
+}
+
+li a{
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 5px;
+}
+
+.principal{
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9fb;
+}
+
+.seasons{
+  display: flex;
+}
+
+.seasons a{
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #e4e4ee;
+  border-radius: 3px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  background-color: white;
+  color: #adb4c7;
+  font-weight: bold;
+}
+
+.capitulos p{
+  margin: 0 20px;
+}
+
+.cap{
+  text-decoration: underline;
+}
+
+.capitulos ol,
+.capitulos ul{
+  list-style: lower-alpha;
+}
+
+.principal-Image{
+  padding: 5px;
+  border: 1px solid #e4e4ee;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 11px 63px -21px black;
+}
+
+.derecha{
+  padding: 15px;
+}

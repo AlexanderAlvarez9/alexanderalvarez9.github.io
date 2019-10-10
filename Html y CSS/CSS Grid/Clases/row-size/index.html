@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tamaño de Item en filas</title>
+  <style>
+    body{
+      font-family: arial;
+    }
+    .container{
+      display: grid;
+      /* grid-template: repeat(3, 1fr) / repeat(4, 1fr); */
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(2, 200px);
+      height: 100vh;
+      grid-gap: 5px;
+    }
+    .item{
+      background: lightblue;
+      padding: 10px;
+      border: 1px solid red;
+    }
+    .item:nth-of-type(1){
+      grid-column: 1 / span 3;
+      grid-row: 1 / span 2
+    }
+    .item:nth-of-type(2){
+      grid-column: 4 / span 2;
+      grid-row: 1 / span 2
+    }
+    .item:nth-of-type(3){
+      grid-column: 6 / span 2;
+    }
+
+    .item:nth-of-type(8){
+      /* grid-column: 1 / -1; */
+    }
+    .item:nth-of-type(7){
+      /* grid-column: 2 / 4; */
+    }
+  </style>
+</head>
+<body>
+    <section class="container">
+      <div class="item">CUADRITO #1</div>
+      <div class="item">CUADRITO #2</div>
+      <div class="item">CUADRITO #3</div>
+      <div class="item">CUADRITO #4</div>
+      <div class="item">CUADRITO #5</div>
+    </section>
+</body>
+</html>
