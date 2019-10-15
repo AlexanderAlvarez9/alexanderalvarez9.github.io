@@ -30,7 +30,6 @@ h5,
 h6 {
   font-family: "Fjalla One";
   font-weight: 100;
-  /* font-style: italic; */
 }
 
 h1 {
@@ -53,12 +52,12 @@ h1 {
   border-radius: 1.5em;
   color: blue;
   display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  justify-content: space-between;
   margin: 1em;
   margin-bottom: 5px;
   padding: 15px;
-  font-weight: bold;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .project-title{
@@ -109,6 +108,21 @@ h1 {
   padding: 0 1em;
 }
 
+.botonmenu {
+  background-color: rgba(162, 172, 28, 0.8);
+  border-radius: 50%;
+  color: greenyellow;
+  display: none;
+  font-size: 1.5em;
+  height: 2em;
+  line-height: 2em;
+  left: 0.5em;
+  position: fixed;
+  text-align: center;
+  top: 0.5em;
+  width: 2em;
+  z-index: 4;
+}
 
 ol,
 ul{
@@ -121,10 +135,9 @@ figure{
   margin: 0;
 }
 
-
 .hero {
   flex-wrap: wrap;
-  height: 300px;
+  height: auto;
   /* background-image: url(./imgs/hero.jpg); */
   background-color: #1b2127;
   justify-content: space-between;
@@ -133,12 +146,12 @@ figure{
   /* background-position-x: right; */
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .hero-img{
   object-fit: cover;
 }
-
 
 h1 strong{
   color: green;
@@ -155,18 +168,18 @@ h1 strong{
 }
 
 .footer{
+  align-items: center;
   background: #1b2127;
-  margin: 0;
   color: white;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
 }
 
 footer p{
-  margin: 0;
   justify-content: space-between;
+  margin: 0;
 }
 
 .footer img{
@@ -174,7 +187,7 @@ footer p{
 }
 
 h2{
-  color: pink;
+  color: rgb(11, 109, 8);
   text-transform: uppercase;
   font-family: "Fjalla One";
   font-weight: bold;
@@ -182,13 +195,13 @@ h2{
 }
 
 .event{
+  background: #f4fbff;
+  border-radius: 1em;
+  flex-shrink: 0;
+  justify-content: center;
+  overflow: hidden;
   margin: 1em;
   width: 300px;
-  flex-shrink: 0;
-  border-radius: 1em;
-  overflow: hidden;
-  background: #f4fbff;
-  justify-content: center;
 }
 
 .eventos{
@@ -197,11 +210,14 @@ h2{
   justify-content: center;
 }
 
+.event-imageContainer {
+  text-align: center;
+}
+
 .event img{
-  width: 400px;
-  height: 150px;
-  object-fit: cover;
   margin: 0;
+  object-fit: cover;
+  width: auto;
 }
 
 .event-details{
@@ -218,11 +234,11 @@ h2{
 }
 
 .event-url{
+  border-radius: 5px;
   color: #056fff;
   border: 1px solid;
   padding: 5px 1.5em;
   text-decoration: none;
-  border-radius: 5px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -233,24 +249,22 @@ h2{
 }
 
 .contact{
+  align-items: center;
   background-color: #056fff;
   color: white;
-  height: 150px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
+  height: 150px;
+  justify-content: space-between;
 }
 
 .social-link{
-  display: inline-block;
-  width: 50px;
-  height: 50px;
   background-size: 50px 50px;
+  display: inline-block;
   margin: 0 1em;
 }
 
-.social-link.twitter{
+/* .social-link.twitter{
 background-image: url(./imgs/twitter.svg);
 }
 
@@ -264,7 +278,7 @@ background-image: url(./imgs/facebook.svg);
 
 .social-link.instagram{
 background-image: url(./imgs/instagram.svg);
-}
+} */
 
 .trabajemos{
   font-weight: bold;
@@ -283,14 +297,14 @@ background-image: url(./imgs/instagram.svg);
 }
 
 .form-email button{
-  border-radius: 5px;
-  margin-top: 5px;
   background: transparent;
-  display: block;
+  border-radius: 5px;
   color: white;
-  width: 100px;
-  padding: 1em 0;
+  display: block;
+  margin-top: 5px;
   margin-top: 0 1em auto;
+  padding: 1em 0;
+  width: 100px;
 }
 
 .container{
@@ -306,6 +320,49 @@ background-image: url(./imgs/instagram.svg);
 }
 
 @media screen and (max-width: 767px) {
+
+  .botonmenu {
+    display: block;
+  }
+  
+  .menu {
+    background: cyan;
+    border-radius: 1em;
+    height: 80vh;
+    left: -10em;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 3;
+  }
+
+  .menu.is-active {
+    left: 0;
+  }
+
+  .hero {
+    height: auto;
+    position: relative;
+  }
+
+  .hero-img {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  h1 {
+    font-size: 2em;
+    z-index: 2;
+  }
+
+  /* .hero-img, h1 {
+    width: 100%;
+    padding: 1em;
+  } */
+
   .header {
     display: block;
     height: auto;
@@ -327,12 +384,61 @@ background-image: url(./imgs/instagram.svg);
     text-align: center;
   }
 
-  .project-image {
-    width: 50%;
-  }
-
   .project {
     display: block;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+
+  .project-imageContainer {
+    width: 100%;
+  }
+
+  .project-details {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .project-title {
+    font-size: 1.5em;
+  }
+
+  .project-url {
+    font-size: 1em;
+  }
+
+  .project-date {
+    font-size: 1em;
+  }
+
+  .project-description {
+    font-size: 0.8em;
+  }
+
+  .project-course {
+    font-size: 0.7em;
+  }
+
+  .project-course, .project-date, .project-url {
+    margin: 0.4em;
+  }
+
+  .contact {
+    display: block;
+    height: auto;
+    padding: 1.5em;
+    text-align: center;
+  }
+
+  .form-email button {
+    margin: 1em auto;
+  }
+
+  .footer {
+    display: block;
+    text-align: center;
   }
 }
 
@@ -340,10 +446,50 @@ background-image: url(./imgs/instagram.svg);
   body {
     /* border: 1em solid green; */
   }
+
+  h1 {
+    font-size: 1em;
+  }
 }
 
 @media screen and (max-width: 320px) {
-  
+    .project-details {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .hero {
+    padding: 2em 1em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .hero {
+    height: auto;
+    position: relative;
+    padding: 2em;
+    overflow: hidden;
+  }
+
+  .hero-img {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2em;
+    z-index: 2;
+  }
 }
 
 .asdas {
@@ -367,3 +513,4 @@ background-image: url(./imgs/instagram.svg);
   --information-hover: #42AAE699;
   --hover-opacity: 0.5;
 }
+
