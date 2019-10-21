@@ -120,9 +120,9 @@ h1 {
 }
 
 .botonmenu {
-  background-color: rgba(162, 172, 28, 0.8);
+  background-color: rgb(61, 35, 204);
   border-radius: 50%;
-  color: greenyellow;
+  color: whitesmoke;
   display: none;
   font-size: 1.5em;
   height: 2em;
@@ -340,7 +340,7 @@ background-image: url(./imgs/instagram.svg);
   }
   
   .menu {
-    background: cyan;
+    background: #42aae6;
     border-radius: 1em;
     height: 80vh;
     left: -10em;
@@ -505,26 +505,3 @@ background-image: url(./imgs/instagram.svg);
     z-index: 2;
   }
 }
-
-.asdas {
-  --primary: #3F6AD8;
-  --primary-contrast: #E0F3FF;
-  --primary-hover: #5E79BF99;
-  --default: #000000;
-  --default-contrast: #FFFFFF;
-  --default-hover: #99999999;
-  --error: #F44336;
-  --error-contrast: #FFFFFF;
-  --error-hover: #DB645C99;
-  --success: #3AC47D;
-  --success-contrast: #D4F0E3;
-  --success-hover: #54AB7E99;
-  --warning: #F7B924;
-  --warning-contrast: #FFFFFF;
-  --warning-hover: #DEAE4D99;
-  --information: #16AAFF;
-  --information-contrast: #16FFE0;
-  --information-hover: #42AAE699;
-  --hover-opacity: 0.5;
-}
-
