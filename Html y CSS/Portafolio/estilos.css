@@ -22,6 +22,12 @@ body {
   margin: 0;
 }
 
+.social-link {
+  border:1px solid white;
+  color: white;
+  padding: 0.5em;
+}
+
 h1,
 h2,
 h3,
@@ -48,8 +54,9 @@ h1 {
   border-color: white;
   border-width: 2px;
   border-style: solid;
-  border-top-color: red;
+  border:1px solid lightcoral;
   border-radius: 1.5em;
+  box-shadow: 0 .5em 2.5em -0.6em burlywood;
   color: blue;
   display: flex;
   flex-wrap: wrap;
@@ -63,13 +70,17 @@ h1 {
 .project-title{
   font-size: 2em;
   margin-top: 0;
-  margin: 1em 0;
+  margin: 0.7em 0;
 }
 
 .project-date,
 .project-url,
 .project-course{
   margin: 1em;
+}
+
+.project-course {
+  font-size: 1.1em;
 }
 
 .project-details {
@@ -187,16 +198,18 @@ footer p{
 }
 
 h2{
-  color: rgb(11, 109, 8);
+  color: whitesmoke;
   text-transform: uppercase;
   font-family: "Fjalla One";
   font-weight: bold;
-  font-size: 24px;
+  font-size: 2em;
+  text-align: center;
 }
 
 .event{
   background: #f4fbff;
   border-radius: 1em;
+  box-shadow: 0 .5em 2.5em -0.6em darkblue;
   flex-shrink: 0;
   justify-content: center;
   overflow: hidden;
@@ -244,6 +257,7 @@ h2{
 }
 
 .event-list-title{
+  box-shadow: 0 .5em 2.5em -0.6em darkblue;
   margin-left: 2em;
   text-align: center;
 }
@@ -296,7 +310,7 @@ background-image: url(./imgs/instagram.svg);
   background-position-x: 5px;
 }
 
-.form-email button{
+.form-email .submit{
   background: transparent;
   border-radius: 5px;
   color: white;
