@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToolTip</title>
+</head>
+<body>
+    
+    <div class="text">
+        <label for="name">Your name:</label>
+        <input id="name" aria-describedby="tp1"/>
+        <howto-tooltip id="tp1">Ideally your name is Batman</howto-tooltip>
+        <br>
+        <label for="cheese">Favourite type of cheese: </label>
+        <input id="cheese" aria-describedby="tp2"/>
+        <howto-tooltip id="tp2">Help I am trapped inside a tooltip message</howto-tooltip>
+    </div>
+
+    <script src="tooltip.js"></script>
+</body>
+</html>

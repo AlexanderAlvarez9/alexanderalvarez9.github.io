@@ -23,8 +23,10 @@ body {
 }
 
 .social-link {
-  border:1px solid white;
   color: white;
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0 1em;
   padding: 0.5em;
 }
 
@@ -273,9 +275,6 @@ h2{
 }
 
 .social-link{
-  background-size: 50px 50px;
-  display: inline-block;
-  margin: 0 1em;
 }
 
 /* .social-link.twitter{
