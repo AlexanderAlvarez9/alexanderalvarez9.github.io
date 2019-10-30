@@ -91,6 +91,12 @@ let cursos = [
         linkCert: 'https://platzi.com/@jhonalexanderalvarezromero/curso/1098-ingenieria/diploma/detalle/',
     },
     {
+        title: 'Curso de Terminal y Línea de Comandos',
+        img: 'https://static.platzi.com/media/achievements/1276-62e97e39-63d1-4139-b299-fc5eb65a9905.png',
+        desc: 'Explora la terminal y optimiza la navegación y ejecución de programas en sistemas operativos Unix. Conociendo y dominando la terminal, podrás invocar y ejecutar programas, crear directorios de los mismos y navegar en ellos de una manera veloz y eficiente.',
+        linkCert: 'https://platzi.com/@jhonalexanderalvarezromero/curso/1276-terminal/diploma/detalle/',
+    },
+    {
         title: 'Curso de Inglés Básico',
         img: 'https://static.platzi.com/media/achievements/badge-basico-ingles-e073f711-763d-4129-badc-5e4baa78b225.png',
         desc: 'Aprende inglés desde cero. Entiende conceptos básicos y construye oraciones simples, enriquece tu vocabulario y da el primer paso en el desarrollo de tus habilidades en el idioma.',
