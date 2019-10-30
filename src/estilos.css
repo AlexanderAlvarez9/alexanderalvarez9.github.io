@@ -1,5 +1,5 @@
 body{
-  background: grey;
+  background: #2A2726;
 }
 
 header {
@@ -42,7 +42,7 @@ h6 {
 
 h1 {
   color: white;
-  font-size: 2em;
+  font-size: 1.8em;
   letter-spacing: -1px;
   line-height: 150%;
   margin: 0;
@@ -52,13 +52,10 @@ h1 {
 
 .project{
   align-items: center;
-  background: white;
-  border-color: white;
-  border-width: 2px;
-  border-style: solid;
+  background: #F4F4F4;
   border:1px solid lightcoral;
   border-radius: 1.5em;
-  box-shadow: 0 .5em 2.5em -0.6em burlywood;
+  box-shadow: 0 .5em 2.5em -0.6em purple;
   color: blue;
   display: flex;
   flex-wrap: wrap;
@@ -66,7 +63,7 @@ h1 {
   justify-content: space-between;
   margin: 1em;
   margin-bottom: 5px;
-  padding: 15px;
+  padding: 1em;
 }
 
 .project-title{
@@ -96,7 +93,10 @@ h1 {
 }
 
 .project-imageContainer img{
-  max-width: 100%;
+  height: 300px;
+  max-width: 100%;    
+  object-fit: contain;
+  width: 400px;
 }
 
 .menu{
@@ -209,7 +209,7 @@ h2{
 }
 
 .event{
-  background: #f4fbff;
+  background: #D4ECF0;
   border-radius: 1em;
   box-shadow: 0 .5em 2.5em -0.6em darkblue;
   flex-shrink: 0;
@@ -239,8 +239,9 @@ h2{
   margin: 1.5em 40px;
   margin-top: -40px;
   background-color: white;
+  border-radius: 2em;
   position: relative;
-  padding: 1.5em;
+  padding: 1.2em;
   text-align: center;
 }
 
@@ -272,29 +273,6 @@ h2{
   flex-wrap: wrap;
   height: 150px;
   justify-content: space-between;
-}
-
-.social-link{
-}
-
-/* .social-link.twitter{
-background-image: url(./imgs/twitter.svg);
-}
-
-.social-link.github{
-background-image: url(./imgs/github.svg);
-}
-
-.social-link.facebook{
-background-image: url(./imgs/facebook.svg);
-}
-
-.social-link.instagram{
-background-image: url(./imgs/instagram.svg);
-} */
-
-.trabajemos{
-  font-weight: bold;
 }
 
 .form-email input{
@@ -402,6 +380,7 @@ background-image: url(./imgs/instagram.svg);
   }
 
   .project-image {
+    object-fit: cover;
     width: 100%;
   }
 
