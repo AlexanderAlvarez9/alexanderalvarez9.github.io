@@ -255,12 +255,17 @@ h2{
 
 .event-url{
   border-radius: 5px;
+  box-shadow: 1px 2px 6px 0px black;
   color: #056fff;
   border: 1px solid;
   padding: 5px 1.5em;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+}
+
+.event-url:hover {
+  box-shadow: 1px 2px 6px 0px rebeccapurple;
 }
 
 .event-list-title{
