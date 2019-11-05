@@ -87,7 +87,6 @@ h1 {
 .project-details {
   width: 50%;
   display: inline-block;
-  /* margin: auto; */
 }
 
 .project-imageContainer {
@@ -95,7 +94,7 @@ h1 {
 }
 
 .project-imageContainer img{
-  height: 300px;
+  /* height: 300px; */
   max-width: 100%;    
   object-fit: contain;
   width: 400px;
@@ -149,6 +148,7 @@ ul{
 
 figure{
   margin: 0;
+  text-align: center;
 }
 
 .hero {
@@ -303,12 +303,11 @@ h2{
 
 .container{
   max-width: 60%;
-  /* width: 100% */
   flex: 1;
   margin: 0 auto;
   display: inherit;
   align-items: inherit;
-  justify-content: inherit;
+  justify-content: center;
   height: inherit;
   flex-wrap: inherit;
 }
@@ -320,10 +319,10 @@ h2{
   }
   
   .menu {
-    background: #42aae6;
+    background: #42faf699;
     border-radius: 1em;
     height: 80vh;
-    left: -10em;
+    left: -15em;
     position: fixed;
     transition: 0.5s;
     z-index: 3;
@@ -349,13 +348,9 @@ h2{
 
   h1 {
     font-size: 2em;
+    margin: 10em 0 0;
     z-index: 2;
   }
-
-  /* .hero-img, h1 {
-    width: 100%;
-    padding: 1em;
-  } */
 
   .header {
     display: block;
@@ -438,10 +433,6 @@ h2{
 }
 
 @media screen and (max-width: 480px) {
-  body {
-    /* border: 1em solid green; */
-  }
-
   h1 {
     font-size: 1em;
   }
