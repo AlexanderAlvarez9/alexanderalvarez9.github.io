@@ -114,7 +114,15 @@ let cursos = [
         desc: 'Tener una marca personal es fundamental para tu desarrollo profesional. Construir un portafolio de proyectos y fortalecer tu presencia online te ayudará a resaltar para ampliar tus oportunidades laborales, conseguir un mejor empleo o crear tu propio negocio.',
         linkCert: 'https://platzi.com/@jhonalexanderalvarezromero/curso/1220-marca-personal/diploma/detalle/',
     },
+    {
+        title: 'Curso de Computación Básica',
+        img: 'https://static.platzi.com/media/achievements/badge-computacion-basica-7bbb6f8a-04e3-4af2-82f2-8b8f2932ba04.png',
+        desc: '¿Eres principiante y quieres tener las bases para manejar tu computadora de manera autónoma? Inicia en el mundo de la computación y aprende a instalar programas en Windows 10. Envía correos, gestiona tu seguridad e identifica las partes básica de una computadora.',
+        linkCert: 'https://platzi.com/@jhonalexanderalvarezromero/curso/1741-computacion-basica/diploma/detalle/',
+    },
 ]
+
+
 
 var cursohtml = document.getElementById("cursosid");
 
@@ -123,12 +131,12 @@ function construyeCursos() {
     for (let i = 0; i < cursos.length; i++) {
         cursohtml.innerHTML += `<article class="event">
                                     <figure class="event-imageContainer">
-                                        <img class="event-image" src="${cursos[i]['img']}" alt="Imagen Curso" height="200">
+                                        <img class="event-image" src="${cursos[i]['img']}" rel="noreferrer" alt="Imagen Curso" height="200">
                                     </figure>
                                     <div class="event-details">
                                         <h3 class="event-title">${cursos[i]['title']}</h3>
                                         <p class="event-description">${cursos[i]['desc']}</p>
-                                        <a class="event-url" target="_blank" href="${cursos[i]['linkCert']}">Ver Certificado</a>
+                                        <a class="event-url" target="_blank" rel="noreferrer" href="${cursos[i]['linkCert']}">Ver Certificado</a>
                                     </div>
                                 </article>`
     }

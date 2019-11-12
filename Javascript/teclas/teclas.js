@@ -6,11 +6,14 @@ var teclas = {
 };
 
 document.addEventListener("keyup", dibujarConElTeclado);
+
+//Otros eventos: 
+//keyup y keydown 
 var cuadrito = document.getElementById('area_de_dibujo');
 var papel = cuadrito.getContext("2d");
 var x = 150;
 var y = 150;
-var colorcito = "pink";
+var colorcito = "red";
 
 dibujarlinea(colorcito, x-1, y-1, x+1, y+1, papel);
 
@@ -27,7 +30,7 @@ function dibujarlinea(color, xinicial, yinicial, xfinal, yfinal, lienzo)
 
 function dibujarConElTeclado(evento)
 {
-  var movimiento = 1;
+  var movimiento = 15;
   switch (evento.keyCode) {
     case teclas.LEFT:
         dibujarlinea("colorcito", x, y, x - movimiento, y, papel);
