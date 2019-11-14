@@ -1,6 +1,6 @@
 var boton = document.getElementById("botonmenu");
-// var menu = document.addEventListener('click', addClassQS);
-var menu = boton.addEventListener('click', addClassID)
+var menu = document.querySelector(".menu");
+var menub = boton.addEventListener('click', addClassQS)
 
 // querySelector recibe:
 //  .clase para las clases
@@ -8,20 +8,23 @@ var menu = boton.addEventListener('click', addClassID)
 //  #ID para los ids
 
 function addClassQS() {
-    let clase = document.querySelector('nav');
-    clase.classList.add('is-active');
+    menu.style.display = "block";
+    boton.style.display = "none";
+    // borar todo lo de is-active
 }
 
-function addClassID() {
-    let clase = document.getElementById("menub");
-
-    if (clase.classList.contains('is-active')) {
-        clase.classList.remove('is-active')
-      } else {
-        clase.classList.add('is-active')
-      }
+window.onclick = function(event) {
+    if (event.target == menu) {
+        menu.style.display = "none";
+        boton.style.display = "block"
+    }
 }
 
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+    menu.style.display = "none"
+    boton.style.display = "block"
+}
 
 let cursos = [
     {

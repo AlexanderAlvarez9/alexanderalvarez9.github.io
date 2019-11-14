@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="tooltip.css">
+    <title>ToolTIp Propio</title>
+</head>
+<body>
+    <div class="contenedor">
+
+        <div class="tooltip1">
+            <div class="parrafo1"> <p> Algo basico que daria informacion</p>
+                <span class="tooltip1h">Informacion adicional, para mostrar al tener hover</span>
+            </div>
+        </div>
+
+        <div class="tooltip2">
+            <input class="input2" type="text" placeholder="Input 1">
+            <div class="tooltip2h">
+                <span class="oculto">Informacion para mostrar mediante hover</span>
+            </div>
+        </div>
+
+        <div class="tooltip3">
+            <input class="input3" type="text" placeholder="Input 2">
+            <div class="tooltip3h">
+                <span class="oculto">Informacion importante oculta, lista para mostrar</span>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="modalButton">Boton Modal</button>
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Algo de texto</p>
+        </div>
+    </div>
+
+    
+    <script src="tooltip.js"></script>
+</body>
+</html>

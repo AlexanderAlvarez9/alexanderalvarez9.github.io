@@ -1,320 +1,335 @@
 body{
-  background: #2A2726;
+    background: #2A2726;
 }
 
 header {
-  background: pink;
-  color: red;
-  flex-wrap: wrap;
+    background: pink;
+    color: red;
+    flex-wrap: wrap;
 }
 
 .header {
-  align-items: center;
-  background-color: black;
-  color: white;
-  display: flex;
-  height: 70px;
-  justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
 }
 
 body {
-  font-family: Muli,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue', Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  margin: 0;
+    font-family: Muli,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue', Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    margin: 0;
 }
 
 .social-link {
-  background-color: #2A2726;
-  border-radius: 2em;
-  color: white;
-  display: inline-block;
-  font-size: 1.25em;
-  margin: 0 0.4em;
-  padding: 1em;
+    background-color: #2A2726;
+    border-radius: 2em;
+    color: white;
+    display: inline-block;
+    font-size: 1.25em;
+    margin: 0 0.4em;
+    padding: 1em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Fjalla One";
-  font-weight: 100;
+h1, h2, h3, 
+h4, h5, h6 {
+    font-family: "Fjalla One";
+    font-weight: 100;
 }
 
 h1 {
-  color: white;
-  font-size: 1.8em;
-  letter-spacing: -1px;
-  line-height: 150%;
-  margin: 0;
-  text-transform: capitalize;
-  text-decoration: underline;
+    color: white;
+    font-size: 1.8em;
+    letter-spacing: -1px;
+    line-height: 150%;
+    margin: 0;
+    text-transform: capitalize;
+    text-decoration: underline;
 }
 
 .project{
-  align-items: center;
-  background: #F4F4F4;
-  border:1px solid lightcoral;
-  border-radius: 1.5em;
-  box-shadow: 0 .5em 2.5em -0.6em purple;
-  color: blue;
-  display: flex;
-  flex-wrap: wrap;
-  font-weight: bold;
-  justify-content: space-between;
-  margin: 1em;
-  margin-bottom: 5px;
-  padding: 1em;
+    align-items: center;
+    background: #F4F4F4;
+    border:1px solid lightcoral;
+    border-radius: 1.5em;
+    box-shadow: 0 .5em 2.5em -0.6em purple;
+    color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 1em;
+    margin-bottom: 5px;
+    padding: 1em;
 }
 
 .project-title{
-  font-size: 2em;
-  margin-top: 0;
-  margin: 0.7em 0;
+    font-size: 2em;
+    margin-top: 0;
+    margin: 0.7em 0;
 }
 
 .project-date,
 .project-url,
 .project-course{
-  margin: 1em;
+    margin: 1em;
 }
 
 .project-course {
-  font-size: 1.1em;
+     font-size: 1.1em;
 }
 
 .project-details {
-  width: 50%;
-  display: inline-block;
+    width: 50%;
+    display: inline-block;
 }
 
 .project-imageContainer {
-  width: 50%;
+     width: 50%;
 }
 
 .project-imageContainer img{
-  /* height: 300px; */
-  max-width: 100%;    
-  object-fit: contain;
-  width: 400px;
+    max-width: 100%;    
+    object-fit: contain;
+    width: 400px;
 }
 
-.menu{
-  height: inherit;
+.menu {
+    height: inherit;
 }
+
+.close {
+    display: none;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 .header ol{
-  display: flex;
-  height: inherit;
+    display: flex;
+    height: inherit;
 }
 
 .header ol li{
-  height: inherit;
+    height: inherit;
 }
 
 .header a {
-  align-items: center;
-  color: white;
-  display: flex;
-  font-size: 1.2em;
-  height: inherit;
-  padding: 0 1em;
-  text-decoration: none;
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 1.2em;
+    height: inherit;
+    padding: 0 1em;
+    text-decoration: none;
 }
 
 .botonmenu {
-  background-color: rgb(61, 35, 204);
-  border-radius: 50%;
-  color: whitesmoke;
-  display: none;
-  font-size: 1.5em;
-  height: 2em;
-  line-height: 2em;
-  left: 0.5em;
-  position: fixed;
-  text-align: center;
-  top: 0.5em;
-  width: 2em;
-  z-index: 4;
+    background-color: rgb(61, 35, 204);
+    border-radius: 50%;
+    color: whitesmoke;
+    display: none;
+    font-size: 1.5em;
+    height: 2em;
+    line-height: 2em;
+    left: 0.5em;
+    position: fixed;
+    text-align: center;
+    top: 0.5em;
+    width: 2em;
+    z-index: 4;
 }
 
 ol,
 ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 figure{
-  margin: 0;
-  text-align: center;
+    margin: 0;
+    text-align: center;
 }
 
 .hero {
-  flex-wrap: wrap;
-  height: auto;
-  /* background-image: url(./imgs/hero.jpg); */
-  background-color: #1b2127;
-  justify-content: space-between;
-  /* background-size: 500px 300px; */
-  /* background-repeat: no-repeat; */
-  /* background-position-x: right; */
-  display: flex;
-  align-items: center;
-  text-align: center;
+    flex-wrap: wrap;
+    height: auto;
+    /* background-image: url(./imgs/hero.jpg); */
+    background-color: #1b2127;
+    justify-content: space-between;
+    /* background-size: 500px 300px; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right; */
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .hero-img{
-  object-fit: cover;
+     object-fit: cover;
 }
 
 h1 strong{
-  color: green;
+    color: green;
 }
 
 .trabajemos{
-  color: white;
-  text-transform: uppercase;
+    color: white;
+    text-transform: uppercase;
 }
 
 .portfolio{
-  background-color: #626262;
-  padding: 1.5em;
+    background-color: #626262;
+    padding: 1.5em;
 }
 
 .footer{
-  align-items: center;
-  background: #1b2127;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
+    align-items: center;
+    background: #1b2127;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
 }
 
 footer p{
-  justify-content: space-between;
-  margin: 0;
+    justify-content: space-between;
+    margin: 0;
 }
 
 .footer img{
-  vertical-align: middle;
+     vertical-align: middle;
 }
 
 h2{
-  color: whitesmoke;
-  text-transform: uppercase;
-  font-family: "Fjalla One";
-  font-weight: bold;
-  font-size: 2em;
-  text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: "Fjalla One";
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
 }
 
 .event{
-  background: #D4ECF0;
-  border-radius: 1em;
-  box-shadow: 0 .5em 2.5em -0.6em darkblue;
-  flex-shrink: 0;
-  justify-content: center;
-  overflow: hidden;
-  margin: 1em;
-  width: 300px;
+    background: #D4ECF0;
+    border-radius: 1em;
+    box-shadow: 0 .5em 2.5em -0.6em #99999999;
+    flex-shrink: 0;
+    justify-content: center;
+    overflow: hidden;
+    margin: 1em;
+    width: 300px;
 }
 
 .eventos{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em;
 }
 
 .event-imageContainer {
-  text-align: center;
+    text-align: center;
 }
 
 .event img{
-  margin: 0;
-  object-fit: cover;
-  width: auto;
+    margin: 0;
+    object-fit: cover;
+    width: auto;
 }
 
 .event-details{
-  margin: 1.5em 40px;
-  margin-top: -40px;
-  background-color: white;
-  border-radius: 1em;
-  position: relative;
-  padding: 1.2em;
-  text-align: center;
+    margin: 1.5em 40px;
+    margin-top: -40px;
+    background-color: white;
+    border-radius: 1em;
+    position: relative;
+    padding: 1.2em;
+    text-align: center;
 }
 
 .event-description{
-  text-align: left;
+    text-align: left;
 }
 
 .event-url{
-  border-radius: 5px;
-  box-shadow: 1px 2px 6px 0px black;
-  color: #056fff;
-  border: 1px solid;
-  padding: 5px 1.5em;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 1px 2px 6px 0px black;
+    color: #056fff;
+    border: 1px solid;
+    padding: 5px 1.5em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .event-url:hover {
-  box-shadow: 1px 2px 6px 0px rebeccapurple;
+     box-shadow: 1px 2px 6px 0px rebeccapurple;
 }
 
 .event-list-title{
-  box-shadow: 0 .5em 2.5em -0.6em darkblue;
-  margin-left: 2em;
-  text-align: center;
+    box-shadow: 0 .5em 2.5em -0.6em #99999999;
+    margin-left: 2em;
+    text-align: center;
 }
 
 .contact{
-  align-items: center;
-  background-color: #056fff;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  height: 150px;
-  justify-content: space-between;
+    align-items: center;
+    background-color: #056fff;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .form-email input{
-  border-color: gray;
-  border-style: solid;
-  border-radius: 5px;
-  padding: 5px 1.5em 5px 25px;
-  background-image: url(./imgs/envelope.svg);
-  background-size: 15px 15px;
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: 5px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px 1.5em 5px 25px;
+    background-image: url(./imgs/envelope.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
 }
 
 .form-email .submit{
-  background: transparent;
-  border-radius: 5px;
-  color: white;
-  display: block;
-  margin-top: 1em;
-  padding: 1em 0;
-  width: 100px;
+    background: transparent;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    margin-top: 1em;
+    padding: 1em 0;
+    width: 100px;
 }
 
 .container{
-  max-width: 60%;
-  flex: 1;
-  margin: 0 auto;
-  display: inherit;
-  align-items: inherit;
-  justify-content: center;
-  height: inherit;
-  flex-wrap: inherit;
+    max-width: 70%;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    align-items: inherit;
+    justify-content: center;
+    height: inherit;
+    flex-wrap: inherit;
 }
 
 @media screen and (max-width: 767px) {
@@ -324,17 +339,29 @@ h2{
   }
   
   .menu {
-    background: #42faf699;
-    border-radius: 1em;
-    height: 80vh;
-    left: -15em;
-    position: fixed;
-    transition: 0.5s;
+    display: none;
+    position: fixed; /* Stay in place */
     z-index: 3;
+    padding-top: 6em;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #99999999;
   }
 
-  .menu.is-active {
-    left: 0;
+  .menu-content {
+    background-color: #42faf699;
+    border: 1px solid #888;
+    border-radius: 1em;
+    margin: 0 auto 0 auto;
+    padding: 2em;
+    width: 40%;
+  }
+
+  .close {
+      display: inherit;
   }
 
   .hero {
@@ -363,11 +390,12 @@ h2{
   }
 
   .header ol {
-    display: initial;
+    display: inherit;
+    height: auto;
   }
 
   .header ol li {
-    height: 50px;
+    height: 3em;
   }
 
   .header a {
@@ -444,7 +472,7 @@ h2{
 }
 
 @media screen and (max-width: 320px) {
-    .project-details {
+.project-details {
     font-size: 12px;
   }
 
@@ -480,5 +508,10 @@ h2{
   h1 {
     font-size: 2em;
     z-index: 2;
+  }
+
+  .contact {
+    height: auto;
+    text-align: center;
   }
 }
