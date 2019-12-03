@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    width: 100vw;
 }
 
 body {
@@ -19,9 +18,8 @@ body {
 
 .house {
     background: url("./imgs/bg-head.png") no-repeat center;
-    background-repeat: no-repeat;
     margin: 0 auto;
-    max-width: 68em;
+    max-width: 70%;
     position: relative;
     top: 3em;
     width: 100%;
@@ -29,13 +27,16 @@ body {
 }
 
 .logo {
+    max-height: 6em;
+    object-fit: contain;
     position: relative;
     top: 3em;
-    width: 18em;
+    width: 100%;
     z-index: 3;
 }
 
 .clavo {
+    background: url("./imgs/bg-nav.png") no-repeat center;
     display: flex;
     justify-content: center;
     height: 3em;
@@ -46,11 +47,18 @@ body {
     z-index: 3;
 }
 
+.texttittle {
+    text-decoration: underline;
+    margin: auto;
+    text-align: center;
+}
+
 .miniback {
     height: 5em;
     overflow: hidden;
     position: relative;
     top: -3em;
+    width: 100%;
     z-index: 2;
 }
 
@@ -58,7 +66,7 @@ body {
     background-image: url("./imgs/bg-top-inset.jpg");
     position: relative;
     top: -4.5em;
-    padding: 3em 3em 10em 5em;
+    padding: 2em 0em 9em 2em;
 }
 
 .footer {
@@ -82,9 +90,24 @@ body {
 .wood {
     position: relative; 
     top: -3.5em;
+    width: 100%;
 }
 
 .back {
     position: relative; 
     top: -4em;
+}
+
+.tienda {
+    margin: 1em;
+    padding: 1em;
+    color: white;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+.schedule {
+    display: none;
 }
