@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    width: 100vw;
+}
+
+body {
+    background-color: #562D17;
+}
+
+.sky {
+    background-image: url("./imgs/bg-sky.jpg");
+    background-repeat: round;
+    height: 16em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.house {
+    background: url("./imgs/bg-head.png") no-repeat center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    max-width: 68em;
+    position: relative;
+    top: 3em;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo {
+    position: relative;
+    top: 3em;
+    width: 18em;
+    z-index: 3;
+}
+
+.clavo {
+    display: flex;
+    justify-content: center;
+    height: 3em;
+    margin: 0 auto;
+    max-width: 68em;
+    position: relative;
+    top: -1em;
+    z-index: 3;
+}
+
+.miniback {
+    height: 5em;
+    overflow: hidden;
+    position: relative;
+    top: -3em;
+    z-index: 2;
+}
+
+.content {
+    background-image: url("./imgs/bg-top-inset.jpg");
+    position: relative;
+    top: -4.5em;
+    padding: 3em 3em 10em 5em;
+}
+
+.footer {
+    background: url("./imgs/bg-footer.png");
+    background-repeat: round;
+    display: flex;
+    height: 25em;
+    position: relative;
+    top: -10em;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+}
+
+.fotext {
+    color: white;
+    position: relative;
+    top: -4.5em;
+}
+
+.wood {
+    position: relative; 
+    top: -3.5em;
+}
+
+.back {
+    position: relative; 
+    top: -4em;
+}

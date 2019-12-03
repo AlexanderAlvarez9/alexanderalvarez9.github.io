@@ -1,0 +1,374 @@
+#block-superfish-1{
+    display: block;
+    height: 47px;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: calc(100% - 20px);
+}
+#block-superfish-1 .content {
+    height: 47px;
+    width: 100%;
+}
+#block-superfish-1 .content #superfish-1{
+    height: 47px;
+    
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+#block-superfish-1 .content #superfish-1 li{
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    display: inline-block;
+    height: 47px;
+    line-height: 47px;
+    margin: 0 10px;
+    padding: 0 !important;
+    top: 0;
+    
+    isplay: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-align: center;
+}
+#block-superfish-1 .content #superfish-1 > li{
+     -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    float: left;
+    position: relative;
+    -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+#block-superfish-1 .content #superfish-1 > li a{
+    padding: 1.3em 1.5em 0.2em;
+    display: block;
+    margin: 0 auto;
+}
+#block-superfish-1 .content #superfish-1 li > ul{
+    background-color: rgba(235,28,36,0.6)!important;
+    background-image:  none !important;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    display: none;
+    max-width: 180px;
+    padding: 1.0em 0 0 !important;
+    top:2px !important;
+    width: 180px!important;
+}
+#block-superfish-1 .content #superfish-1 li:hover > ul{
+    display: block;
+    top:40px !important;
+}
+#block-superfish-1 .content #superfish-1 li > ul li{
+    background-color:transparent none !important;
+    border-bottom: thin solid #FFF;
+    line-height: 50px;
+    margin: 0 !important;
+    min-height: 50px;
+    width: 100% !important;
+}
+
+#block-superfish-1 .content #superfish-1 li > ul li.active-trail{
+    border-bottom: thin solid #FFF;
+    color: #ffd31f 2px solid;
+}
+#block-superfish-1 .content #superfish-1 li > ul li a{
+    background-color:transparent none !important;
+    border:  none!important;
+    color: #FFF!important;
+    width: 100% !important;
+}
+#block-superfish-1 .content #superfish-1 li.active-trail a{
+    border-bottom: #4f2d1a 2px solid;
+}
+.menu-noticias{
+    border-bottom: 2px solid #eb1c24;
+    display: block;
+    box-sizing: initial;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+.menu-noticias li{
+    border: none;
+    box-sizing: initial;
+    color: #eb1c24;
+    float:left;
+    display: block;
+    margin: 0;
+    padding: 7px 0;
+    text-align: center;
+    width: 33.333%;
+}
+.menu-noticias li.active{
+    background: #eb1c24;
+}
+.menu-noticias li a{
+    color: #eb1c24;
+}
+.menu-noticias li.active a{
+    background: #eb1c24;
+    color: #FFF;
+}
+
+.menu-recetas{
+    border-bottom: 2px solid #eb1c24;
+    display: block;
+    box-sizing: initial;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+.menu-recetas li{
+    border: none;
+    box-sizing: initial;
+    color: #eb1c24;
+    float:left;
+    display: block;
+    margin: 0;
+    padding: 7px 0;
+    text-align: center;
+    width: 20%;
+}
+.menu-recetas li.active{
+    background: #eb1c24;
+}
+.menu-recetas li a{
+    color: #eb1c24;
+}
+.menu-recetas li.active a{
+    background: #eb1c24;
+    color: #FFF;
+}
+#superfish-1-toggle{
+    background: url('../images/icon-nav-movil.png') transparent center top no-repeat;
+    border: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    left: 20%;
+    margin-left: -65px!important;
+    margin-top: 3px !important;
+    padding: 0;
+    position: absolute;
+    height: 65px;
+    margin: 0px 0;
+    width: 65px;
+}
+#superfish-1-toggle.sf-expanded{
+    background: url('../images/icon-nav-movil.png') #eb1c24 center bottom no-repeat;
+}
+#superfish-1-accordion li{
+    background-image: none!important;
+    background-color: rgba(235,28,36,0.6)!important;
+}
+#superfish-1-accordion li a{
+    color: #FFF!important;
+    text-shadow:none!important;
+}
+#btn-nosotros{
+    background: url('../images/btn-nosotros.png') center center no-repeat;
+}
+#btn-contacto{
+    background: url('../images/btn-contacto.png') center center no-repeat;
+}
+#btn-location{
+    background: url('../images/btn-location.png') center center no-repeat;
+}
+#block-menu-menu-movil{
+    display: none;
+    margin-right: 30px;
+    float: right;
+}
+#block-menu-menu-movil ul{
+    float: right;
+    margin-bottom: 0;
+    padding: 0;
+    width:100%;
+}
+#block-menu-menu-movil ul li{
+    float: left;
+    list-style: none;
+    margin: 3px 0 !important;
+    padding:  0 !important;
+    width:33%;
+}
+#block-menu-menu-movil ul li a{
+    background-size: contain;
+    display: block;
+    height: 65px;
+    line-height: 65px;
+    margin: 0 0;
+    text-indent:-999px;
+    width: 100%;
+}
+
+#block-menu-menu-social-networks ul{
+    float: right;
+    margin-bottom: 0;
+    padding: 0;
+    width:100%;
+}
+#block-menu-menu-social-networks ul li{
+    display: inline-block;
+    list-style: none;
+}
+#block-menu-menu-social-networks ul li a{
+    display: block;
+    height: 47px;
+    text-indent: -999999px !important;
+    width: 25px;
+}
+#block-menu-menu-social-networks {
+    height: 47px;
+    float: right;
+    margin-right: 30px;
+}
+#block-menu-menu-social-networks ul li#icon-facebook a{
+    background: url('../images/social-facebook.png') center center no-repeat;
+}
+#block-menu-menu-social-networks ul li#icon-twitter a{
+    background: url('../images/social-twitter.png') center center no-repeat;
+}
+#block-menu-menu-social-networks ul li#icon-instagram a{
+    background: url('../images/social-instagram.png') center center no-repeat;
+}
+
+.fixed-head #block-superfish-1 .content #superfish-1 > li a {
+    padding: 1.3em 0.7em 0.2em;
+}
+#menu-219-1{
+    display:none !important;
+}
+#menu-219-1 a.sf-depth-1{
+    display:block !important;
+    background: url('../images/logo-santa-reyes.png') center center no-repeat;
+    background-size: contain;
+    height: 62px !important;
+    line-height: 62px !important;
+    bottom: -8px;
+    margin-top: -30px;
+    position: relative;
+    text-indent: -9999px;
+    min-widows: 168px !important;
+    widows: 168px !important;
+}
+
+#menu-219-1 a.sf-depth-1.active{
+    border-bottom: none !important;
+}
+.fixed-head #menu-219-1{
+    display:inline-block !important;
+}
+.fixed-head #logohead{
+    display:none !important;
+}
+.fixed-head #navhead .container{
+    width: 100% !important;
+}
+.fixed-head #navhead{
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 10000
+}
+.fixed-head #navhead #bg-nav{
+    background-size: 110% 47px;
+    position: fixed !important;
+    top: 10px !important;
+}
+.fixed-head #navhead #bg-nav  #superfish-1 > li{
+    width: 16%;
+    margin: 0 0;
+}
+.fixed-head #navhead #bg-nav .topseparation{
+    display:block !important;
+}
+
+
+
+@media(max-width:1201px){
+    #block-superfish-1 .content #superfish-1 li a{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media(max-width:992px){
+}
+@media(max-width:768px){
+    #headage{
+        z-index: 99999;
+    }
+    #block-superfish-1{
+        float: left;
+        height: 1px;;
+        position: relative;
+    }
+    #superfish-1-accordion{
+        position: absolute;
+        top: 60px !important;
+        width: 100%;
+    }
+    #block-superfish-1 {
+        overflow: visible !important;
+        width: 100%;
+    }
+    #block-superfish-1 .content {
+        height: auto;;
+        position: absolute;
+        width: 100%;
+    }
+    
+    #block-menu-menu-social-networks{
+        display: none  !important;  
+    }
+    #block-menu-menu-movil{
+        display: block;
+        margin-right: 0;
+        position: relative;
+        width:75%;
+        z-index: 1000;
+    }
+    #bg-nav {
+        background-image: none!important;
+        background-color: #FFF !important;
+        display: table;
+        height: 50px !important;
+        margin-bottom: -30px;
+        margin-top: -10px;
+        position: inherit;
+        width: 100%;
+    }
+    #block-block-1, #block-block-2, #block-block-3{
+        margin: 20px 0;
+    }
+    #block-views-banner-hero-block-1,
+    #block-block-4,
+    #block-fb-likebox-0{
+        display: none !important;
+    }
+    .title1 {
+        font-size: 40px;
+    }
+    .title3 {
+        color: #eb1c24;
+        font-size: 20px;
+        font-weight: 600px;
+    }
+}

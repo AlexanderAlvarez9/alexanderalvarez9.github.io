@@ -109,14 +109,14 @@ h1 {
     float: right;
     font-size: 2em;
     font-weight: bold;
-  }
+}
   
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 .header ol{
     display: flex;
@@ -466,24 +466,24 @@ h2{
 }
 
 @media screen and (max-width: 480px) {
-  h1 {
-    font-size: 1em;
-  }
+    h1 {
+      font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 320px) {
-.project-details {
-    font-size: 12px;
-  }
+    .project-details {
+        font-size: 12px;
+    }
 
-  h1 {
-    font-size: 1.2em;
-    background: rgba(0, 0, 0, 0.5);
-  }
+    h1 {
+        font-size: 1.2em;
+        background: rgba(0, 0, 0, 0.5);
+    }
 
-  .hero {
-    padding: 2em 1em;
-  }
+    .hero {
+        padding: 2em 1em;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -515,3 +515,13 @@ h2{
     text-align: center;
   }
 }
+
+rcd {
+    color: #000000; /*header*/
+    color: #808080; /*Link del menu sin hover*/ 
+    color: #000000; /*Fondo del hero*/ 
+    color: #FFCE05; /*Link del menu*/ 
+    color: #666666; /*texto sin negrilla*/ 
+    color: #00b9ff; /*linea azul*/ 
+    color: #e6e6e6; /*Gris de preguntas frecuentes*/ 
+  }
