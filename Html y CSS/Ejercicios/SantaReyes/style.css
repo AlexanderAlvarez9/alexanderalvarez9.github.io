@@ -43,7 +43,7 @@ body {
     margin: 0 auto;
     max-width: 68em;
     position: relative;
-    top: -1em;
+    top: -1em; /*desborrado*/
     z-index: 3;
 }
 
@@ -57,7 +57,7 @@ body {
     height: 5em;
     overflow: hidden;
     position: relative;
-    top: -3em;
+    top: -3em; /*desborrado*/
     width: 100%;
     z-index: 2;
 }
@@ -65,49 +65,92 @@ body {
 .content {
     background-image: url("./imgs/bg-top-inset.jpg");
     position: relative;
-    top: -4.5em;
+    top: -4.5em; /*desborrado*/
     padding: 2em 0em 9em 2em;
 }
 
 .footer {
     background: url("./imgs/bg-footer.png");
     background-repeat: round;
-    display: flex;
+    /* display: flex; */
     height: 25em;
-    position: relative;
-    top: -10em;
-    justify-content: center;
+    /* justify-content: center;*/
+    position: relative; /*desborrado*/
     text-align: center;
-    width: 100vw;
-}
-
-.fotext {
-    color: white;
-    position: relative;
-    top: -4.5em;
+    top: -12em; /*desborrado*/
+    width: 100vw;*/
 }
 
 .wood {
+    height: 8em;
     position: relative; 
-    top: -3.5em;
+    top: -3.5em; /*desborrado*/
     width: 100%;
 }
 
 .back {
     position: relative; 
-    top: -4em;
+    top: -4em; /*desborrado*/
 }
 
 .tienda {
     margin: 1em;
     padding: 1em;
     color: white;
+    border: 1px solid white;
+    border-radius: 2em;
+    max-width: 16em;
 }
 
 .title {
     font-size: 1.5em;
+    margin: 0.5em 0;
 }
 
 .schedule {
     display: none;
+}
+
+.fotext {
+    color: white;
+    display: flex;
+    height: 10em;
+    justify-content: space-around;
+    overflow: hidden;
+    position: relative;
+    padding: 2em;
+    top: 14em;
+    /* z-index: 10; */
+}
+
+.redes {
+    display: block;
+}
+
+.social {
+    text-align: center;
+}
+
+.social img {
+    padding: 0.5em;
+    margin: 0.2em;
+}
+
+.facebook {
+    background-color: #0153A5;
+}
+
+.twitter {
+    background-color: #21A2DC;
+}
+
+.instagram {
+    background-color: #9832C6;
+}
+
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em;
 }
