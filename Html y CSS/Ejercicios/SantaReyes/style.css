@@ -106,10 +106,11 @@ body {
 }
 
 .title {
-    font-size: 1.5em;
+    font-size: 27px;
+    font-weight: 600;
     margin: 0.5em 0;
     text-align: center;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: #FFD31F;
 }
 
