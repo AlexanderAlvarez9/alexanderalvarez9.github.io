@@ -194,7 +194,7 @@ body {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 476px) {
     .miniback {
         padding: 4em 0 5em 0;
     }
