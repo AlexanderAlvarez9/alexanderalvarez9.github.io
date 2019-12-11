@@ -44,25 +44,44 @@ body {
     justify-content: center;
     height: 3em;
     margin: 0 auto;
-    max-width: 68em;
+    max-width: 82em;
     position: relative;
     top: -1em; /*desborrado*/
     z-index: 3;
+}
+
+.miniback {
+    background: url("./imgs/bg-top-inset.jpg") ; /*no-repeat center*/
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    justify-content: center;
+    height: 5em;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 4em 0 1em 0;
+    position: relative;
+    top: -3em; /*desborrado*/
+    width: 100%;
+    z-index: 2;
+}
+
+.rlink {
+    color: white;
+    margin: 0.5em 1em;
+    position: relative;
+    text-decoration: none;
+    z-index: 3;
+}
+
+.miniback img {
+    width: 100%;
 }
 
 .texttittle {
     text-decoration: underline;
     margin: auto;
     text-align: center;
-}
-
-.miniback {
-    height: 5em;
-    overflow: hidden;
-    position: relative;
-    top: -3em; /*desborrado*/
-    width: 100%;
-    z-index: 2;
 }
 
 .content {
@@ -87,8 +106,9 @@ body {
 .wood {
     height: 8em;
     position: relative; 
-    top: -3.5em; /*desborrado*/
+    top: -3em; /*desborrado*/
     width: 100%;
+    z-index: 2;
 }
 
 .back {
@@ -166,4 +186,16 @@ body {
 
 .texto {
     font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .miniback {
+        padding: 4em 0 3em 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .miniback {
+        padding: 4em 0 5em 0;
+    }
 }
