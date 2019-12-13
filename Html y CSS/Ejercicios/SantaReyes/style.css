@@ -37,7 +37,7 @@ body {
     z-index: 3;
 }
 
-.clavo {
+.wood2 {
     background: url("./imgs/bg-nav.png") no-repeat center;
     display: flex;
     font-size: 12px;
@@ -46,22 +46,21 @@ body {
     margin: 0 auto;
     max-width: 82em;
     position: relative;
-    top: -1em; /*desborrado*/
+    top: -1em;
     z-index: 3;
 }
 
 .miniback {
-    background: url("./imgs/bg-top-inset.jpg") ; /*no-repeat center*/
+    background: url("./imgs/bg-top-inset.jpg") ;
     display: flex;
     flex-wrap: wrap;
     font-size: 12px;
     justify-content: center;
-    height: 5em;
     margin: 0 auto;
     overflow: hidden;
-    padding: 4em 0 1em 0;
+    padding: 3em 0 1.5em 0;
     position: relative;
-    top: -3em; /*desborrado*/
+    top: -3em;
     width: 100%;
     z-index: 2;
 }
@@ -74,10 +73,6 @@ body {
     z-index: 3;
 }
 
-.miniback img {
-    width: 100%;
-}
-
 .texttittle {
     text-decoration: underline;
     margin: auto;
@@ -87,40 +82,33 @@ body {
 .content {
     background-image: url("./imgs/bg-top-inset.jpg");
     position: relative;
-    top: -4.5em; /*desborrado*/
+    top: -4.5em;
     padding: 2em 0 9em 0;
 }
 
 .footer {
     background: url("./imgs/bg-footer.png");
     background-repeat: round;
-    /* display: flex; */
     height: 25em;
-    /* justify-content: center;*/
-    position: relative; /*desborrado*/
+    position: relative;
     text-align: center;
-    top: -12em; /*desborrado*/
+    top: -12em;
     width: 100vw;*/
 }
 
 .wood {
     height: 8em;
-    position: relative; 
-    top: -3em; /*desborrado*/
+    position: relative;
+    top: -3em;
     width: 100%;
     z-index: 2;
-}
-
-.back {
-    position: relative; 
-    top: -4em; /*desborrado*/
 }
 
 .tienda {
     margin: 1em;
     padding: 1em;
     color: white;
-    border: 1px solid white;
+    border: 3px solid white;
     border-radius: 2em;
     max-width: 16em;
 }
@@ -130,15 +118,10 @@ body {
     font-weight: 600;
     margin: 0.5em 0;
     text-align: center;
-    /* text-decoration: underline; */
     color: #FFD31F;
 }
 
-.schedule {
-    display: none;
-}
-
-.fotext {
+.footertext {
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -181,21 +164,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     margin: 1em auto;
+    text-align: center;
     width: 60%;
 }
 
 .texto {
     font-size: 12px;
-}
-
-@media screen and (max-width: 768px) {
-    .miniback {
-        padding: 4em 0 3em 0;
-    }
-}
-
-@media screen and (max-width: 476px) {
-    .miniback {
-        padding: 4em 0 5em 0;
-    }
 }
