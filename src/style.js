@@ -70,6 +70,12 @@ let cursos = [
         linkCert: 'https://platzi.com/@jhonalexanderalvarezromero/curso/1362-responsive-design/diploma/detalle/',
     },
     {
+        title: 'Curso de jQuery a JavaScript',
+        img: 'https://static.platzi.com/media/achievements/1316-718fb32b-2ab6-4042-a25b-ac2169e05cc3.png',
+        desc: 'Aprende a pasar código de jQuery a JS. Crea páginas dinámicas y animaciones en muy poco tiempo. Optimiza tu código jQuery y programa scripts de forma fácil y rápida con Javascript.',
+        linkCert: 'https://platzi.com/@jhonalexanderalvarezromero/curso/1316-jquery-js/diploma/detalle/',
+    },
+    {
         title: 'Curso profesional de Git y GitHub',
         img: 'https://static.platzi.com/media/achievements/badge-github-0b729570-934d-47d8-ba6b-610d7f15e0ec.png',
         desc: 'Deja de versionar tus proyectos usando tu propio sistema de control de versiones. Mejor usa Git el Sistema de control de versiones por excelencia que utiliza la industria, aprende a gestionar tus proyectos alojándolos en Github. Domina Git y Github de cero a avanzado.',
