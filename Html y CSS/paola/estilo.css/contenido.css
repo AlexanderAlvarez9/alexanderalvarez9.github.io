@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.bloquetitulo {
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: coral;
+}
+.parrafotitulo1 {
+    letter-spacing: 1px;
+    font-family: cursive;
+    color: palevioletred;
+    margin-top: -30px;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 35px;
+}
+
+.iconos{
+    padding-top: 55px   ;
+}
+
+.bloquetitulo2{
+    width: 100%;
+    display: inline-block;
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-top: 35px;
+    text-align: center;
+    color: rgb(180, 20, 60);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    background-image: url(../fondos/imagenfondo3.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.parrafotitulo2 {
+    letter-spacing: 1px;
+    font-family: cursive;
+    color: black;
+    text-align: left;
+    margin-left: 80px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 24px;
+    float: left;
+}

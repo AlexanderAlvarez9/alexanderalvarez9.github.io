@@ -1,0 +1,16 @@
+h1{
+    color: black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: rosybrown;
+}
+li {list-style-type: square;}
+.titulo1{text-shadow: 2px 2px rgb(234, 0, 255);
+letter-spacing: 5px; border-style: double}
+p{
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}

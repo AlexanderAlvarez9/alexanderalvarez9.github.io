@@ -1,0 +1,17 @@
+footer{
+    width: 100%;
+}
+
+.nombreestudiante {
+    text-align: center;
+}
+.textofooter{
+    padding-top: 10px;
+    width: 100%;
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    background-color: rgb(189, 88, 88);
+    height: 80px;
+}
