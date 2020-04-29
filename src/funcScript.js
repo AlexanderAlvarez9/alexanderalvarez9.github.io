@@ -239,12 +239,12 @@ if ("share" in navigator) {
         url: "https://darkmefisto9.github.io/",
       })
       .then(() => {
-        alert("Gracias por Compartir");
+        console.log("Gracias por Compartir");
       })
       .catch(() => {
-        alert("no se pudo compartir, prueba usandolo en un navegador móvil");
+        console.log("Error, prueba usandolo en un navegador móvil");
       });
   }
 } else {
-  alert("No está disponible el API de web share");
+  // alert("No está disponible el API de web share");
 }
