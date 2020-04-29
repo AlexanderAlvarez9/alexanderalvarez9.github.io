@@ -246,5 +246,6 @@ if ("share" in navigator) {
       });
   }
 } else {
-  // alert("No está disponible el API de web share");
+  $share.style.display = "none";
+  console.log("No está disponible el API de web share");
 }

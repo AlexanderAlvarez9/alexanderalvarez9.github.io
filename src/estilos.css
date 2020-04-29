@@ -339,10 +339,10 @@ h2 {
 }
 
 #share {
-  background-color: #76e4e2;
-  border: none;
+  background-color: transparent;
+  border: dotted;
   color: white;
-  display: none;
+  display: flex;
   font-size: 1.5em;
   margin: 0 auto;
 }
@@ -379,10 +379,6 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
-  #share {
-    display: flex;
-  }
-
   .botonmenu {
     display: block;
   }
