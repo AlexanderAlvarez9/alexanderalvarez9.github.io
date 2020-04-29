@@ -235,7 +235,7 @@ if ("share" in navigator) {
     navigator
       .share({
         title: "Comparte mi Portafolio",
-        text: "Portafolio de Alexander Alvarez",
+        text: "Portafolio de Alexander Alvarez en GitHub",
         url: "https://darkmefisto9.github.io/",
       })
       .then(() => {

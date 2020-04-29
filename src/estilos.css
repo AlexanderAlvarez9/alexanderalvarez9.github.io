@@ -339,7 +339,12 @@ h2 {
 }
 
 #share {
+  background-color: #76e4e2;
+  border: none;
+  color: white;
   display: none;
+  font-size: 1.5em;
+  margin: 0 auto;
 }
 
 /* INICIO MEDIA QUERYS */
@@ -443,6 +448,7 @@ h2 {
   }
 
   .header a {
+    text-align: center;
     justify-content: center;
   }
 
