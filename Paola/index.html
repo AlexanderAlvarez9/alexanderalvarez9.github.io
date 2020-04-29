@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+
+
+    <style>
+        body {
+            cursor: url(cursor.cur), auto;
+        }
+
+        .resaltar {
+            background: red;
+        }
+
+        .resaltar2 {
+            background: white;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background: black;
+            color: white;
+            font-size: 50px;
+        }
+
+        .box:hover {
+            background: white;
+            color: black;
+        }
+
+        .box1 {
+            width: 150px;
+            height: 150px;
+            background: rgb(228, 10, 10);
+            color: white;
+            font-size: 50px;
+        }
+
+        .box1:hover {
+            background: white;
+            color: rgb(219, 15, 15);
+        }
+
+        .box2 {
+            width: 150px;
+            height: 150px;
+            background: rgb(11, 31, 207);
+            color: white;
+            font-size: 50px;
+            background-position: left;
+        }
+
+        .box2:hover {
+            background: white;
+            color: rgb(27, 13, 228);
+        }
+
+        input {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        #follow {
+            border-radius: 1%;
+            background: rgb(15, 15, 15);
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            display: flex;
+            opacity: 0.20;
+            border: 2px solid black;
+        }
+
+        .container {
+            border: 1px solid red;
+        }
+
+        .giro:hover {
+            /* transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg); */
+            transform: rotate3d(0, 0, 1, 90deg);
+        }
+
+        .giro {
+            transition: 2s;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Parrafos</h1>
+    <div></div>
+    </script>
+    <button type="button" disabled>Click Me!</button>
+
+
+
+    <script type="text/javascript">
+        var planeta = parseInt(prompt("Estado del boton: \n 0. Desactivado \n 1. Activado"));
+        let boton = document.querySelector("button");
+        if (planeta === 1) {
+            boton.removeAttribute("disabled");
+        }
+    </script>
+
+    <div>
+        <ol>
+            <li><a href="#" title="impar">unos</a></li>
+            <li><a href="#" title="par">dos</a></li>
+            <li><a href="#" title="impar">tres</a></li>
+            <li><a href="#" title="par">cuatro</a></li>
+            <li><a href="#" title="impar">cinco</a></li>
+            <li><a href="#" title="par">seis</a></li>
+            <li><a href="#" title="impar">siete</a></li>
+            <li><a href="#" title="par">ocho</a></li>
+            <li><a href="#" title="impar">nueve</a></li>
+            <li><a href="#" title="par">diez</a></li>
+        </ol>
+    </div>
+    <div class="box giro">
+        Box 1
+    </div>
+
+    <div class="box1 giro">
+        Box 2
+    </div>
+    <div class="box2 giro">
+        Box 3
+    </div>
+
+    <br>
+    <br>
+    <form>
+        <input type="text" id="name" placeholder="name"></input>
+    </form>
+
+    <div id="follow">
+    </div>
+
+    <div class="textBoxHolder">
+        <label>Select Color</label>
+        <input type="color" id="tbcontentBorder" />
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

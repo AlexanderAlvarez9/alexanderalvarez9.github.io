@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paola3</title>
+    <style>
+
+        .container {
+            border: 1px solid red;
+        }
+
+        .giro:hover {
+            /* transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg); */
+            transform: rotate3d(0, 0, 1, 90deg);
+        }
+
+        .giro {
+            background: #7dc900;
+            margin: 1.5em;
+            color: red;
+            transition: 2s;
+            width: 3em;
+            padding: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Parrafos</h1>
+    <div></div>
+    <script type="text/javascript">
+      let cantidad = prompt("Cuantos parrafos debo crear?");
+      let parrafos = parseInt(cantidad);
+      let contenedor = document.querySelector("div");
+
+      for (let i = 0; i < parrafos; i++) {
+          contenedor.append("Parrafo " + i + "    ");
+      }
+
+    </script>
+      <button type="button" disabled>Click Me!</button>
+
+      
+
+      <script type="text/javascript">
+            let planeta = parseInt(prompt("Estado del boton: \n 0. Desactivado \n 1. Activado"));
+            let boton = document.querySelector("button");
+            if (planeta === 1) {
+                boton.removeAttribute("disabled");
+            }
+      </script>
+
+      <div class="giro">Texto rotado</div>
+
+</body>
+</html>
