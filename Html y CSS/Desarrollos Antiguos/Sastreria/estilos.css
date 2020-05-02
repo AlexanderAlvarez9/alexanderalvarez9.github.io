@@ -1,0 +1,143 @@
+P {
+font-size : 12pt;
+font-family : arial,helvetica;
+font-weight : normal;
+text-align : justify;
+}
+H1 {
+font-size : 30pt;
+font-family : Comic Sans MS;
+text-decoration : underline;
+text-align : center;
+bAAackground-color : red;
+}
+H2 {
+font-size : 12pt;
+font-family : verdana,arial;
+text-decoration : S;
+text-align : center;
+background-color : #A9F5BC;
+}
+H3 {
+font-size : 10pt;
+font-family : verdana,arial;
+text-align : left;
+background-color : black;
+color : yellow;
+}
+
+H4 {
+font-size : 16pt;
+font-family : verdana,arial;
+text-align : left;
+background-color : #E0E0F8;
+color : #610B21;
+}
+
+TD {
+font-size : 15pt;
+font-family : verdana,arial;
+text-align : center;
+background-color : #A9F5F2;
+}
+
+
+BODY {
+background-color : #0FFFFF;
+font-family : arial;
+color : #EEEEEE;
+background: #B40431 url(103.png) repeat fixed center;
+link : white;
+vlink : orange;
+alink : red;
+}
+
+<body background="103.png" link="red" vlink="YELLOW" alink="green" bgcolor="336699" text="Yellow">
+
+
+Br {
+font-size : 72pt;
+}
+Bf {
+font-size : 50pt;
+}
+
+P:first-letter {
+font-size: 250%;
+color: #00FF00; font-weight: bold;
+}
+
+titulo1 {
+font-size : 36pt;
+font-family : Comic Sans MS;
+text-decoration : underline;
+text-align : center;
+background-color : red;
+}
+
+titulo2 {
+font-size : 14pt;
+font-family : verdana,arial;
+text-decoration : S;
+text-align : center;
+background-color : green;
+}
+
+
+ul{
+  list-style:none;
+}
+li{
+  float:left;
+  margin: 0 10px;
+}
+.dropdown-wrapper{
+  height:20px;
+  background: #333; 
+   color:#f0f0f0;
+  width:100%;
+  margin:0 auto;
+  padding:10px 10px;
+  position:fixed;
+  top:0;
+}
+.content-wrapper{
+  max-width:700px;
+  margin:0 auto;
+  margin-top:50px;
+}
+.dropdown-wrapper li span{
+  padding:10px 10px;
+  cursor:pointer;
+}
+.dropdown-wrapper li span:hover + .dropdown,.dropdown-wrapper li span:hover{
+  background:#131313;
+}
+
+.dropdown li{
+  float:none;
+  margin:0;
+  padding:0;
+}
+ .dropdown{
+   padding:10px 20px;
+   background: #333; 
+   color:#f0f0f0;
+   overflow:hidden;
+   display:none;
+   margin-top:-1px;
+ }
+.dropdown li{
+  cursor:pointer;
+}
+.hasdropdown{
+  cursor:pointer;
+}
+.hasdropdown:hover + .dropdown,.dropdown:hover{
+  display:block;
+}
+.right{
+  float:center;
+}
+.right span{
+  font-size:.8em;

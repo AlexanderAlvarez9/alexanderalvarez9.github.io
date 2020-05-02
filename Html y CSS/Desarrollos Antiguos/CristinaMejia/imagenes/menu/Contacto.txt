@@ -1,0 +1,50 @@
+﻿<table width="300" height="195" border="0" align="center" cellpadding="2" cellspacing="0" bgcolor="#E499A5">
+     <tr>
+       <td width="540"><form action="enviado.php" method="post" name="form1" id="form1" onsubmit="MM_validateForm('nombre','','R','email','','RisEmail','telefono','','NisNum');return document.MM_returnValue">
+           <table width="300" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#E499A5">
+             <tr>
+               <td><span class="Estilo18"><font size="2">Nombre y Apellido</font></span> </td>
+               <td><input name="nombre" type="text" class="Estilo6" id="nombre" />               </td>
+             </tr>
+             <tr>
+               <td><span class="Estilo18"><font size="2">Email </font></span></td>
+               <td><input name="email" type="text" class="Estilo6" id="email" />               </td>
+             </tr>
+             <tr>
+               <td><span class="Estilo18"><font size="2">Tel&eacute;fono </font></span></td>
+               <td><input name="telefono" type="text" class="Estilo6" id="telefono" />               </td>
+             </tr>
+             <tr>
+               <td colspan="2"><span class="Estilo18"><font size="2">Comentario</font></span></td>
+             </tr>
+             <tr>
+               <td colspan="2"><label>
+                 <textarea name="coment" cols="40" rows="4" class="Estilo6" id="coment">
+    </textarea>
+                 </label>               </td>
+             </tr>
+           </table>
+         <label></label>
+           <div align="center">
+             <input name="enviar" type="submit" id="enviar" value="Enviar" />
+           </div>
+       </form></td>
+     </tr>
+   </table>
+
+
+
+
+TALLER
+Carrera 14 No. 83 - 26 Local 7
+Horario: 9AM - 6 PM
+Telefono: (57 1) 236 2807
+Celular: 300 688 1980
+Bogota - Colombia
+
+PUNTO DE VENTA C.C. SANTA BARBARA DRIVE
+Av Cra. 19 No. 122 - 49 Local 30
+Horario: 10 AM - 7 PM
+Telefono: (57 1) 467 2619
+Celular: 314 429 3927
+Bogota - Colombia

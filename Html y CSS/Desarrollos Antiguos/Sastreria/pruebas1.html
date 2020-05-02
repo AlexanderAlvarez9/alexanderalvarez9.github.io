@@ -1,0 +1,197 @@
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+
+<HEAD>
+<TITLE>Tic Tac Toe</TITLE>
+</HEAD>
+
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+
+
+
+      <SCRIPT LANGUAGE="LiveScript">
+        <!-- 
+		step = 0;
+		diff=3;
+		// change board when button is clicked
+        function clear_all(form) {
+			step = 0;
+			for (i=0;i<9; ++i) {
+				position="a"+i;
+				form[position].value="";
+			}
+		}
+		// change board when button is clicked
+        function clickit(field) {
+		if (step == -1) {alert("Reinicie el Juego"); return;}
+
+        position=field.name.substring(1,2,1);
+        position = 'a'+position;
+		if (field.form[position].value !="") {alert("No puedes jugar aqui!"); return;}
+        field.form[position].value="X";
+        if (eval_pos(field.form)) {
+			field.form.output.value="Ganaste!"; 
+			step = -1;
+			return;
+		}
+        position=get_move(field.form);
+        field.form.output.value='Jugado en ' + position.substring(1,2,1);
+		if (position=="") {
+			field.form.output.value="Nadie Gana."; 
+			step = -1;
+
+			return;
+		}
+        field.form[position].value="O";
+        if (eval_pos(field.form)) {
+			field.form.output.value="Perdiste!";
+			step = -1;
+		}
+        }
+
+		// see if there is a winner
+        function eval_pos(form) {
+   		if ((form.a0.value!="" && 
+			form.a0.value==form.a3.value && form.a0.value==form.a6.value)||
+
+   		   (form.a0.value!="" 
+			&& form.a0.value==form.a1.value && form.a0.value==form.a2.value) ||
+   		   (form.a0.value!="" 
+			&& form.a0.value==form.a4.value && form.a0.value==form.a8.value) ||
+   		   (form.a1.value!="" 
+			&& form.a1.value==form.a4.value && form.a1.value==form.a7.value) ||
+   		   (form.a2.value!="" 
+			&& form.a2.value==form.a5.value && form.a2.value==form.a8.value) ||
+   		   (form.a2.value!="" 
+			&& form.a2.value==form.a4.value && form.a2.value==form.a6.value) ||
+   		   (form.a3.value!="" 
+			&& form.a3.value==form.a4.value && form.a3.value==form.a5.value) ||
+   		   (form.a6.value!="" 
+			&& form.a6.value==form.a7.value && form.a6.value==form.a8.value))
+			return true;
+		else	
+           return false;
+        }
+
+		function f(a) {
+		if (a == "") return "."; else return a;
+		}
+
+		// get position for move.
+        function comp_move(form,player,weight,depth) {
+
+            var cost;
+			var bestcost=-2;
+			var position;
+			var newplayer;
+			if (player=="X") newplayer="O"; else newplayer="X";
+			if (depth==diff) return 0;
+
+			if (eval_pos(form)) return 1;
+			for (var i=0; i<9; ++i) {
+				position='a'+i;
+				if (form[position].value != "")
+					continue;
+				form[position].value=player;
+				cost = comp_move(form,newplayer, -weight, depth+1);
+				if (cost > bestcost) {
+					bestcost=cost;
+					if (cost==1) i=9;
+				}
+				form[position].value="";
+			}
+			if (bestcost==-2) bestcost=0;
+			return(-bestcost);
+		}
+
+		// get position for move.
+        function get_move(form) {
+			var cost;
+			var bestcost=-2;
+			bestmove="";
+			// don't think about first move.
+			if (step++ == 0)
+				if (form.a4.value=="") 
+					return "a4";
+				else 
+				if (form.a0.value=="") 
+					return "a0";
+
+			for (var i=0; i<9; ++i) {
+				localposition='a'+i;
+				if (form[localposition].value != "")
+					continue;
+				form[localposition].value="O";
+				cost=comp_move(form,"X", -1, 0);
+				if (cost > bestcost) {
+					if (cost==1) i=9;
+					bestmove=localposition;
+					bestcost=cost;
+				}
+				form[localposition].value="";
+			}
+			return bestmove;
+        }
+
+		// complain if user attempts to change board
+        function complain(field) {
+			field.form.output.focus(); // put focus eleswhere
+			alert("Don't change the game fields directly!");
+        }
+	//a href="http://www.ucsd.edu/
+        // the end -->
+      </SCRIPT>
+</HEAD>
+
+	<H1>Juego Triki</H1>
+	Click en el boton para marcar su posicion con una X. 
+<hr>
+    <FORM>
+
+
+	<INPUT SIZE=1 NAME="a0" OnFocus="complain(this)"> 
+	<INPUT TYPE="button" NAME="b0" OnClick="clickit(this)">
+	<INPUT SIZE=1 NAME="a1" OnFocus="complain(this)"> 
+	<INPUT TYPE="button" NAME="b1" OnClick="clickit(this)">
+	<INPUT SIZE=1 NAME="a2" OnFocus="complain(this)"> 
+	<INPUT TYPE="button" NAME="b2" OnClick="clickit(this)">
+    <BR>
+
+	<INPUT SIZE=1 NAME="a3" OnFocus="complain(this)"> 
+	<INPUT TYPE="button" NAME="b3" OnClick="clickit(this)">
+	<INPUT SIZE=1 NAME="a4" OnFocus="complain(this)"> 
+	<INPUT TYPE="button" NAME="b4" OnClick="clickit(this)">
+	<INPUT SIZE=1 NAME="a5" OnFocus="complain(this)"> 
+	<INPUT TYPE="button" NAME="b5" OnClick="clickit(this)">
+    <BR>
+
+	<INPUT SIZE=1 NAME="a6" OnFocus="complain(this)"> 
+	<INPUT TYPE="button" NAME="b6" OnClick="clickit(this)">
+	<INPUT SIZE=1 NAME="a7" OnFocus="complain(this)"> 
+	<INPUT TYPE="button" NAME="b7" OnClick="clickit(this)">
+	<INPUT SIZE=1 NAME="a8" OnFocus="complain(this)"> 
+	<INPUT TYPE="button" NAME="b8" OnClick="clickit(this)">
+    <BR>
+    <BR>
+    <BR>
+
+	
+	Mensaje: <INPUT NAME="output" TYPE="text"><BR>
+    <BR>
+	Dificultad: <SELECT NAME="difficulty" 
+		OnChange="diff=form.difficulty[form.difficulty.selectedIndex].value;">
+	<OPTION VALUE=1> Muy Facil
+	<OPTION VALUE=2 SELECTED> Facil
+	<OPTION VALUE=3> Normal
+	<OPTION VALUE=4> Dificil (quizas no ganes -.-)
+	</SELECT>
+	<BR><INPUT TYPE="button" VALUE="EL computador Juega Primero" OnClick="
+		if (!step++) this.form.a4.value='O';">
+
+	<BR><INPUT TYPE="reset" VALUE="Reiniciar" OnClick="clear_all(this.form)">
+
+		
+	</FORM>
+
+

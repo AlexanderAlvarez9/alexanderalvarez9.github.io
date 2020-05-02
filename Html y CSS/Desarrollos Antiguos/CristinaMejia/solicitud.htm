@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+
+	<meta charset="UTF-8">
+    
+	<title>Ventana Modal, Popup con animación css3 | antocas.com</title>
+	<meta name="description" content="Tutorial : crear una ventana Modal, popup o ventana emergente con CSS3">
+	
+
+<script src="jquery-1.11.0.min.js">
+
+</script>
+	
+
+<link rel="stylesheet" href="estilos.css">
+	
+
+<script>
+		$(document).ready(function() {
+			$('.button').click(function() {
+				type = $(this).attr('data-type');
+				$('.overlay-container').fadeIn(function() {
+				window.setTimeout(function(){
+					$('.window-container.'+type).addClass('window-container-visible');
+				}, 100);
+				});
+			});
+			$('.close').click(function() {
+				$('.overlay-container').fadeOut().end().find('.window-container').removeClass('window-container-visible');
+			});
+		});
+</script>
+
+
+
+
+</head>
+<body>
+	
+	<input type="button" value="Acercar Ventana Modal" class="button" data-type="zoomin" />
+	
+	<div class="overlay-container">
+		<div class="window-container zoomin">
+            <h3>Hola soy tu ventana modal "Efecto Acercar"</h3> 
+			Gracias al css3 y su propiedad de<strong> scale </strong>estoy aqui y soy mas sencillo de realizar<br/>
+			Regresa al tutorial y sigue las instrucciones, nos vemos!<br/>
+			<span class="close">Cierrame</span>
+		</div>
+	</div>
+    
+<div id="menuu">
+<ul>
+<li><a href="nosotros.htm">Quienes Somos</a></li>
+<li><a href="productos.htm">Productos</a></li>
+<li><a href="contacto.htm">Contactanos</a></li>
+<li><a href="localizanos.htm">Localizanos</a></li>
+</ul>
+</div>
+	
+</body>
+</html>

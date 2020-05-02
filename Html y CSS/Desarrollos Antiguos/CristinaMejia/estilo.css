@@ -1,0 +1,9 @@
+BODY {
+background-color : #0FFFFF;
+font-family : arial;
+color : #EEEEEE;
+background: #DFD6E6 url(imagenes/fondo2.png) repeat fixed center;
+link : white;
+vlink : orange;
+alink : red;
+}

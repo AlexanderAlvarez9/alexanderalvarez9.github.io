@@ -1,0 +1,32 @@
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT LANGUAGE="JavaScript">
+var txt="                          :-) CLINICA DEL JEAN ;-)            -                            SASTRERIA RENE SUAREZ";
+var espera=100;
+var refresco=null;
+function rotulo_title() {
+        document.title=txt;
+        txt=txt.substring(1,txt.length)+txt.charAt(0);
+        refresco=setTimeout("rotulo_title()",espera);}
+rotulo_title();
+</SCRIPT>
+
+
+
+<frameset rows="16%,7%,73%,*" border="0">
+
+    <frame name="titulo" src="titulo.html">
+    <frame name="menu" src="menu.html">
+    
+
+<frameset cols="100%" border="0">
+
+    <frame name="principal" src="principal.html">
+
+</frameset>
+
+     <frame name="direccion" src="direccion.html">
+
+
+
+</frameset>

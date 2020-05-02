@@ -1,0 +1,107 @@
+<html>
+
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript"  src="app.js"></script>
+
+<script type="text/JavaScript">
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+//-->
+</script>
+<head>
+<title>Cristina Mejia - Contactenos</title>
+<link rel="icon" type="image/png" href="imagenes/favicon.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Pagina Cristina Mejia Diseños de ropa tejidos a mano en bogota">
+<meta name="keywords" content="diseño ropa diseñadora alta calidad cristina mejia a mano contacto">
+<meta http-equiv="refresh" content="3600">
+
+<style type="text/css">td img {display: block;}body {
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="principal">
+   <img src="imagenes/banner.gif">
+  
+  
+<div id="menuu" align="center">
+<ul>
+<li><a href="nosotros.htm">Quienes Somos</a></li>
+<li><a href="productos.htm">Productos</a></li>
+<li><a href="contactos.htm">Contactanos</a></li>
+<li><a href="localizanos.htm">Localizanos</a></li>
+</ul>
+</div>
+
+<br>
+
+<table width="1024" border="0" align="center">
+  <tr>
+    <td>
+		
+	<table width="300" height="195" border="5" align="center" cellpadding="2" cellspacing="0" bgcolor="#E499A5">
+      <tr>
+        <td width="540"><form action="enviado.php" method="post" name="form1" id="form1" onSubmit="MM_validateForm		('nombre','','R','email','','RisEmail','telefono','','NisNum');return document.MM_returnValue">
+           
+           
+            <table width="300" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#E499A5">
+              <tr>
+                <td><strong><span class="Estilo6"><font >Nombre y Apellido</font></span> </strong></td>
+                <td><input name="nombre" type="text" class="Estilo7" id="nombre" /></td>
+              </tr>
+              <tr>
+                <td><strong><span class="Estilo6"><font >Email </font></span></strong></td>
+                <td><input name="email" type="text" class="Estilo7" id="email" /></td>
+              </tr>
+              <tr>
+                <td><strong><span class="Estilo6"><font >Tel&eacute;fono </font></span></strong></td>
+                <td><input name="telefono" type="text" class="Estilo7" id="telefono" /></td>
+              </tr>
+              <tr>
+                <td colspan="2"><br>
+                <p ><font class="Estilo6"><strong>Comentario o sugerencia</strong></font></p></td>
+              </tr>
+              <tr>
+                	<td colspan="2"><label>
+                  	<textarea name="coment" cols="40" class="Estilo7" id="coment">
+   		 			</textarea>
+                  </label>
+                </td>
+              </tr>
+            </table>
+          <label></label>
+            <div align="center">
+              <input name="enviar" type="submit" id="enviar" value="Enviar" />
+            </div>
+        </form></td>
+      </tr>
+    
+	<td align="center">
+		<img src="imagenes/contacto.png">
+                
+	</td>
+</table>
+
+  <img src="imagenes/Banerabajo.png">
+</div>
+</body>
+
+</html>

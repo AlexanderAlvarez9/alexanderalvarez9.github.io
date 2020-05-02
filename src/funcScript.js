@@ -2,14 +2,9 @@ var boton = document.getElementById("botonmenu");
 var menu = document.querySelector(".menu");
 var menub = boton.addEventListener("click", addClassQS);
 
-// querySelector recibe:
-//  .clase para las clases
-//  etiqueta para etiquetas
-//  #ID para los ids
-
 function addClassQS() {
-  menu.style.display = "block";
   boton.style.display = "none";
+  menu.style.display = "block";
   // borar todo lo de is-active
 }
 
@@ -242,7 +237,9 @@ if ("share" in navigator) {
         console.log("Gracias por Compartir");
       })
       .catch(() => {
-        console.log("Error, prueba usandolo en un navegador móvil");
+        console.log(
+          "Error al compartir, prueba usandolo en un navegador móvil"
+        );
       });
   }
 } else {

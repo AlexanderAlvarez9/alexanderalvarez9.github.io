@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Grid Implicito</title>
-  <style>
-    body{
-      font-family: arial;
-    }
-    .container{
-      display: grid;
-      grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr [final];
-      grid-template-rows: [inicio] 200px [inicio2] 200px [final];
-      height: 100vh;
-      grid-gap: 5px;
-      /* grid-auto-flow: column; */
-      /* grid-auto-columns: 100px 50px; */
-      grid-auto-rows: 100px 50px;
-
-    }
-    .item{
-      background: lightblue;
-      padding: 10px;
-      border: 1px solid red;
-
-    }
-    .item:nth-of-type(1){
-      grid-column: inicio / destacado-end;
-      grid-row: inicio / final;
-    }
-    .item:nth-of-type(2){
-      grid-column: destacado-end / destacado2-end;
-      grid-row: inicio / final;
-    }
-    .item:nth-of-type(3){
-      grid-column: destacado2-end / final;
-    }
-
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grid Implicito</title>
+    <style>
+      body {
+        font-family: arial;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr [final];
+        grid-template-rows: [inicio] 200px [inicio2] 200px [casiFinal] 100px [final] 300px [finalfinal];
+        height: 100vh;
+        grid-gap: 5px;
+        /* grid-auto-flow: column; */
+        /* grid-auto-columns: 100px 50px; */
+        grid-auto-rows: 100px 50px;
+      }
+      .item {
+        background: lightblue;
+        padding: 10px;
+        border: 1px solid red;
+      }
+      .item:nth-of-type(1) {
+        grid-column: inicio / destacado-end;
+        grid-row: inicio / final;
+      }
+      .item:nth-of-type(2) {
+        grid-column: destacado-end / destacado2-end;
+        grid-row: inicio / final;
+      }
+      .item:nth-of-type(3) {
+        grid-column: destacado2-end / final;
+      }
+      .item:nth-of-type(5) {
+        grid-column: linea7 / final;
+        grid-row: inicio2 / final;
+      }
+    </style>
+  </head>
+  <body>
     <section class="container">
       <div class="item">CUADRITO #1</div>
       <div class="item">CUADRITO #2</div>
@@ -64,5 +65,5 @@
       <div class="item">CUADRITO #21</div>
       <div class="item">CUADRITO #22</div>
     </section>
-</body>
+  </body>
 </html>

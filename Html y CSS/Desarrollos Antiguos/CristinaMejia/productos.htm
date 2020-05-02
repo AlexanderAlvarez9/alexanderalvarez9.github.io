@@ -1,0 +1,214 @@
+<html>
+
+<script src="jquery-1.11.0.min.js"></script>
+<script type="text/JavaScript">
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+
+$(document).ready(function() {
+			$('.button').click(function() {
+				type = $(this).attr('data-type');
+				$('.overlay-container').fadeIn(function() {
+				window.setTimeout(function(){
+					$('.window-container.'+type).addClass('window-container-visible');
+				}, 100);
+				});
+			});
+			$('.close').click(function() {
+				$('.overlay-container').fadeOut().end().find('.window-container').removeClass('window-container-visible');
+			});
+		});
+
+</script>
+<head>
+<title>Cristina Mejia - Productos</title>
+<link rel="icon" type="image/png" href="imagenes/favicon.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Cristina Mejia Diseños de ropa tejidos a mano en bogota nuestros productos articulos">
+<meta name="keywords" content="diseño ropa diseñadora alta calidad cristina mejia a mano productos ventas articulos ropa sacos">
+<meta http-equiv="refresh" content="3600">
+
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+<div id="principal">
+   <img src="imagenes/banner.gif">
+  
+  
+
+
+
+<div id="menuu" align="center">
+<ul>
+<li><a href="nosotros.htm">Quienes Somos</a></li>
+<li><a href="productos.htm">Productos</a></li>
+<li><a href="contactos.htm">Contactanos</a></li>
+<li><a href="localizanos.htm">Localizanos</a></li>
+</ul>
+</div>
+
+   
+   <div  class="div1">
+
+	<div id="menu">
+<ul>
+
+    <li class="has-sub"><a title="">Sacos</a>
+        <ul>
+         <li><a title="" href="imagenes/productos/sacos/sacocintasmorado.jpg" target="cargaproducto">Cinta Ancha</a></li>
+         <li><a title="" href="imagenes/productos/sacos/sacocintagalonmariacafe.JPG" target="cargaproducto">Cinta Angosta</a></li>
+         <li><a title="" href="imagenes/productos/sacos/sacocintagalonblanco.JPG" target="cargaproducto">Cinta Galon</a></li>
+         <li><a title="" href="imagenes/productos/sacos/sacocintatravez.JPG" target="cargaproducto">Cinta Travez</a></li>
+         
+         <li class="has-sub"><a title="">Cuello Cangrejo</a>
+          <ul>                     
+           <li><a title="" href="imagenes/productos/sacos/sacocangrejorojo.JPG" target="cargaproducto">Modelo 1</a></li>
+           <li><a title="" href="imagenes/productos/sacos/sacocuellocangrejomodelo2cafe.JPG" target="cargaproducto">Modelo 2</a></li>
+	      </ul>
+         </li>
+         <li><a title="" href="imagenes/productos/sacos/sacocuellopiel.JPG" target="cargaproducto">Cuello Piel</a></li>
+         <li><a title="" href="imagenes/productos/sacos/sacolentejuelasrosa.JPG" target="cargaproducto">Lentejuelas</a></li>
+         <li><a title="" href="imagenes/productos/sacos/sacomichaelrojo.jpg" target="cargaproducto">Michael</a></li>
+         <li><a title="" href="imagenes/productos/sacos/sacorayas.JPG" target="cargaproducto">Rayas</a></li>        
+         <li><a title="" href="imagenes/productos/sacos/sacocoredondomodelo1morado.JPG" target="cargaproducto">Redondo</a></li>
+         <li><a title="" href="imagenes/productos/sacos/sacotiras.JPG" target="cargaproducto">Tiras</a></li>
+         <li><a title="" href="imagenes/productos/sacos/sacotrenzasverde.JPG" target="cargaproducto">Trenzas</a></li>
+     	</ul>
+    </li>
+    
+    
+    
+
+    <li class="has-sub"><a title="">Abrigos</a>
+        <ul>
+          <li class="has-sub"><a title="" href="imagenes/productos/abrigos/abrigodepielgris.jpg" target="cargaproducto">De Piel</a>
+          </li>
+            <li><a title="" href="imagenes/productos/abrigos/abrigolentejuelasgris.jpg" target="cargaproducto">Lentejuelas</a></li>
+        </ul>
+    </li>
+    
+    <li class="has-sub"><a title="">Bufandas</a>
+        <ul>
+            <li class="has-sub"><a title="" href="imagenes/productos/bufandas/bufandatelitasazul1.JPG" target="cargaproducto">Telitas</a>
+                <ul>
+                </ul>
+          </li>
+        </ul>
+    </li>
+    
+    <li class="has-sub"><a title="">Capas</a>
+        <ul>
+          <li class="has-sub"><a title="" href="imagenes/productos/capas/capadolurexnegra.JPG" target="cargaproducto">Lurex</a>
+          </li>
+            <li><a title="" href="imagenes/productos/capas/capamariposaaguamarina.JPG" target="cargaproducto">Mariposa</a></li>
+            <li><a title="" href="imagenes/productos/capas/capaunamangablanca.JPG" target="cargaproducto">Una Manga</a></li>
+        </ul>
+    </li>
+        
+	<li class="has-sub"><a title="">Chalecos</a>
+        <ul>
+         <li class="has-sub"><a title="" href="imagenes/productos/chalecos/chalecotelitasgris.jpg" target="cargaproducto">Telitas</a></li>
+            <li><a title="" href="imagenes/productos/chalecos/chalecoredondomodelo1beige.JPG" target="cargaproducto">Redondo</a></li>
+	             </ul>
+    </li>
+    
+    <li class="has-sub"><a title="">Chales</a>
+       <ul>
+         <li class="has-sub"><a title="" href="imagenes/productos/chales/chalrayasfuccia.JPG" target="cargaproducto">Rayas</a></li>
+     		<li><a title="" href="imagenes/productos/chales/chalsedarojo.jpg" target="cargaproducto">Seda</a></li>
+       </ul>
+    </li>    
+    
+    <li class="has-sub"><a title="">Otros</a>
+        <ul>
+            <li class="has-sub"><a title="" href="imagenes/productos/otros/faldalargagris.JPG" target="cargaproducto">Falda Larga</a>            </li>
+                    <li><a title="" href="imagenes/productos/otros/cuellofiesta.JPG" target="cargaproducto">Cuellos</a></li>
+        </ul>
+    </li>
+  </ul>
+   </div>
+</div>
+
+
+
+<div class="div1"><iframe name="cargaproducto" src="imagenes/productos/sacos/sacocintatravez.JPG" width=815 height=550>Actualize su navegador a una version mas reciente para compatibilidad con esta pagina.</iframe></div>
+   
+   
+   
+   <div id="divflotante">
+   	<input type="button" value="Solicitalos Aqui" class="button" data-type="zoomin" />
+	
+	<div class="overlay-container">
+		<div class="window-container zoomin">
+        
+        
+        
+        
+        <div align="Left">
+        
+       
+
+<form action="enviado.php" method="post" enctype="multipart/form-data" name="formredac">
+
+<br />Nombre:<br />
+<input name="nombre" type="text" size="30" maxlength="40" />
+
+<br />Email:<br />
+<input name="email" type="text" size="30" maxlength="50"/>
+
+<br />Telefono:<br />
+<input name="telefono" type="text" size="30" maxlength="50" />
+
+<br />Ciudad:<br />
+<input name="ciudad" type="text" size="30" maxlength="50" />
+
+<br />Productos que Le interesan:<br />
+<input name="productos" type="text" size="80" maxlength="50" />
+
+<br/>Mensaje:<br />
+<textarea name="coment" cols="60" rows="8"></textarea><br/>
+
+<input name="" type="submit" value="Enviar" />
+
+
+</form>
+
+
+</div>
+
+
+     
+            
+            
+			<span class="close">Cerrar</span>
+		</div>
+	</div>
+    
+    </div>
+
+   
+  
+   
+     
+  <img src="imagenes/Banerabajo.png" >
+</div>
+
+
+</body>
+</html>
