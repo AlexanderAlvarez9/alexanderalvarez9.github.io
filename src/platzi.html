@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platzi Cursos</title>
+    <style>
+      body {
+        background-color: #99c84a;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <input type="text" id="user" />
+      <input type="button" value="Traer Informacion" id="buscarUser" />
+    </p>
+
+    <div>
+      <p id="cursos"></p>
+    </div>
+
+    <script>
+      const url = "https://platzi-user-api.jecsham.com/api/v1/getUserSummary/@";
+      let userName = "jhonalexanderalvarezromero";
+      let Data;
+
+      var resultado = document.getElementById("cursos");
+      var user = document.getElementById("user");
+      var boton = document.getElementById("buscarUser");
+      // let userName = user.value;
+
+      async function searchPlatzi() {
+        const response = await fetch(`${url}${userName}`);
+        if (!response.status.error) {
+          let usersData = await response.json();
+          usersData = usersData.userData;
+          console.log(usersData);
+          buildCourse(usersData);
+        } else {
+          alert("Usuario no encontrado");
+        }
+      }
+      searchPlatzi();
+      // boton.addEventListener("click", searchPlatzi());
+
+      function buildCourse(usersData) {
+        // arrayCourse.forEach(element => {
+
+        // });
+        // debugger;
+
+        for (let i = 0; i < usersData.courses.length; i++) {
+          resultado.innerHTML += `<b>${i + 1}</b> - ID: ${
+            usersData.courses[i].id
+          } <br>`;
+          resultado.innerHTML += `<img src="${usersData.courses[i].badge}" alt="" srcset=""><br><br>`;
+          resultado.innerHTML += `Titulo: ${usersData.courses[i].title} <br><br>`;
+          resultado.innerHTML += `URL: ${usersData.courses[i].url} <br><br>`;
+          resultado.innerHTML += `Carrera: ${usersData.courses[i].career} <br><br>`;
+          resultado.innerHTML += `https://platzi.com${usersData.courses[i].diploma_link}<hr/>`;
+        }
+      }
+    </script>
+  </body>
+</html>

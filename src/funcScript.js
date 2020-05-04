@@ -202,6 +202,24 @@ let cursos = [
     linkCert:
       "https://platzi.com/@jhonalexanderalvarezromero/curso/1190-finanzas/diploma/detalle/",
   },
+  {
+    title: "Curso de Estrategias para Aprender en Línea Efectivamente",
+    img:
+      "https://static.platzi.com/media/achievements/badge-estrategias-aprender-enlinea-df2bec85-990c-4afb-964c-8fb2dfbd1c2e.png",
+    desc:
+      "Todos los cerebros funcionan diferente ¿cómo aprende el tuyo?. En este curso aprenderás a identificar tus fortalezas cognitivas para mejorar tu rendimiento académico. Descubrirás tu estilo de aprendizaje y pondremos en práctica técnicas para estimular tu inteligencia, atención y memoria.",
+    linkCert:
+      "https://platzi.com/@jhonalexanderalvarezromero/curso/1190-finanzas/diploma/detalle/",
+  },
+  {
+    title: "Curso de Comunicación Online con Slack ",
+    img:
+      "https://static.platzi.com/media/achievements/badges-comunicacion-slack-a9bd2f28-82f2-4fef-8d67-6cec70724d94.png",
+    desc:
+      "Mejora el ritmo de trabajo de tu equipo con Slack, una herramienta de comunicación ampliamente utilizada que te permite potenciar la transformación digital de tu empresa. Aprovecha la agilidad de la mensajería instantánea y los recursos de las redes sociales para optimizar tiempo y recursos.",
+    linkCert:
+      "https://platzi.com/@jhonalexanderalvarezromero/curso/1399-slack/diploma/detalle/",
+  },
 ];
 
 var cursohtml = document.getElementById("cursosid");
