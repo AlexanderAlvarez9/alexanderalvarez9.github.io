@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transformacion: Origin</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+        font-family: Arial;
+      }
+
+      .container {
+        border: 1px solid red;
+      }
+
+      .container:hover .cuadrado {
+        /* transform-origin: 50% 50%; // Valor por defecto */
+        /* transform-origin: left; */
+        transform-origin: left top;
+        /* transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg); */
+        transform: rotateZ(45deg);
+      }
+
+      .cuadrado {
+        width: 100px;
+        height: 100px;
+        background: #7dc900;
+        margin: 20px;
+        color: white;
+        transition: 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cuadrado">Hola Mundo</div>
+    </div>
+  </body>
+</html>

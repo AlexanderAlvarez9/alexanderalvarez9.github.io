@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transformacion: Rotacion</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+        font-family: Arial;
+      }
+
+      .container {
+        border: 1px solid red;
+      }
+
+      .container:hover .cuadrado {
+        /* transform: skew(x, y); */
+        transform: skew(90deg, 90deg);
+      }
+
+      .cuadrado {
+        width: 100px;
+        height: 100px;
+        background: #7dc900;
+        margin: 20px;
+        color: white;
+        transition: 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cuadrado">Hola Todos</div>
+    </div>
+  </body>
+</html>

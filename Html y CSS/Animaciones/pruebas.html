@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pruebas</title>
+    <style>
+      :root {
+        background-color: grey;
+        margin: 0;
+      }
+
+      .animaFont {
+        transition: 3s ease;
+        transform-origin: left;
+      }
+
+      .container:hover .animaFont {
+        font-size: 3em;
+      }
+
+      .container:hover .bola {
+        transform: scale(2);
+      }
+
+      .container:hover .pendulo {
+        left: calc(50% - 50px);
+      }
+
+      .container:hover {
+        border: 10px dotted green;
+        background-color: pink;
+        height: 500px;
+      }
+
+      .container {
+        transition: 5s ease;
+        border: 1px solid red;
+        height: 200px;
+        position: relative;
+      }
+
+      .bola {
+        border: 1px solid green;
+        border-radius: 50%;
+        background-color: green;
+        height: 50px;
+        width: 50px;
+        transition: 3s ease;
+        transform-origin: left;
+      }
+
+      .pendulo {
+        border: 1px solid green;
+        border-radius: 50%;
+        background-color: purple;
+        height: 50px;
+        width: 50px;
+        left: 20px;
+        transition: 4s;
+        transform-origin: left;
+        position: absolute;
+        animation-name: mover, pendulo;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes pendulo {
+        0% {
+          transform: translateY(0px);
+        }
+        25% {
+          transform: translateY(100px);
+        }
+        50% {
+          transform: translateY(200px);
+        }
+        75% {
+          transform: translateY(100px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes mover {
+        0% {
+          /* opacity: 1; */
+          left: 0;
+        }
+        50% {
+          background-color: pink;
+          /* bottom: -10px; */
+        }
+        100% {
+          /* opacity: 0; */
+          left: calc(100% - 120px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="animaFont">Texto Creciente</p>
+      <div class="bola"></div>
+      <div class="pendulo"></div>
+    </div>
+  </body>
+</html>

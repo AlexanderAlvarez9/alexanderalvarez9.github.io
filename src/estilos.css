@@ -93,12 +93,17 @@ h1 {
 
 .project-imageContainer {
   width: 50%;
+  transition: 1s;
 }
 
 .project-imageContainer img {
   max-width: 100%;
   object-fit: contain;
   width: 400px;
+}
+
+.project-imageContainer:hover {
+  transform: scale(1.5);
 }
 
 .menu {

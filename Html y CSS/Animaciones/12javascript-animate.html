@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element Animate</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        border: 1px solid red;
+      }
+      .pelota {
+        border-radius: 50%;
+        background: green;
+        width: 100px;
+        height: 100px;
+      }
+      button {
+        text-align: center;
+        background: #7dc800;
+        padding: 0.6em 0.8em 0.8em;
+        border: none;
+        margin: 5px;
+        border-radius: 5px;
+        color: ivory;
+        cursor: pointer;
+        box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+        will-change: transform;
+      }
+      button:active {
+        transform: scale(0.9);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="pelota"></div>
+      <div class="buttons">
+        <button class="play">Play</button>
+        <button class="pause">Pause</button>
+        <button class="stop">Stop</button>
+        <button class="reverse">Reverse</button>
+      </div>
+    </div>
+    <script>
+      const $pelota = document.querySelector(".pelota");
+
+      // element.animate(Keyframe = [], option = {})
+      const animation = $pelota.animate(
+        [
+          //from
+          {
+            transform: "translateX(0)",
+          },
+          //to
+          {
+            transform: "translateX(500px)",
+          },
+        ],
+        {
+          duration: 1000,
+          delay: 1000,
+          direction: "normal",
+          easing: "linear",
+          iterations: Infinity,
+          fill: "forwards",
+          iterationStart: 0.5, // = 50%
+          //endDelay: 5000,
+        }
+      );
+
+      const play = document.querySelector(".play");
+      const pause = document.querySelector(".pause");
+      const stop = document.querySelector(".stop");
+      const reverse = document.querySelector(".reverse");
+
+      play.addEventListener("click", (event) => {
+        animation.play();
+      });
+      pause.addEventListener("click", (event) => {
+        animation.pause();
+      });
+      stop.addEventListener("click", (event) => {
+        animation.cancel();
+      });
+      reverse.addEventListener("click", (event) => {
+        animation.reverse();
+      });
+    </script>
+  </body>
+</html>
