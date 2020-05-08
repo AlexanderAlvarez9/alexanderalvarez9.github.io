@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logo de Platzi</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: #234050;
+      }
+      .platzi {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        margin: 40px auto;
+        transform: rotate(45deg);
+
+        animation-name: platzi-base;
+        animation-duration: 3.5s;
+        animation-iteration-count: infinite;
+      }
+
+      .platzi-left {
+        width: 100%;
+        height: 65%;
+        border: 20px solid #97c93e;
+        border-bottom: none;
+        border-radius: 20px 20px 0 0;
+        box-sizing: border-box;
+        position: relative;
+        top: 1px;
+
+        animation-name: platzi-left;
+        animation-duration: 3.5s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+      }
+
+      .platzi-right {
+        width: 100%;
+        height: 35%;
+        border: 20px solid #97c93e;
+        border-top: none;
+        border-radius: 0 0 20px 20px;
+        box-sizing: border-box;
+
+        animation-name: platzi-right;
+      }
+
+      @keyframes platzi-base {
+        0% {
+          opacity: 0;
+          transform: scale(0.3) rotate(0deg);
+        }
+        30% {
+          opacity: 1;
+          transform: scale(0.8) rotate(405deg);
+        }
+        80% {
+          opacity: 1;
+          transform: scale(0.8) rotate(405deg);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(0.3) rotate(0deg);
+        }
+      }
+
+      @keyframes platzi-left {
+        0% {
+          width: 100%;
+        }
+        20% {
+          width: 80%;
+        }
+        50% {
+          width: 80%;
+        }
+        70% {
+          width: 100%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
+      @keyframes platzi-size {
+        0% {
+          /* transform: scale(0.5); */
+        }
+        100% {
+          /* transform: scale(1); */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="platzi">
+      <div class="platzi-left"></div>
+      <div class="platzi-right"></div>
+    </div>
+  </body>
+</html>

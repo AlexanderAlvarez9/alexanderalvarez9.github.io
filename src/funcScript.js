@@ -220,6 +220,14 @@ let cursos = [
     linkCert:
       "https://platzi.com/@jhonalexanderalvarezromero/curso/1399-slack/diploma/detalle/",
   },
+  {
+    title: "Curso de Animaciones para la Web",
+    img:
+      "https://static.platzi.com/media/achievements/1103-0dce9ce6-dd88-466b-af07-76a87643c8b7.png",
+    desc: "Descripcion del Curso",
+    linkCert:
+      "https://platzi.com/@jhonalexanderalvarezromero/curso/1103-animaciones-web/diploma/detalle/",
+  },
 ];
 
 var cursohtml = document.getElementById("cursosid");

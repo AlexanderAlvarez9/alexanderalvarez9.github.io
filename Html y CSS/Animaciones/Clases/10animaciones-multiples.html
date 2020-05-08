@@ -62,19 +62,22 @@
       @keyframes cuadrado {
         0% {
           /* opacity: 1; */
-          left: 0;
+          /* left: 0; */
+          right: calc(100% - 50px);
+          transition-tim;
         }
         50% {
-          background-color: pink;
+          /* background-color: pink; */
           /* bottom: -10px; */
         }
         100% {
           /* opacity: 0; */
-          left: calc(100% - 120px);
+          /* left: calc(100% - 120px); */
+          right: 0;
         }
       }
 
-      @keyframes escalera {
+      /* @keyframes escalera {
         from {
           transform: translateY(0);
         }
@@ -90,7 +93,7 @@
         100% {
           transform: translateY(100px) scale(1, 0.8);
         }
-      }
+      } */
     </style>
   </head>
   <body>

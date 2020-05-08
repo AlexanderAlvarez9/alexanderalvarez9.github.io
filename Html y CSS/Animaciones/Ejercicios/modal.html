@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animaciones de Entrada y Salida</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100vh; */
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        flex-direction: column;
+      }
+      .overlay {
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .modal {
+        border-radius: 0.5em;
+        /* height: 200px; */
+        width: 500px;
+        background: #fff;
+        /* animation: name time estado; */
+        animation: animationIn 2s /*alternate infinite*/;
+        padding: 2em;
+        text-align: center;
+      }
+
+      @keyframes animationIn {
+        0% {
+          transform: translateY(-3000px);
+        }
+        60% {
+          transform: translateY(25px);
+        }
+        75% {
+          transform: translateY(-10px);
+        }
+        90% {
+          transform: translateY(5px);
+        }
+      }
+
+      @keyframes animationOut {
+        0% {
+          transform: skew(15deg) translateX(0px);
+        }
+        30% {
+          transform: skew(-30deg) translateX(-100px);
+        }
+        100% {
+          transform: skew(60deg) translateX(2000px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./platziModal.png" alt="" srcset="" />
+    <div class="overlay"></div>
+    <div class="modal">
+      <h1>Atencion</h1>
+      <p>Estas a punto de crear una ventana de modal</p>
+      <p>Te gusto?</p>
+      <div class="modal-buttons">
+        <button>Si, esta bueno</button>
+        <button>No :(</button>
+      </div>
+    </div>
+    <!-- <script>
+      const $cuadrado = document.querySelector(".cuadrado");
+
+      $cuadrado.addEventListener("animationend", (event) => {
+        if (event.animationName == "animationIn") {
+          $cuadrado.style.animationName = "animationOut";
+          $cuadrado.style.animationDuration = "1.5s";
+          $cuadrado.style.animationDelay = ".5s";
+        }
+      });
+    </script> -->
+  </body>
+</html>

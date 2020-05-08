@@ -1,238 +1,293 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10779585-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-10779585-3');
-    </script>
-    <meta charset="utf-8">
-    <title>Portafolio - Alexander Alvarez</title>
-    <link rel="icon" type="image/png" href="src/imgs/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Indie+Flower&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="src/media.css" media="screen and (max-width:768px)"/> -->
-    <link rel="stylesheet" href="src/stylefonts.css">
-    <link rel="stylesheet" href="src/estilos.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-      <header class="header">
-        <div class="container">
-          <span class="icon-menu botonmenu" id="botonmenu"></span>
-          <figure class="logo">
-            <img src="src/imgs/paltzilogo.png" alt="Logo de Platzi" height="70">
-          </figure>
-          <nav class="menu" id="menub">
-            <span class="close">&times;</span>
-            <ol class="menu-content">
-              <li>
-                <a href="#Portafolio" class="link">Portafolio</a>
-              </li>
-              <li>
-                <a href="#Experiencia" class="link">Experiencia</a>
-              </li>
-              <li>
-                <a href="#Contacto" class="link">Trabajemos Juntos</a>
-              </li>
-              <li>
-                <a href="#antiguos" class="link">Desarrollos Antiguos</a>
-              </li>
-              <li>
-                <a href="https://github.com/DarkMefisto9" target="_blank" class="link">Repositorio Git</a>
-              </li>
-              <li>
-                <button  id="share">Compartir</button>
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </header>
-      <section class="hero">
-        <div class="container">
-          <h1>
-            Hola soy <strong>Alexander Alvarez</strong> <br> programador <strong>Frontend</strong>
-            <br>en tecnologias UI y UX, 
-            <br>buscando nuevos retos y conocimientos 
-            <br>para mejorar y aportar mas
-            <br>Y ademas Papito de <strong>Sofia</strong>
-          </h1>
-          <img class="hero-img" src="src/imgs/hero.jpg" width="500" height="300" alt="Imagen Principal">
-        </div>
-      </section>
-      <section class="Portfolio" id="Portafolio">
-          <div class="container">
-            <h2>PORTAFOLIO (Proyectos Destacados)</h2>
-            <article class="project">
-              <div class="project-details">
-                <h3 class="project-title">Cursos en Platzi</h3>
-                <h6 class="project-course">Estudios Online</h6>
-                <p class="project-date"><small><strong>Fecha: </strong>Desde 10/08/2019 - Actual</small></p>
-                <p class="project-url"><small><strong>Visitalo en: </strong><a href="https://platzi.com/@jhonalexanderalvarezromero/" target="_blank">Platzi.com/Alexander</small> </a></p>
-                <p class="project-description"><small>Cursos realizados con dedicacion y muchas ganas de aprender, ademas espero poder lograr crear muchas aplicaciones web para ayudar primero a quienes lo necesitan, impulsar sus proyectos y aumentar mi desarrollo profesional.</small></p>
-              </div>
-              <figure class="project-imageContainer">
-                <img class="project-image" src="src/imgs/proyect1.png" alt="imagen de proyecto"/>
-              </figure>
-            </article>
-            <article class="project">
-              <div class="project-details">
-                <h3 class="project-title">Asambleas VivoVien</h3>
-                <h6 class="project-course">Aplicacion WEB</h6>
-                <p class="project-date"><small><strong>Fecha:</strong> Febrero 2019</small></p>
-                <p class="project-url"><small><strong>Realizado en: </strong><a>DumboPHP, JavaScript, Sass</small></a></p>
-                <p class="project-url"><small><strong>Visitalo en: </strong><a href="https://http://asamblea.vivovien.com/" target="_blank">Asamblea vivovien</small> </a></p>
-                <p class="project-description"><small>Aplicacion Web para conjuntos residenciales, donde podran llevar a cabo las asambleas que exige el conjunto residencial de manera electronica o presencial, ya que permite la participacion tanto completamente remota o asiste la presencial.</small></p>
-              </div>
-              <figure class="project-imageContainer">
-                <img class="project-image" src="src/imgs/asamblea.png" alt="imagen de proyecto"/>
-              </figure>
-            </article>
-            <article class="project">
-              <div class="project-details">
-                <h3 class="project-title">ReclamoDirecto.com</h3>
-                <h6 class="project-course">Aplicacion WEB</h6>
-                <p class="project-date"><small><strong>Fecha:</strong> 01/09/2019</small></p>
-                <p class="project-url"><small><strong>Realizado en: </strong><a>DumboPHP, JavaScript, Sass</small> </a></p>
-                <p class="project-url"><small><strong>Visitalo en: </strong><a href="https://www.ReclamoDirecto.com" target="_blank">ReclamoDirecto.com</small> </a></p>
-                <p class="project-description"><small>Pagina web con funcionalidad para uso de buffet de abogados que ayudara a determinar si los casos que les llegan son viables para tomarlos y poderlos ejecutar ganando el caso, se usan varias tecnologias como, php, html, scss, css, bases de datos, preprocesadores, JavaScript</small></p>
-              </div>
-              <figure class="project-imageContainer">
-                <img class="project-image" src="src/imgs/rcd-dash.png" alt="imagen de proyecto"/>
-              </figure>
-            </article>
-            <article class="project">
-              <div class="project-details">
-                <h3 class="project-title">Juego Simon</h3>
-                <h6 class="project-course">Juego</h6>
-                <p class="project-date"><small><strong>Fecha:</strong> 16/10/2019</small></p>
-                <p class="project-url"><small><strong>Realizado en: </strong><a>HTML5, CSS3, JavaScript</small> </a></p>
-                <p class="project-url"><small><strong>Visitalo en: </strong><a href="Javascript\FundamentosJavaScript\Juego Simon\clase42 - comenzando el juego.html" target="_blank">Este Link</small> </a></p>
-                <p class="project-description"><small>Juego Simon dice, juego que trata de memorizar secuencias de colores, aumentando la dificultad en cada nivel</small></p>
-              </div>
-              <figure class="project-imageContainer">
-                <img class="project-image" src="src/imgs/simon.png" alt="imagen de proyecto"/>
-              </figure>
-            </article><article class="project">
-              <div class="project-details">
-                <h3 class="project-title">Villa Sofia</h3>
-                <h6 class="project-course">Mini-Juego Infantil</h6>
-                <p class="project-date"><small><strong>Fecha:</strong> 16/10/2019</small></p>
-                <p class="project-url"><small><strong>Realizado en: </strong><a>Canvas y Javascript</small> </a></p>
-                <p class="project-url"><small><strong>Visitalo en: </strong><a href="Javascript\Villa Sofy\villah.html" target="_blank">Este Link</small> </a></p>
-                <p class="project-description"><small>Juego donde esta Sofia paseando por una granja, acompañada de animalitos</small></p>
-              </div>
-              <figure class="project-imageContainer">
-                <img class="project-image" src="src/imgs/villa.png" alt="imagen de proyecto"/>
-              </figure>
-            </article>
-            <article class="project">
-              <div class="project-details">
-                <h3 class="project-title">Pizzarra WEB</h3>
-                <h6 class="project-course">Componente Web</h6>
-                <p class="project-date"><small><strong>Fecha:</strong> 10/08/2019</small></p>
-                <p class="project-url"><small><strong>Realizado en: </strong><a>Canvas y Javascript</small> </a></p>
-                <p class="project-url"><small><strong>Visitalo en: </strong><a href="Javascript\teclas\mouse.html" target="_blank">Este Link</small> </a></p>
-                <p class="project-description"><small>Pizzarra web, en html, JavaScript con canvas, desde la cual podras escribir, firmar o dibujar, boton de reset de el dibugo.</small></p>
-              </div>
-              <figure class="project-imageContainer">
-                <img class="project-image" src="src/imgs/whiteboard.png" alt="imagen de proyecto"/>
-              </figure>
-            </article>
-            <article class="project">
-                <div class="project-details">
-                  <h3 class="project-title">Platzi Video</h3>
-                  <h6 class="project-course">Layout Video-Web</h6>
-                  <p class="project-date"><small><strong>Fecha:</strong> 29/10/2019</small></p>
-                  <p class="project-url"><small><strong>Realizado en: </strong><a >HTML5, CSS3</small> </a></p>
-                  <p class="project-url"><small><strong>Visitalo en: </strong><a href="Javascript\platziVideo\video.html" target="_blank">Este Link</small> </a></p>
-                  <p class="project-description"><small>Platzi Video es un proyecto de desarrollo Web frontend en donde mostramos un template de una pagina web con login y registro para acceder a un sistema de videos de forma visualmente amigable.</small></p>
-                </div>
-                <figure class="project-imageContainer">
-                  <img class="project-image" src="src/imgs/platzivideo.png" alt="imagen de proyecto"/>
-                </figure>
-            </article>
-            <article class="project">
-                <div class="project-details">
-                  <h3 class="project-title">Santa Reyes</h3>
-                  <h6 class="project-course">Landing Page</h6>
-                  <p class="project-date"><small><strong>Fecha:</strong> 03/12/2019</small></p>
-                  <p class="project-url"><small><strong>Realizado en: </strong><a>HTML, CSS</small> </a></p>
-                  <p class="project-url"><small><strong>Visitalo en: </strong><a href="Html y CSS\Ejercicios\SantaReyes\index.html" target="_blank">Este Link</small> </a></p>
-                  <p class="project-description"><small>Land Page para campaña publicitaria de la marca Santa Reyes, en el cual los clientes de la marca podran consultar el sitio mas cercano donde podran encontrar un punto de venta</small></p>
-                </div>
-                <figure class="project-imageContainer">
-                  <img class="project-image" src="src/imgs/santareyes.png" alt="imagen de proyecto"/>
-                </figure>
-            </article>
-            <h2 id="antiguos">PRIMEROS DESARROLLOS - AÑO 2006</h2>
-            <article class="project">
-                <div class="project-details">
-                  <h3 class="project-title">Sastreria</h3>
-                  <h6 class="project-course">Pagina Web</h6>
-                  <p class="project-date"><small><strong>Fecha:</strong> 03/12/2019</small></p>
-                  <p class="project-url"><small><strong>Realizado en: </strong><a href="Html y CSS\Desarrollos Antiguos\Sastreria\index.html" target="_blank">HTML, CSS</small> </a></p>
-                  <p class="project-description"><small>Primeros desarrollos realizados en HTML y CSS en el año 2006. Trata de una pagina informativa para empresa que distribuia sus productos y servicios</small></p>
-                </div>
-                <figure class="project-imageContainer">
-                  <img class="project-image" src="src/imgs/sastreria.jpg" alt="imagen de proyecto"/>
-                </figure>
-            </article>
-            <article class="project">
-                <div class="project-details">
-                  <h3 class="project-title">Cristina Mejia</h3>
-                  <h6 class="project-course">Pagina Web</h6>
-                  <p class="project-date"><small><strong>Fecha:</strong> 03/12/2019</small></p>
-                  <p class="project-url"><small><strong>Realizado en: </strong><a href="Html y CSS\Desarrollos Antiguos\CristinaMejia\index.htm" target="_blank">HTML, CSS</small> </a></p>
-                  <p class="project-description"><small>Primeros desarrollos realizados en HTML y CSS en el año 2006. Trata de una pagina informativa para empresa que distribuia sus productos y servicios</small></p>
-                </div>
-                <figure class="project-imageContainer">
-                  <img class="project-image" src="src/imgs/CristinaMejia.png" alt="imagen de proyecto"/>
-                </figure>
-            </article>
-          </div>
-      </section>
-        <div class="container">
-          <h2 class="event-list-title">Mas Sobre mi Experiencia - Cursos - Certificados</h2>
-        </div>
-      <section id="Experiencia" class="eventos">
-        <div class="container" id="cursosid">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10779585-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'UA-10779585-3');
+  </script>
+  <meta charset="utf-8">
+  <title>Portafolio - Alexander Alvarez</title>
+  <link rel="icon" type="image/png" href="src/imgs/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Indie+Flower&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="src/media.css" media="screen and (max-width:768px)"/> -->
+  <link rel="stylesheet" href="src/stylefonts.css">
+  <link rel="stylesheet" href="src/estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <span class="icon-menu botonmenu" id="botonmenu"></span>
+      <figure class="logo">
+        <img src="src/imgs/paltzilogo.png" alt="Logo de Platzi" height="70">
+      </figure>
+      <nav class="menu" id="menub">
+        <span class="close">&times;</span>
+        <ol class="menu-content">
+          <li>
+            <a href="#Portafolio" class="link">Portafolio</a>
+          </li>
+          <li>
+            <a href="#Experiencia" class="link">Experiencia</a>
+          </li>
+          <li>
+            <a href="#Contacto" class="link">Trabajemos Juntos</a>
+          </li>
+          <li>
+            <a href="#antiguos" class="link">Desarrollos Antiguos</a>
+          </li>
+          <li>
+            <a href="https://github.com/DarkMefisto9" target="_blank" class="link">Repositorio Git</a>
+          </li>
+          <li>
+            <button id="share">Compartir</button>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <h1>
+        Hola soy <strong>Alexander Alvarez</strong> <br> programador <strong>Frontend</strong>
+        <br>en tecnologias UI y UX,
+        <br>buscando nuevos retos y conocimientos
+        <br>para mejorar y aportar mas
+        <br>Y ademas Papito de <strong>Sofia</strong>
+      </h1>
+      <img class="hero-img" src="src/imgs/hero.jpg" width="500" height="300" alt="Imagen Principal">
+    </div>
+  </section>
+  <section class="Portfolio" id="Portafolio">
+    <div class="container">
+      <h2>PORTAFOLIO (Proyectos Destacados)</h2>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Cursos en Platzi</h3>
+          <h6 class="project-course">Estudios Online</h6>
+          <p class="project-date"><small><strong>Fecha: </strong>Desde 10/08/2019 - Actual</small></p>
+          <p class="project-url"><small><strong>Visitalo en: </strong><a
+                href="https://platzi.com/@jhonalexanderalvarezromero/" target="_blank">Platzi.com/Alexander</small> </a>
+          </p>
+          <p class="project-description"><small>Cursos realizados con dedicacion y muchas ganas de aprender, ademas
+              espero poder lograr crear muchas aplicaciones web para ayudar primero a quienes lo necesitan, impulsar sus
+              proyectos y aumentar mi desarrollo profesional.</small></p>
         </div>
-      </section>
-      <section id="Contacto" class="contact">
-        <div class="container">
-          <form action="gmail.com" class="form-email">
-            <label class="trabajemos" for="email">Creamos algo juntos?</br></label>
-            <input type="datetime" name="" id="email" value="" placeholder="Dejame tu email">
-            <!-- <input type="submit" name="" value="Texto del boton"> -->
-            <button type="submit" name="Enviar" class="submit">Enviar</button>
-          </form>
-          <div class="social">
-            <a target="_blank" href="mailto:jhonalexander9@gmail.com" class="icon-envelop social-link instagram"></a>
-            <a target="_blank" href="https://www.linkedin.com/in/jhon-alexander-alvarez-romero-94a63028/" class="icon-linkedin social-link instagram"></a>
-            <a target="_blank" href="https://github.com/DarkMefisto9/darkmefisto9.github.io" class="icon-github social-link github"></a>
-            <a target="_blank" href="https://darkmefisto9.github.io/" class="icon-whatsapp social-link instagram"></a>
-            <a target="_blank" href="https://www.facebook.com/thedarkalexander" class="icon-facebook2 social-link facebook"></a>
-            <a target="_blank" href="https://www.instagram.com/alexander9alvarez/" class="icon-instagram social-link instagram"></a>
-            <a target="_blank" href="https://www.skype.com/alexander.9." class="icon-skype social-link instagram"></a>
-            <a target="_blank" href="https://www.twitter.com" class="icon-twitter social-link twitter"></a>
-            <a target="_blank" href="https://open.spotify.com/user/12139848167?si=I8pm2ckCT4auPRa-qBmGEw" class="icon-spotify social-link instagram"></a>
-          </div>
+        <figure class="project-imageContainer">
+          <img class="project-image" src="src/imgs/proyect1.png" alt="imagen de proyecto" />
+        </figure>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Asambleas VivoVien</h3>
+          <h6 class="project-course">Aplicacion WEB</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> Febrero 2019</small></p>
+          <p class="project-url"><small><strong>Realizado en: </strong><a>DumboPHP, JavaScript, Sass</small></a></p>
+          <p class="project-url"><small><strong>Visitalo en: </strong><a href="https://http://asamblea.vivovien.com/"
+                target="_blank">Asamblea vivovien</small> </a></p>
+          <p class="project-description"><small>Aplicacion Web para conjuntos residenciales, donde podran llevar a cabo
+              las asambleas que exige el conjunto residencial de manera electronica o presencial, ya que permite la
+              participacion tanto completamente remota o asiste la presencial.</small></p>
         </div>
-      </section>
-      <footer class="footer">
-        <div class="container">
-        <div>
-          <p>Carrera de Frontend developer en JavaScript 2019 <img src="./src/imgs/platzi.png" width="80px" alt="Logo Platzi"> </p>
+        <figure class="project-imageContainer">
+          <img class="project-image" src="src/imgs/asamblea.png" alt="imagen de proyecto" />
+        </figure>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">ReclamoDirecto.com</h3>
+          <h6 class="project-course">Aplicacion WEB</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 01/09/2019</small></p>
+          <p class="project-url"><small><strong>Realizado en: </strong><a>DumboPHP, JavaScript, Sass</small> </a></p>
+          <p class="project-url"><small><strong>Visitalo en: </strong><a href="https://www.ReclamoDirecto.com"
+                target="_blank">ReclamoDirecto.com</small> </a></p>
+          <p class="project-description"><small>Pagina web con funcionalidad para uso de buffet de abogados que ayudara
+              a determinar si los casos que les llegan son viables para tomarlos y poderlos ejecutar ganando el caso, se
+              usan varias tecnologias como, php, html, scss, css, bases de datos, preprocesadores, JavaScript</small>
+          </p>
         </div>
-        <div>
-          <p>Diseñado por Jhonny with &lt3 con ayuda de Leo</p>
+        <figure class="project-imageContainer">
+          <img class="project-image" src="src/imgs/rcd-dash.png" alt="imagen de proyecto" />
+        </figure>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Juego Simon</h3>
+          <h6 class="project-course">Juego</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 16/10/2019</small></p>
+          <p class="project-url"><small><strong>Realizado en: </strong><a>HTML5, CSS3, JavaScript</small> </a></p>
+          <p class="project-url"><small><strong>Visitalo en: </strong><a
+                href="Javascript\FundamentosJavaScript\Juego Simon\clase42 - comenzando el juego.html"
+                target="_blank">Este Link</small> </a></p>
+          <p class="project-description"><small>Juego Simon dice, juego que trata de memorizar secuencias de colores,
+              aumentando la dificultad en cada nivel</small></p>
         </div>
-      </footer>
-                  <script src="src/funcScript.js"></script>
-  </body>
+        <figure class="project-imageContainer">
+          <img class="project-image" src="src/imgs/simon.png" alt="imagen de proyecto" />
+        </figure>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Villa Sofia</h3>
+          <h6 class="project-course">Mini-Juego Infantil</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 16/10/2019</small></p>
+          <p class="project-url"><small><strong>Realizado en: </strong><a>Canvas y Javascript</small> </a></p>
+          <p class="project-url"><small><strong>Visitalo en: </strong><a href="Javascript\Villa Sofy\villah.html"
+                target="_blank">Este Link</small> </a></p>
+          <p class="project-description"><small>Juego donde esta Sofia paseando por una granja, acompañada de
+              animalitos</small></p>
+        </div>
+        <figure class="project-imageContainer">
+          <img class="project-image" src="src/imgs/villa.png" alt="imagen de proyecto" />
+        </figure>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Pizzarra WEB</h3>
+          <h6 class="project-course">Componente Web</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 10/08/2019</small></p>
+          <p class="project-url"><small><strong>Realizado en: </strong><a>Canvas y Javascript</small> </a></p>
+          <p class="project-url"><small><strong>Visitalo en: </strong><a href="Javascript\teclas\mouse.html"
+                target="_blank">Este Link</small> </a></p>
+          <p class="project-description"><small>Pizzarra web, en html, JavaScript con canvas, desde la cual podras
+              escribir, firmar o dibujar, boton de reset de el dibugo.</small></p>
+        </div>
+        <figure class="project-imageContainer">
+          <img class="project-image" src="src/imgs/whiteboard.png" alt="imagen de proyecto" />
+        </figure>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Platzi Video</h3>
+          <h6 class="project-course">Layout Video-Web</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 29/10/2019</small></p>
+          <p class="project-url"><small><strong>Realizado en: </strong><a>HTML5, CSS3</small> </a></p>
+          <p class="project-url"><small><strong>Visitalo en: </strong><a href="Javascript\platziVideo\video.html"
+                target="_blank">Este Link</small> </a></p>
+          <p class="project-description"><small>Platzi Video es un proyecto de desarrollo Web frontend en donde
+              mostramos un template de una pagina web con login y registro para acceder a un sistema de videos de forma
+              visualmente amigable.</small></p>
+        </div>
+        <figure class="project-imageContainer">
+          <img class="project-image" src="src/imgs/platzivideo.png" alt="imagen de proyecto" />
+        </figure>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Santa Reyes</h3>
+          <h6 class="project-course">Landing Page</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 03/12/2019</small></p>
+          <p class="project-url"><small><strong>Realizado en: </strong><a>HTML, CSS</small> </a></p>
+          <p class="project-url"><small><strong>Visitalo en: </strong><a
+                href="Html y CSS\Ejercicios\SantaReyes\index.html" target="_blank">Este Link</small> </a></p>
+          <p class="project-description"><small>Land Page para campaña publicitaria de la marca Santa Reyes, en el cual
+              los
+              clientes de la marca podran consultar el sitio mas cercano donde podran encontrar un punto de
+              venta</small></p>
+        </div>
+        <figure class="project-imageContainer">
+          <img class="project-image" src="src/imgs/santareyes.png" alt="imagen de proyecto" />
+        </figure>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Cursos Platzi Usuario</h3>
+          <h6 class="project-course">Pagina de Consulta de cursos</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 08/05/2020</small></p>
+          <p class="project-url"><small><strong>Realizado en: </strong><a>HTML5, CSS3, JavaScript</small> </a></p>
+          <p class="project-url"><small><strong>Visitalo en: </strong><a href="src\platzi.html" target="_blank">Este
+                Link</small> </a></p>
+          <p class="project-description"><small>Pagina de consulta de cursos de usuario en Platzi <b>En
+                construccion</b></small></p>
+        </div>
+        <figure class="project-imageContainer">
+          <img class="project-image" src="src/imgs/platziUsers.png" alt="imagen de proyecto" />
+        </figure>
+      </article>
+      <h2 id="antiguos">PRIMEROS DESARROLLOS - AÑO 2006</h2>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Sastreria</h3>
+          <h6 class="project-course">Pagina Web</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 03/12/2019</small></p>
+          <p class="project-url"><small><strong>Realizado en: </strong><a
+                href="Html y CSS\Desarrollos Antiguos\Sastreria\index.html" target="_blank">HTML, CSS</small> </a></p>
+          <p class="project-description"><small>Primeros desarrollos realizados en HTML y CSS en el año 2006. Trata de
+              una pagina informativa para empresa que distribuia sus productos y servicios</small></p>
+        </div>
+        <figure class="project-imageContainer">
+          <img class="project-image" src="src/imgs/sastreria.jpg" alt="imagen de proyecto" />
+        </figure>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Cristina Mejia</h3>
+          <h6 class="project-course">Pagina Web</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 03/12/2019</small></p>
+          <p class="project-url"><small><strong>Realizado en: </strong><a
+                href="Html y CSS\Desarrollos Antiguos\CristinaMejia\index.htm" target="_blank">HTML, CSS</small> </a>
+          </p>
+          <p class="project-description"><small>Primeros desarrollos realizados en HTML y CSS en el año 2006. Trata de
+              una pagina informativa para empresa que distribuia sus productos y servicios</small></p>
+        </div>
+        <figure class="project-imageContainer">
+          <img class="project-image" src="src/imgs/CristinaMejia.png" alt="imagen de proyecto" />
+        </figure>
+      </article>
+    </div>
+  </section>
+  <div class="container">
+    <h2 class="event-list-title">Mas Sobre mi Experiencia - Cursos - Certificados</h2>
+  </div>
+  <section id="Experiencia" class="eventos">
+    <div class="container" id="cursosid">
+
+    </div>
+  </section>
+  <section id="Contacto" class="contact">
+    <div class="container">
+      <form action="gmail.com" class="form-email">
+        <label class="trabajemos" for="email">Creamos algo juntos?</br></label>
+        <input type="datetime" name="" id="email" value="" placeholder="Dejame tu email">
+        <!-- <input type="submit" name="" value="Texto del boton"> -->
+        <button type="submit" name="Enviar" class="submit">Enviar</button>
+      </form>
+      <div class="social">
+        <a target="_blank" href="mailto:jhonalexander9@gmail.com" class="icon-envelop social-link instagram"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/jhon-alexander-alvarez-romero-94a63028/"
+          class="icon-linkedin social-link instagram"></a>
+        <a target="_blank" href="https://github.com/DarkMefisto9/darkmefisto9.github.io"
+          class="icon-github social-link github"></a>
+        <a target="_blank" href="https://darkmefisto9.github.io/" class="icon-whatsapp social-link instagram"></a>
+        <a target="_blank" href="https://www.facebook.com/thedarkalexander"
+          class="icon-facebook2 social-link facebook"></a>
+        <a target="_blank" href="https://www.instagram.com/alexander9alvarez/"
+          class="icon-instagram social-link instagram"></a>
+        <a target="_blank" href="https://www.skype.com/alexander.9." class="icon-skype social-link instagram"></a>
+        <a target="_blank" href="https://www.twitter.com" class="icon-twitter social-link twitter"></a>
+        <a target="_blank" href="https://open.spotify.com/user/12139848167?si=I8pm2ckCT4auPRa-qBmGEw"
+          class="icon-spotify social-link instagram"></a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <p>Carrera de Frontend developer en JavaScript 2019 <img src="./src/imgs/platzi.png" width="80px"
+            alt="Logo Platzi"> </p>
+      </div>
+      <div>
+        <p>Diseñado por Jhonny with &lt3 con ayuda de Leo</p>
+      </div>
+  </footer>
+  <script src="src/funcScript.js"></script>
+</body>
+
 </html>

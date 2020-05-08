@@ -1,66 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Platzi Cursos</title>
-    <style>
-      body {
-        background-color: #99c84a;
-      }
-    </style>
-  </head>
-  <body>
-    <p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Platzi Cursos</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #234050;
+      color: white;
+    }
+
+    .spoiler {
+      border: 1px solid #99c84a;
+      border-radius: 2em;
+      display: none;
+      padding: 2em 0 0 2em;
+      user-select: contain;
+      transition: 1s ease;
+    }
+
+    .button {
+      cursor: pointer;
+      border-radius: 0.5em;
+      user-select: none;
+    }
+
+    .visible {
+      display: flex;
+    }
+
+    header {
+      background-color: #1f6388;
+      padding: 1em 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .cont {
+      margin: 0 auto;
+    }
+
+    section {
+      display: flex;
+      padding: 1em;
+    }
+
+    #cursos {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    .card {
+      border: 1px dotted green;
+      border-radius: 2em;
+      padding: 2em;
+      margin: 1em;
+      max-width: 28%;
+    }
+
+    img {
+      transition: 1s ease;
+    }
+
+    img:hover {
+      transform: scale(1.5);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="cont">
       <input type="text" id="user" />
-      <input type="button" value="Traer Informacion" id="buscarUser" />
-    </p>
-
-    <div>
-      <p id="cursos"></p>
+      <input type="button" value="Buscar Usuario" id="buscarUser" />
+      <h2 class="tagUser">Usuario:&#32;</h2>
+      <h3 class="total">Total de cursos:&#32;</h3>
     </div>
+  </header>
 
-    <script>
-      const url = "https://platzi-user-api.jecsham.com/api/v1/getUserSummary/@";
-      let userName = "jhonalexanderalvarezromero";
-      let Data;
+  <section>
+    <div id="cursos"></div>
+  </section>
 
-      var resultado = document.getElementById("cursos");
-      var user = document.getElementById("user");
-      var boton = document.getElementById("buscarUser");
-      // let userName = user.value;
+  <script>
+    const url = "https://platzi-user-api.jecsham.com/api/v1/getUserSummary/@";
+    let userName = "jhonalexanderalvarezromero";
 
-      async function searchPlatzi() {
-        const response = await fetch(`${url}${userName}`);
-        if (!response.status.error) {
-          let usersData = await response.json();
-          usersData = usersData.userData;
-          console.log(usersData);
-          buildCourse(usersData);
-        } else {
-          alert("Usuario no encontrado");
-        }
+    const $tagUser = document.querySelector(".tagUser");
+    const $total = document.querySelector(".total");
+    const resultado = document.getElementById("cursos");
+    // const user = document.getElementById("user");
+    // const boton = document.getElementById("buscarUser");
+    // let userName = user.value;
+
+    async function searchInPlatzi() {
+      const response = await fetch(`${url}${userName}`);
+      if (!response.status.error) {
+        let usersData = await response.json();
+        usersData = usersData.userData;
+        console.log(usersData);
+        totalCursos(usersData);
+      } else {
+        alert("Usuario no encontrado");
       }
-      searchPlatzi();
-      // boton.addEventListener("click", searchPlatzi());
+    }
+    searchInPlatzi();
+    // boton.addEventListener("click", searchInPlatzi()); //El campo de texto deberia buscar
 
-      function buildCourse(usersData) {
-        // arrayCourse.forEach(element => {
+    let totalCursos = function (usersData) {
+      // arrayCourse.forEach(element => {}); // Pendiente usar foreach
 
-        // });
-        // debugger;
+      for (let i = 0; i < usersData.courses.length; i++) {
+        resultado.innerHTML += `<div class="card">
+                                <b>${i + 1}</b> - ID: ${usersData.courses[i].id}<br>
+                                <img src="${usersData.courses[i].badge}" alt="Logo Curso" height="160"><br><br>
+                                Titulo: ${usersData.courses[i].title} <br><br>
+                                URL: https://platzi.com${usersData.courses[i].url} <br><br>
+                                Carrera: ${usersData.courses[i].career} <br><br>
+                                https://platzi.com${usersData.courses[i].diploma_link}<br><br>
+                                <button class="button ${i}">Codigo</button><br><br>
+                                <div class="spoiler ${i}"><br>
 
-        for (let i = 0; i < usersData.courses.length; i++) {
-          resultado.innerHTML += `<b>${i + 1}</b> - ID: ${
-            usersData.courses[i].id
-          } <br>`;
-          resultado.innerHTML += `<img src="${usersData.courses[i].badge}" alt="" srcset=""><br><br>`;
-          resultado.innerHTML += `Titulo: ${usersData.courses[i].title} <br><br>`;
-          resultado.innerHTML += `URL: ${usersData.courses[i].url} <br><br>`;
-          resultado.innerHTML += `Carrera: ${usersData.courses[i].career} <br><br>`;
-          resultado.innerHTML += `https://platzi.com${usersData.courses[i].diploma_link}<hr/>`;
-        }
+                                  {<br>
+                                    title: "${usersData.courses[i].title}",<br>
+                                    img:
+                                      "${usersData.courses[i].badge}",<br>
+                                    desc:
+                                      "Descripcion del Curso",<br>
+                                    linkCert:
+                                      "https://platzi.com${usersData.courses[i].diploma_link}",<br>
+                                  },<br><br>
+
+                                  </div></div>`;
       }
-    </script>
-  </body>
+      $totalCursos = usersData.courses.length;
+
+      spoilers($totalCursos);
+    };
+
+    function spoilers(valor) {
+      $total.innerHTML += $totalCursos;
+      $tagUser.innerHTML += userName;
+
+      let $button = document.querySelectorAll(".button");
+      let $spoiler = document.querySelectorAll(".spoiler");
+
+      console.log($button);
+
+      for (let i = 0; i < $spoiler.length; i++) {
+        $button[i].addEventListener("click", function () {
+          console.log(`Hola Soy ${i}`);
+          $spoiler[i].classList.toggle("visible");
+        });
+      }
+
+      // $spoiler.addEventListener('click', function () {
+      //   console.log(spoiler);
+      // });
+    }
+  </script>
+</body>
+
 </html>

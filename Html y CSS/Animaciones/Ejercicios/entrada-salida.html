@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animaciones de Entrada y Salida</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .cuadrado {
+        border-radius: 2em;
+        width: 200px;
+        height: 200px;
+        background: #7dc900;
+        /* animation: name time estado; */
+        animation: animationIn 2s ease-in-out forwards /*alternate infinite*/;
+        will-change: transform;
+      }
+
+      @keyframes animationIn {
+        0% {
+          transform: translateY(-3000px);
+        }
+        60% {
+          transform: translateY(25px);
+        }
+        75% {
+          transform: translateY(-10px);
+        }
+        90% {
+          transform: translateY(5px);
+        }
+      }
+
+      @keyframes animationOut {
+        0% {
+          transform: skew(15deg) translateX(0px);
+        }
+        30% {
+          transform: skew(-30deg) translateX(-100px);
+        }
+        100% {
+          transform: skew(60deg) translateX(2000px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cuadrado"></div>
+    <script>
+      const $cuadrado = document.querySelector(".cuadrado");
+
+      $cuadrado.addEventListener("animationend", (event) => {
+        if (event.animationName == "animationIn") {
+          $cuadrado.style.animationName = "animationOut";
+          $cuadrado.style.animationDuration = "1.5s";
+          $cuadrado.style.animationDelay = ".5s";
+        }
+      });
+    </script>
+  </body>
+</html>
