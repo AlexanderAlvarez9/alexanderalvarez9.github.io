@@ -1,0 +1,26 @@
+$x() // asi empieza el lenguaje xpath
+
+$x('/') // raiz de la pagina
+$x('/html') // html de la pagina
+$x('/html/body') // bodi de la pagina
+$x('//span') // buscar todos los span
+$x('//span[@class="text"]') // span de clase text
+
+quotes to scrape
+
+$x('//div[contains(@class, "tags-box")]')
+$x('//div[contains(@class, "tags-box")]//a[@class="tag"]/text()').map(x => x.wholeText)
+
+Amazon
+
+$x('//h2//a[@class="a-link-normal a-text-normal"]/span[contains(@class, "a-text-normal")]/text()').map(x => x.wholeText)
+
+El Espectador
+
+---Titulo
+$x('//div[]//div/div[contains(@class, "group-container")]//div[contains(@class, "node-title") and @itemprop="name"]/h1/text()')[1].wholeText
+
+$x('//div[contains(@class, "node-title") and @itemprop="name"]/h1/text()')[0].wholeText
+
+---Imagen
+$x('//div[contains(@class, "group-container")]//div[contains(@class, "node-image")]//img/@src')[0].value

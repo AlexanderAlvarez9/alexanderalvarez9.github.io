@@ -224,12 +224,14 @@ let cursos = [
     title: "Curso de Animaciones para la Web",
     img:
       "https://static.platzi.com/media/achievements/1103-0dce9ce6-dd88-466b-af07-76a87643c8b7.png",
-    desc: "Descripcion del Curso",
+    desc: "Crea animaciones de interfaces, maneja fotográmas en la web, aplica transiciones, transformaciones, timing y composición. Logra que tus sitios sean más dinámicos.",
     linkCert:
       "https://platzi.com/@jhonalexanderalvarezromero/curso/1103-animaciones-web/diploma/detalle/",
   },
 ];
 
+
+//Arma cursos
 var cursohtml = document.getElementById("cursosid");
 
 function construyeCursos() {
@@ -247,8 +249,13 @@ function construyeCursos() {
   }
 }
 
+let $totalCourses = document.querySelector('.totalCourses');
+$totalCourses.innerHTML += cursos.length;
+
 construyeCursos();
 
+
+//Compartir desde movil
 const $share = document.querySelector("#share");
 if ("share" in navigator) {
   $share.addEventListener("click", share);

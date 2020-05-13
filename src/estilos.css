@@ -352,6 +352,10 @@ h2 {
   margin: 0 auto;
 }
 
+.totalCourses {
+  font-size: 0.3em;
+}
+
 /* INICIO MEDIA QUERYS */
 
 @media screen and (max-width: 1024px) {
@@ -390,14 +394,18 @@ h2 {
 
   .menu {
     display: none;
-    position: fixed; /* Stay in place */
+    position: fixed;
+    /* Stay in place */
     z-index: 3;
     padding-top: 6em;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
     background-color: #99999999;
   }
 

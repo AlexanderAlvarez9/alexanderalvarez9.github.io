@@ -6,6 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Platzi Cursos</title>
   <style>
+    a {
+      color: red;
+      cursor: pointer;
+    }
+
+    a:hover {
+      color: greenyellow;
+    }
+
     body {
       margin: 0;
       background-color: #234050;
@@ -78,6 +87,7 @@
       <input type="button" value="Buscar Usuario" id="buscarUser" />
       <h2 class="tagUser">Usuario:&#32;</h2>
       <h3 class="total">Total de cursos:&#32;</h3>
+      <h3 class="puntos">Puntos Totales:&#32;</h3>
     </div>
   </header>
 
@@ -91,6 +101,7 @@
 
     const $tagUser = document.querySelector(".tagUser");
     const $total = document.querySelector(".total");
+    const $puntos = document.querySelector(".puntos");
     const resultado = document.getElementById("cursos");
     // const user = document.getElementById("user");
     // const boton = document.getElementById("buscarUser");
@@ -120,7 +131,7 @@
                                 Titulo: ${usersData.courses[i].title} <br><br>
                                 URL: https://platzi.com${usersData.courses[i].url} <br><br>
                                 Carrera: ${usersData.courses[i].career} <br><br>
-                                https://platzi.com${usersData.courses[i].diploma_link}<br><br>
+                                <a href="https://platzi.com${usersData.courses[i].diploma_link}" target="_blank">Certificado</a> <br><br>
                                 <button class="button ${i}">Codigo</button><br><br>
                                 <div class="spoiler ${i}"><br>
 
@@ -136,13 +147,19 @@
 
                                   </div></div>`;
       }
-      $totalCursos = usersData.courses.length;
+      $totalCursos = usersData;
+
+      // $totalCursos = usersData.courses.length;
 
       spoilers($totalCursos);
     };
 
     function spoilers(valor) {
-      $total.innerHTML += $totalCursos;
+      console.log($totalCursos);
+
+      $total.innerHTML += $totalCursos.courses.length;
+      $puntos.innerHTML += $totalCursos.platzi_rank
+
       $tagUser.innerHTML += userName;
 
       let $button = document.querySelectorAll(".button");
