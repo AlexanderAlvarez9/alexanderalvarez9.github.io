@@ -1,0 +1,73 @@
+Curso de Pensamiento Lógico
+
+1. Lógica proposicional e inferencias lógicas
+
+    Enunciado: Es un conjunto de palabras que tienen un sujeto y predicado.
+    Proposición: Es un enunciado al que se le puede dar un valor de verdad (verdadero o falso).
+    Premisa: Es el enunciado/proposición que tenemos afirmado.
+    Argumento: Es un conjunto de premisas.
+    Conclusión: Se redacta a partir del argumento.
+*********
+1. Enunciado. Entidad lingüística conformada por palabras.
+2. Proposición. Información contenida en un enunciado que es verdadera o falsa.
+3. Argumento. Conjunto de proposiciones que sirven de premisas que conducen a una conclusión.
+4. Premisa. Proposición aseverada o supuesta que sirve de apoyo o razón para aceptar la conclusión de un argumento.
+5. Conclusión. Es la proposición aseverada con base en otras proposiciones (premisas) del argumento.
+
+
+las premisas son lo que lo componen y generan la conclucion
+
+2. Conectivos lógicos
+    Negación: No, nunca, jamás : ¬, ~
+    Conjunción: Y : ^, &
+    Disyunción: O : V
+    Condicional: Si… entonces : -> C
+    Bicondicional: Si y sólo si : <--> , ---
+
+28. Estructuras de control y palabras reservadas 
+
+Las estructuras de control representan gráficamente la secuencia que siguen los diagramas de flujo.
+
+    La estructura de control secuencial son instrucciones consecutivas que se van ejecutando una después de la otra.
+
+    La estructura de control de selección simple son instrucciones en las que si se cumple alguna condición se realizan algunas acciones, mientras que si no se cumple, no se realizan dichas acciones.
+
+    La estructura de control de selección doble son instrucciones en las que si se cumple una condición, realiza un bloque de acciones; y si no se cumple, hace otro bloque de acciones.
+
+    La estructura de control de repetición mientras es un ciclo que repite un bloque de instrucciones mientras la condición es verdadera.
+
+    La estructura de control de repetición hacer / mientras es un ciclo que repite un bloque de instrucciones mientras la condición es verdadera.
+
+    La estructura de control de repetición para / hasta es un ciclo que se utiliza para repetir un conjunto de acciones, hasta que se deje de cumplir una condición.
+
+    La estructura de control de repetición hacer / mientras es un ciclo que repite un bloque de instrucciones mientras la condición es verdadera.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
