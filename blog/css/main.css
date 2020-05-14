@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
+
+body {
+    font-family: 'Roboto mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+}
+
+.home-body {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.grid-container {
+    max-width: 62em;
+    margin: auto;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 8.8em;
+    width: 100%;
+}
+
+header .header-icons-container {
+    background-color: #47cfac;
+    display: grid;
+    height: 3.2em;
+    width: 100%;
+}
+
+header .header-icons-container .icons {
+    align-items: center;
+    display: flex;
+    height: auto;
+    justify-items: flex-end;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 3.2em;
+    width: 19em;
+}
+
+header .icons span {
+    color: white;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 5.6em;
+}
+
+nav .nav-logo-container {
+    margin-left: 3.2em;
+}
+
+nav .nav-logo-container img {
+    margin-top: 1em;
+    width: 14em;
+}
+
+nav .profile-link {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3.2em;
+}
+
+nav .profile-link a {
+    color: black;
+    border-bottom: 1px solid black;
+    font-weight: 700;
+}
+
+.home-main {
+    background-image: url("../assets/imgs/Cover.png");
+    height: 90vh;
+}
+
+.home-main .home-main-text {
+    color: white;
+    font-size: 3em;
+    margin-top: 3em;
+}
+
+.home-main section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.home-main .home-main-button {
+    color: black;
+    background-color: #47cfac;
+    border: none;
+    height: 3em;
+    width: 7em;
+}
+
+.blogs-main {
+    display: grid;
+}
+
+.blogs-news-container {
+    background-color: #e6e9ed;
+    padding: 0 3.3em 2.6em;
+}
+
+.blogs-main-new {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+.blogs-news-img-container {
+    grid-column: 1;
+}
+
+.blogs-news-img-container img {
+    width: 85%;
+}
+
+.blogs-news-info-container {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-news-info-container p {
+    margin-bottom: 2.2em;
+}
+
+.blogs-posts-container {
+    padding: 0 3em 2.2em;
+}
+
+.blogs-posts-container h3 {
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 1.2em;
+    text-align: center;
+}
+
+.blogs-button {
+    border: 2px solid #47cfac;
+    padding: 0.7em 1em;
+    width: 6em;
+    text-align: center;
+}
+
+.blogs-posts-container .post-container {
+    display: inline-block;
+    padding-left: 0.7em;
+    max-width: 30%;
+    margin-bottom: 3.2em;
+}
+
+.blogs-posts-container .post-container p {
+    margin-bottom: 2em;
+}
+
+.blogs-posts-container .post-container img {
+    width: 100%;
+}
+
+footer {
+    background-color: #22272d;
+    border-top: 2em solid #47cfac;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    margin-bottom: 0;
+    padding: 2em;
+}
+
+.blogpost-img-container {
+    padding: 0 3.2em 2.3em;
+}
+
+.blogpost-img-container img {
+    width: 100%;
+}
+
+.blogpost-main-container {
+    padding: 0 3.2em 2.3em;
+}
+
+.blogpost-main-container h3 {
+    border-bottom: 2px solid #cdd2da;
+    padding-bottom: 1em;
+}
+
+.blogpost-main-container h1 {
+    font-size: 2em;
+}
+
+.contact-main-container {
+    background-color: #cdd2da;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3em;
+}
+
+.general-contact {
+    display: flex;
+}
+
+.contact-main-container img {
+    width: 5em;
+    margin-right: 1em;
+}
+
+.contact-main-container a {
+    border-bottom: 2px solid black;
+}
+
+.profile-main-container {
+    padding: 4.3em 2.8em;
+    background-color: #e6e9ed;
+    margin-bottom: 3.2em;
+}
+
+.profile-main-container img {
+    width: 20em;
+    margin-right: 2em;
+}
+
+.profile-container {
+    display: flex;
+}
+
+.profile-main-proyects {
+    padding: 0 3.2em 2.7em;
+}
+
+.profile-main-proyects h3 {
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.profile-main-proyects h4 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+
+.proyects-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.proyect-container {
+    padding-right: 2em;
+}
