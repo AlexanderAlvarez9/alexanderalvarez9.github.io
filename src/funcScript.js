@@ -50,6 +50,18 @@ let cursos = [
       "https://platzi.com/@jhonalexanderalvarezromero/curso/1339-fundamentos-javascript/diploma/detalle/",
   },
   {
+    title: "Curso de ECMAScript 6+",
+    img: "https://static.platzi.com/media/achievements/badge-ecmascript-6-d48e7bb7-a7a4-416d-a3b4-e11f0b13a229.png",
+    desc: "JavaScript es el lenguaje más utilizado para desarrollo de aplicaciones web, principalmente en el frontend. Cada año, ECMA International publica una nueva edición de ECMAScript, la especificación a la cual se ajusta JavaScript. Aprende las nuevas características que implementa ECMAScript desde la versión 6 hasta la versión 10.",
+    linkCert: "https://platzi.com/@jhonalexanderalvarezromero/curso/1815-ecmascript-6/diploma/detalle/",
+  },
+  {
+    title: "Curso Básico de JavaScript",
+    img: "https://static.platzi.com/media/achievements/badge-basicojs-e2ead888-428e-4f55-962c-8894aeaeacda.png",
+    desc: "Conoce los conceptos clave del lenguaje de programación que se está comiendo al mundo. Aprende qué es una variable, una función, un objeto y dónde se guardan esos valores. Descubre qué es Scope y cómo se utilizan los loops. Obtén las herramientas para saber cómo tomar decisiones y validar acciones. En este curso, darás el primer paso para empezar tu carrera como desarrollador.",
+    linkCert: "https://platzi.com/@jhonalexanderalvarezromero/curso/1814-basico-javascript/diploma/detalle/",
+  },
+  {
     title: "Curso de Desarrollo Web Online",
     img:
       "https://static.platzi.com/media/achievements/1350-09ddb033-354b-4c0c-84a4-56cbb71d0b08.png",
@@ -95,6 +107,14 @@ let cursos = [
       "https://platzi.com/@jhonalexanderalvarezromero/curso/1316-jquery-js/diploma/detalle/",
   },
   {
+    title: "Curso de Animaciones para la Web",
+    img:
+      "https://static.platzi.com/media/achievements/1103-0dce9ce6-dd88-466b-af07-76a87643c8b7.png",
+    desc: "Crea animaciones de interfaces, maneja fotográmas en la web, aplica transiciones, transformaciones, timing y composición. Logra que tus sitios sean más dinámicos.",
+    linkCert:
+      "https://platzi.com/@jhonalexanderalvarezromero/curso/1103-animaciones-web/diploma/detalle/",
+  },
+  {
     title: "Curso profesional de Git y GitHub",
     img:
       "https://static.platzi.com/media/achievements/badge-github-0b729570-934d-47d8-ba6b-610d7f15e0ec.png",
@@ -102,6 +122,11 @@ let cursos = [
       "Deja de versionar tus proyectos usando tu propio sistema de control de versiones. Mejor usa Git el Sistema de control de versiones por excelencia que utiliza la industria, aprende a gestionar tus proyectos alojándolos en Github. Domina Git y Github de cero a avanzado.",
     linkCert:
       "https://platzi.com/@jhonalexanderalvarezromero/curso/1557-git-github/diploma/detalle/",
+  }, {
+    title: "Curso de Buenas Prácticas para Escritura de Código",
+    img: "https://static.platzi.com/media/achievements/badge-buenas-practicas-escritura-codigo-fcdbd219-8bd1-4578-ac07-b5abccf6e3b8.png",
+    desc: "Escribe código legible y libre de vicios. Conoce los principios básicos para programar aplicaciones que sean fáciles de mantener y ampliar. Realiza pruebas en tu código para encontrar errores antes de enviar a producción y mejora tus habilidades para trabajar en equipos de desarrollo de software.",
+    linkCert: "https://platzi.com/@jhonalexanderalvarezromero/curso/1630-mejor-codigo/diploma/detalle/",
   },
   {
     title: "Curso de Programación Orientada a Objetos: POO",
@@ -221,12 +246,28 @@ let cursos = [
       "https://platzi.com/@jhonalexanderalvarezromero/curso/1399-slack/diploma/detalle/",
   },
   {
-    title: "Curso de Animaciones para la Web",
-    img:
-      "https://static.platzi.com/media/achievements/1103-0dce9ce6-dd88-466b-af07-76a87643c8b7.png",
-    desc: "Crea animaciones de interfaces, maneja fotográmas en la web, aplica transiciones, transformaciones, timing y composición. Logra que tus sitios sean más dinámicos.",
-    linkCert:
-      "https://platzi.com/@jhonalexanderalvarezromero/curso/1103-animaciones-web/diploma/detalle/",
+    title: "Curso de Gestión Efectiva del Tiempo",
+    img: "https://static.platzi.com/media/achievements/badge-gestion-tiempo-5368aa24-4418-4e10-b6c3-c8775b849bf9.png",
+    desc: "Gestionar tu tiempo personal y profesional de manera eficiente es una destreza que te permitirá alcanzar tus objetivos de aprendizaje. Aprende las bases necesarias para priorizar tus tareas. Domina técnicas de organización del tiempo. Acelera tu crecimiento profesional con el Curso de Gestión Efectiva del Tiempo de Platzi.",
+    linkCert: "https://platzi.com/@jhonalexanderalvarezromero/curso/1749-gestion-tiempo/diploma/detalle/",
+  },
+  {
+    title: "Curso de Pensamiento Lógico",
+    img: "https://static.platzi.com/media/achievements/badges-pensamiento-logico-3e33eb45-302d-408a-a624-bee4e57118d3.png",
+    desc: "¡Aprende a imaginar y a razonar con Platzi! Domina técnicas para aplicar en la toma de decisiones y en la solución de problemas cotidianos. Logra un aprendizaje óptimo y significativo. Mejora tu estructura mental y desarrolla todo tu potencial formando las bases del pensamiento lógico.",
+    linkCert: "https://platzi.com/@jhonalexanderalvarezromero/curso/1444-pensamiento-logico/diploma/detalle/",
+  },
+  {
+    title: "Curso Práctico de HTML y CSS",
+    img: "https://static.platzi.com/media/achievements/badge-practico-html-css-1-106665ee-bf4f-4301-8991-1fab9e54a73e.png",
+    desc: "Ahora que ya tienes todos los conocimientos de HTML y CSS, estás listo para este curso práctico en el cual tendrás un reto: clonar la página de Google. Reforzarás conceptos como posicionamiento, modelo de cajas, tipos de Display, selectores como clases, IDS, Flexbox y Grid.",
+    linkCert: "https://platzi.com/@jhonalexanderalvarezromero/curso/1758-html-practico/diploma/detalle/",
+  },
+  {
+    title: "Curso Práctico de Maquetación en CSS",
+    img: "https://static.platzi.com/media/achievements/badge-css-grid-91153317-c981-4a38-a534-b651b4395267.png",
+    desc: "Ahora que ya tienes todos los conocimientos teóricos de CSS, estás listo para este curso práctico en el cual tendrás un reto: crear un blog personal. Así podrás reforzar tus conocimientos en maquetación de HTML 5 semántico mientras creas un espacio para promocionar tu trabajo profesional.",
+    linkCert: "https://platzi.com/@jhonalexanderalvarezromero/curso/1744-practico-css/diploma/detalle/",
   },
 ];
 

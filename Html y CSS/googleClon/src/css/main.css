@@ -1,0 +1,132 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    height: 10vh;
+    flex: 0 0 auto;
+}
+
+.header-nav {
+    padding: 0.7em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.link-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 2em;
+    width: 2em;
+}
+
+
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    margin: 0 0.7em;
+    cursor: pointer;
+}
+
+.profile-pic {
+    height: 2.3em;
+    clip-path: circle(50% at 50% 50%);
+}
+
+
+.main {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.main img {
+    max-width: 400px;
+    margin: 0.6em 0;
+}
+
+.main-search {
+    height: 3em;
+    width: 490px;
+    outline: none;
+    margin: 0 2em;
+    border: none;
+}
+
+.search-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin: 0 1em;
+}
+
+main .main-input-container {
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #99999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease all;
+}
+
+main .main-input-container:hover {
+    box-shadow: 0px 1px 6px #20212447;
+}
+
+main .main-input .micro-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.main-buttons-button {
+    height: 2.5em;
+    border: none;
+    border-radius: 0.4em;
+    color: #5F6368;
+    margin: 2em 0.6em;
+    padding: 0 2em;
+}
+
+.footer {
+    background-color: #F2F2F2;
+    display: flex;
+    height: 3em;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 auto;
+    height: 5vh;
+}
+
+.footer-right {
+    right: 0;
+}
+
+.footer-link {
+    color: #707378;
+}

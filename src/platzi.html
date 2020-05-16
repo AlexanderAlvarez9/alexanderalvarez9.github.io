@@ -123,11 +123,16 @@
       // arrayCourse.forEach(element => {}); // Pendiente usar foreach
 
       for (let i = 0; i < usersData.courses.length; i++) {
+
+        let url_curso = usersData.courses[i].url.substring(7, usersData.courses[i].url.length);
+        console.log(url_curso);
+
+
         resultado.innerHTML += `<div class="card">
                                 <b>${i + 1}</b> - ID: ${usersData.courses[i].id}<br>
                                 <img src="${usersData.courses[i].badge}" alt="Logo Curso" height="160"><br><br>
                                 Titulo: ${usersData.courses[i].title} <br><br>
-                                URL: https://platzi.com${usersData.courses[i].url} <br><br>
+                                URL del curso: <a href="https://platzi.com${usersData.courses[i].url}" target="_blank">Link Curso</a> <br><br>
                                 Carrera: ${usersData.courses[i].career} <br><br>
                                 <a href="https://platzi.com${usersData.courses[i].diploma_link}" target="_blank">Certificado</a> <br><br>
                                 <button class="button ${i}">Codigo</button><br><br>
@@ -141,7 +146,8 @@
                                       "Descripcion del Curso",<br>
                                     linkCert:
                                       "https://platzi.com${usersData.courses[i].diploma_link}",<br>
-                                  },<br><br>
+                                  },<br><br><br><br>
+                                  <a href="https://platzi.com/cursos${url_curso}" target="_blank">Descripcion</a><br><br>
 
                                   </div></div>`;
       }
