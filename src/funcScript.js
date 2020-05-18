@@ -32,15 +32,6 @@ let cursos = [
       "https://platzi.com/@jhonalexanderalvarezromero/curso/1640-frontend-developer/diploma/detalle/",
   },
   {
-    title: "Curso de Prework: Buenas Prácticas y Entorno de Desarrollo",
-    img:
-      "https://static.platzi.com/media/achievements/badge-prework-da6b0493-9908-40f3-ad53-f5d330b995b8.png",
-    desc:
-      "Comienza tus proyectos de desarrollo para JavaScript configurando un entorno de desarrollo cómodo y adaptado a tus necesidades. Empieza por la herramienta más poderosa para un desarrollador: la terminal. Aprenderás a instalarla, ejecutar comandos y compilar código. Haz parte del trabajo colaborativo entre desarrolladores configurando Github, creando repositorios remotos, y aprendiendo a hacer push y pull.",
-    linkCert:
-      "https://platzi.com/@jhonalexanderalvarezromero/curso/1650-prework/diploma/detalle/",
-  },
-  {
     title: "Curso de Fundamentos de JavaScript",
     img:
       "https://static.platzi.com/media/achievements/badge-fundamentos-javascript-61c15bdf-0a83-4aed-8537-b4753e4071e1.png",
@@ -50,10 +41,28 @@ let cursos = [
       "https://platzi.com/@jhonalexanderalvarezromero/curso/1339-fundamentos-javascript/diploma/detalle/",
   },
   {
+    title: "Curso de Asincronismo con JavaScript",
+    img:
+      "https://static.platzi.com/media/achievements/badge-asincronismo-javascript-3f44d51e-209e-4e47-a228-4142d049525c.png",
+    desc:
+      "Apropia los conceptos fundamentales de asincronismo con JavaScript, aplica sus diferentes estructuras y desarrolla soluciones asíncronas. ¡Amplia tus conocimientos de programación aquí!",
+    linkCert:
+      "https://platzi.com/@jhonalexanderalvarezromero/curso/1789-asincronismo-js/diploma/detalle/",
+  },
+  {
     title: "Curso de ECMAScript 6+",
     img: "https://static.platzi.com/media/achievements/badge-ecmascript-6-d48e7bb7-a7a4-416d-a3b4-e11f0b13a229.png",
     desc: "JavaScript es el lenguaje más utilizado para desarrollo de aplicaciones web, principalmente en el frontend. Cada año, ECMA International publica una nueva edición de ECMAScript, la especificación a la cual se ajusta JavaScript. Aprende las nuevas características que implementa ECMAScript desde la versión 6 hasta la versión 10.",
     linkCert: "https://platzi.com/@jhonalexanderalvarezromero/curso/1815-ecmascript-6/diploma/detalle/",
+  },
+  {
+    title: "Curso de Prework: Buenas Prácticas y Entorno de Desarrollo",
+    img:
+      "https://static.platzi.com/media/achievements/badge-prework-da6b0493-9908-40f3-ad53-f5d330b995b8.png",
+    desc:
+      "Comienza tus proyectos de desarrollo para JavaScript configurando un entorno de desarrollo cómodo y adaptado a tus necesidades. Empieza por la herramienta más poderosa para un desarrollador: la terminal. Aprenderás a instalarla, ejecutar comandos y compilar código. Haz parte del trabajo colaborativo entre desarrolladores configurando Github, creando repositorios remotos, y aprendiendo a hacer push y pull.",
+    linkCert:
+      "https://platzi.com/@jhonalexanderalvarezromero/curso/1650-prework/diploma/detalle/",
   },
   {
     title: "Curso Básico de JavaScript",
@@ -318,5 +327,5 @@ if ("share" in navigator) {
   }
 } else {
   $share.style.display = "none";
-  console.log("No está disponible el API de web share");
+  console.error("No está disponible el API de web share");
 }
