@@ -37,6 +37,11 @@
       z-index: 0;
     }
 
+    .main-cursos {
+      width: 80%;
+      margin: 0 auto;
+    }
+
     .spoiler {
       border: 1px solid #99c84a;
       border-radius: 2em;
@@ -79,6 +84,7 @@
     }
 
     .card {
+      background-color: #99999999;
       border: 1px dotted green;
       border-radius: 2em;
       padding: 2em;
@@ -91,6 +97,30 @@
 
     img:hover {
       transform: scale(1.5);
+    }
+
+    @media screen and (max-width: 1024px) {
+      #cursos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      #cursos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+      }
+    }
+
+    @media screen and (max-width: 425px) {
+      #cursos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+      }
     }
   </style>
 </head>
@@ -107,7 +137,9 @@
   </header>
 
   <section class="main">
-    <div id="cursos"></div>
+    <div class="main-cursos">
+      <div id="cursos"></div>
+    </div>
   </section>
 
   <script>
