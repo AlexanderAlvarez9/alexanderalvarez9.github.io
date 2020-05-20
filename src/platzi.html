@@ -21,6 +21,22 @@
       color: white;
     }
 
+    .main {
+      background-image: url('imgs/dino.png');
+      position: relative;
+    }
+
+    .main:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #0000ff77;
+      z-index: 0;
+    }
+
     .spoiler {
       border: 1px solid #99c84a;
       border-radius: 2em;
@@ -66,6 +82,7 @@
       border: 1px dotted green;
       border-radius: 2em;
       padding: 2em;
+      z-index: 5;
     }
 
     img {
@@ -89,7 +106,7 @@
     </div>
   </header>
 
-  <section>
+  <section class="main">
     <div id="cursos"></div>
   </section>
 
