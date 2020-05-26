@@ -52,7 +52,7 @@ body {
 }
 
 .miniback {
-    background: url("./imgs/bg-top-inset.jpg") ;
+    background: url("./imgs/bg-top-inset.jpg");
     display: flex;
     flex-wrap: wrap;
     font-size: 12px;
@@ -74,7 +74,7 @@ body {
     z-index: 3;
 }
 
-.texttittle {
+.texttitle {
     text-decoration: underline;
     margin: auto;
     text-align: center;
@@ -94,7 +94,8 @@ body {
     position: relative;
     text-align: center;
     top: -12em;
-    width: 100vw;*/
+    width: 100vw;
+    */
 }
 
 .wood {

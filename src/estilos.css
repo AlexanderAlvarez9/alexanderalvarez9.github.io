@@ -108,18 +108,20 @@ h1 {
 
 .menu {
   height: inherit;
-}
-
-.close {
-  display: none;
+  animation: menu 1s ease;
 }
 
 /* The Close Button */
+
 .close {
-  color: #aaaaaa;
+  color: red;
+  display: none;
   float: right;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
+  position: relative;
+  right: 1em;
+  top: -1.5em;
 }
 
 .close:hover,
@@ -179,12 +181,8 @@ figure {
 .hero {
   flex-wrap: wrap;
   height: auto;
-  /* background-image: url(./imgs/hero.jpg); */
   background-color: #1b2127;
   justify-content: space-between;
-  /* background-size: 500px 300px; */
-  /* background-repeat: no-repeat; */
-  /* background-position-x: right; */
   display: flex;
   align-items: center;
   text-align: center;
@@ -310,16 +308,21 @@ h2 {
   text-align: center;
 }
 
+.form-email {
+  margin: 2em;
+  align-items: center;
+}
+
 .form-email input {
   border-color: gray;
   border-style: solid;
   border-radius: 5px;
-  padding: 5px 1.5em 5px 25px;
   background-image: url(./imgs/envelope.svg);
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 5px;
+  padding: 5px 1.5em 5px 25px;
 }
 
 .form-email .submit {
@@ -544,5 +547,15 @@ h2 {
 
   .hero {
     padding: 2em 1em;
+  }
+}
+
+@keyframes menu {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
