@@ -1,58 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Areas</title>
   <style>
-    body{
+    body {
       font-family: arial;
     }
-    .container{
+
+    .container {
       display: grid;
       grid-template: 100px 1fr 50px / 200px 1fr;
       height: 100vh;
       grid-gap: 5px;
-      grid-template-areas:"header header"
-                          "left contenido"
-                          "footer footer";
+      grid-template-areas: "header header"
+        "left contenido"
+        "footer footer";
     }
-    .item{
+
+    .item {
       background: lightblue;
       padding: 5px;
       border: 1px solid red;
     }
-    .item:nth-of-type(4){
+
+    .item:nth-of-type(4) {
       background: blue;
       overflow: auto;
       display: grid;
       grid-template: 20px 20px 20px 20px/100px 100px 100px;
       grid-gap: 5px;
     }
-    .item .item{
+
+    .item .item {
       background: yellow;
     }
-    .header{
+
+    .header {
       grid-area: header;
     }
-    .left{
+
+    .left {
       grid-area: left;
     }
-    .contenido{
+
+    .contenido {
       grid-area: contenido;
     }
-    .footer{
+
+    .footer {
       grid-area: footer;
     }
   </style>
 </head>
+
 <body>
-    <section class="container">
-      <div class="item header">header</div>
-      <div class="item left">left</div>
-      <div class="item contenido">contenido</div>
-      <div class="item footer">footer</div>
-    </section>
+  <section class="container">
+    <div class="item header">header</div>
+    <div class="item left">left</div>
+    <div class="item contenido">contenido</div>
+    <div class="item footer">footer</div>
+  </section>
 </body>
+
 </html>
