@@ -1,172 +1,179 @@
 a {
-    color: red;
-    cursor: pointer;
+  color: pink;
+  cursor: pointer;
 }
 
 a:hover {
-    color: greenyellow;
+  color: greenyellow;
 }
 
 body {
-    margin: 0;
-    background-color: #234050;
-    color: white;
+  margin: 0;
+  background-color: #234050;
+  color: white;
 }
 
 .main {
-    background-image: url('../src/imgs/dino.png');
-    position: relative;
+  background-image: url('../src/imgs/dino.png');
+  position: relative;
 }
 
 .main:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #0000ff77;
-    z-index: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0000ff77;
+  z-index: 0;
 }
 
 .main-cursos {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .spoiler {
-    border: 1px solid #99c84a;
-    border-radius: 2em;
-    display: none;
-    padding: 2em 0 0 2em;
-    user-select: contain;
-    transition: 1s ease;
+  border: 1px solid #99c84a;
+  border-radius: 2em;
+  display: none;
+  padding: 2em 0 0 2em;
+  user-select: contain;
+  transition: 1s ease;
 }
 
 .button {
-    cursor: pointer;
-    border-radius: 0.5em;
-    user-select: none;
+  cursor: pointer;
+  border-radius: 0.5em;
+  user-select: none;
 }
 
 .visible {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    background-color: #1f6388;
-    padding: 1em 0;
-    display: flex;
-    justify-content: center;
+  background: rgb(37, 63, 78);
+  background: linear-gradient(180deg, rgba(37, 63, 78, 1) 0%, rgba(39, 186, 105, 1) 100%);
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
 }
 
 .cont {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 section {
-    display: flex;
-    padding: 1em;
+  display: flex;
+  padding: 1em;
 }
 
 #cursos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
 }
 
 .card {
-    background-color: #99999999;
-    border: 1px dotted green;
-    border-radius: 2em;
-    padding: 2em;
-    z-index: 5;
+  background-color: #99999999;
+  border: 1px dotted green;
+  border-radius: 2em;
+  padding: 2em;
+  z-index: 5;
 }
 
 .mainImg {
-    transition: 1s ease;
+  transition: 1s ease;
 }
 
 .mainImg:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.CV {
+  display: flex;
+  flex-direction: column;
 }
 
 .unhidde {
-    background-color: red;
-    border-radius: 40%;
-    height: 1em;
-    margin: 1em auto;
-    text-align: center;
-    text-transform: uppercase;
-    width: 6em;
+  background-color: red;
+  border-radius: 1em;
+  font-size: 1.5em;
+  height: 1.5em;
+  margin: 1em auto;
+  text-align: center;
+  text-transform: uppercase;
+  outline: none;
 }
 
 .hiddenCV {
-    background-color: white;
-    display: none;
-    grid-template-columns: repeat(4, 230px);
-    justify-content: center;
-    margin: 0 auto;
-    padding: 2em;
+  background-color: white;
+  display: none;
+  grid-template-columns: repeat(4, 230px);
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2em;
 }
 
 .listCV {
-    display: grid;
-    grid-gap: 0.2em;
-    grid-template-columns: 25% 1fr;
-    grid-template-areas: "courseImg courseName"
-        "courseImg courseEntity"
-        "courseImg courseDate";
-    padding: 0.3em;
+  display: grid;
+  grid-gap: 0.2em;
+  grid-template-columns: 25% 1fr;
+  grid-template-areas: "courseImg courseName"
+    "courseImg courseEntity"
+    "courseImg courseDate";
+  padding: 0.3em;
 }
 
 .courseImg {
-    height: 2.5em;
-    grid-area: courseImg;
+  height: 2.5em;
+  grid-area: courseImg;
 }
 
 .courseName {
-    grid-area: courseName;
-    font-weight: bold;
+  grid-area: courseName;
+  font-weight: bold;
 }
 
 .courseEntity {
-    grid-area: courseEntity;
+  grid-area: courseEntity;
 }
 
 .courseDate {
-    grid-area: courseDate;
+  grid-area: courseDate;
 }
 
 .word {
-    margin: 0;
-    font-size: 0.8em;
-    color: black;
+  margin: 0;
+  font-size: 0.8em;
+  color: black;
 }
 
 
 
 @media screen and (max-width: 1024px) {
-    #cursos {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1em;
-    }
+  #cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    #cursos {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1em;
-    }
+  #cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
 }
 
 @media screen and (max-width: 425px) {
-    #cursos {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1em;
-    }
+  #cursos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
 }

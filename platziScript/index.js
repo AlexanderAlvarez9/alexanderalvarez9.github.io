@@ -13,46 +13,47 @@ const $buttonCV = document.querySelector('.unhidde');
 const $listCV = document.querySelector('.listCV');
 
 $buttonCV.addEventListener('click', () => {
-    if (!$hiddenCV.style.display) {
-        $hiddenCV.style.display = "grid"
-    } else {
-        $hiddenCV.style.display = ""
-    }
+  if (!$hiddenCV.style.display) {
+    $hiddenCV.style.display = "grid"
+    document.querySelector('.CV').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  } else {
+    $hiddenCV.style.display = ""
+  }
 });
 
 async function searchInPlatzi() {
-    const response = await fetch(`${url}${userName}`);
-    if (!response.status.error) {
-        let usersData = await response.json();
-        usersData = usersData.userData;
-        console.log(usersData);
-        totalCursos(usersData);
-    } else {
-        alert("Usuario no encontrado");
-    }
+  const response = await fetch(`${url}${userName}`);
+  if (!response.status.error) {
+    let usersData = await response.json();
+    usersData = usersData.userData;
+    console.log(usersData);
+    totalCursos(usersData);
+  } else {
+    alert("Usuario no encontrado");
+  }
 }
 searchInPlatzi();
 // button.addEventListener("click", searchInPlatzi(userName)); //El campo de texto deberia buscar
 
 let totalCursos = function (usersData) {
-    // arrayCourse.forEach(element => {}); // Pendiente usar foreach
+  // arrayCourse.forEach(element => {}); // Pendiente usar foreach
 
-    for (let i = 0; i < usersData.courses.length; i++) {
+  for (let i = 0; i < usersData.courses.length; i++) {
 
-        //Ordenar Cursos por carrera
-        usersData.courses.sort((a, b) => {
-            if (a.career > b.career) {
-                return 1
-            }
-            if (a.career < b.career) {
-                return -1
-            }
-            return 0;
-        })
+    //Ordenar Cursos por carrera
+    usersData.courses.sort((a, b) => {
+      if (a.career > b.career) {
+        return 1
+      }
+      if (a.career < b.career) {
+        return -1
+      }
+      return 0;
+    })
 
-        let url_curso = usersData.courses[i].url.substring(7, usersData.courses[i].url.length);
+    let url_curso = usersData.courses[i].url.substring(7, usersData.courses[i].url.length);
 
-        resultado.innerHTML += `
+    resultado.innerHTML += `
 <div class="card">
   <b>${i + 1}</b> - ID: ${usersData.courses[i].id}<br>
   <img class="mainImg" src="${usersData.courses[i].badge}" alt="Logo Curso" height="160"><br><br>
@@ -77,36 +78,36 @@ let totalCursos = function (usersData) {
     </>
 </div>
         `;
-    }
-    $totalCursos = usersData;
+  }
+  $totalCursos = usersData;
 
-    spoilers($totalCursos);
-    wordCV($totalCursos);
+  spoilers($totalCursos);
+  wordCV($totalCursos);
 };
 
 function spoilers(valor) {
 
-    $total.innerHTML += $totalCursos.courses.length;
-    $puntos.innerHTML += $totalCursos.platzi_rank
+  $total.innerHTML += $totalCursos.courses.length;
+  $puntos.innerHTML += $totalCursos.platzi_rank
 
-    $tagUser.innerHTML += userName;
+  $tagUser.innerHTML += userName;
 
-    let $button = document.querySelectorAll(".button");
-    let $spoiler = document.querySelectorAll(".spoiler");
+  let $button = document.querySelectorAll(".button");
+  let $spoiler = document.querySelectorAll(".spoiler");
 
-    for (let i = 0; i < $spoiler.length; i++) {
-        $button[i].addEventListener("click", function () {
-            $spoiler[i].classList.toggle("visible");
-        });
-    }
+  for (let i = 0; i < $spoiler.length; i++) {
+    $button[i].addEventListener("click", function () {
+      $spoiler[i].classList.toggle("visible");
+    });
+  }
 }
 
 function wordCV(data) {
 
-    for (let i = 0; i < data.courses.length; i++) {
+  for (let i = 0; i < data.courses.length; i++) {
 
 
-        $hiddenCV.innerHTML += `
+    $hiddenCV.innerHTML += `
             <div class="listCV">
                 <img class="courseImg"
                     src="${data.courses[i].badge}"
@@ -115,5 +116,5 @@ function wordCV(data) {
                 <p class="word courseEntity">Platzi</p>
             </div>
             `
-    }
+  }
 }
