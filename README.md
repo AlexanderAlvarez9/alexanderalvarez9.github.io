@@ -7,7 +7,7 @@ Recopilacion de los proyectos realizados durante los cursos en Platzi y desarrol
 
 ## Demo
 
-You can see the demo live, [here](https://darkmefisto9.github.io/)
+You can see the demo live, [here](https://AlexanderAlvarez9.github.io/)
 
 ## Image Preview
 

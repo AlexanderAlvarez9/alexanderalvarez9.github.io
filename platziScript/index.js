@@ -70,9 +70,11 @@ let totalCursos = function (usersData) {
       img:
       "${usersData.courses[i].badge}",<br>
       desc:
-      "Descripcion del Curso",<br>
+      "Descripcion_del_Curso",<br>
       linkCert:
       "https://platzi.com${usersData.courses[i].diploma_link}",<br>
+    show: true,
+      <br>
       },<br><br></div>
     <a href="https://platzi.com/cursos${url_curso}" target="_blank">Descripcion</a><br>
     </>
