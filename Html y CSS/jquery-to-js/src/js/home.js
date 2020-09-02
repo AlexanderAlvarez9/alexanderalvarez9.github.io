@@ -81,7 +81,7 @@ fetch('https://randomuser.me/api/')
   async function getData(url) {
     const response = await fetch(url);
     const data = await response.json();
-    if(data.data.movie_count > 0) {
+    if (data.data.movie_count > 0) {
       return data;
     }
     throw new Error('No se encontró ningun resultado');
@@ -89,7 +89,7 @@ fetch('https://randomuser.me/api/')
   async function getDataUser(url) {
     const response = await fetch(url);
     const data = await response.json();
-    if(data.info.results > 0){
+    if (data.info.results > 0) {
       return data;
     }
     throw new Error('No se encontro ningun usuario');
@@ -129,7 +129,7 @@ fetch('https://randomuser.me/api/')
     $featuringContainer.append($loader);
 
     const data = new FormData($formContainer);
-    try{
+    try {
       const {
         data: {
           movies: pelis
@@ -138,13 +138,13 @@ fetch('https://randomuser.me/api/')
       const HTMLString = featuringTemplate(pelis[0]);
       $featuringContainer.innerHTML = HTMLString;
     }
-    catch(error) {
+    catch (error) {
       alert(error.message);
       $loader.remove();
       $homeContainer.classList.remove('search-active');
     }
-    
-    
+
+
   })
 
   function videoItemTemplate(movie, category) {
@@ -173,7 +173,7 @@ fetch('https://randomuser.me/api/')
         </a>
       </li>`)
   }
-  function renderUserList(list, $container){
+  function renderUserList(list, $container) {
     $container.children[0].remove();
     list.forEach((user) => {
       const HTMLString = userItemTemplate(user);
@@ -199,7 +199,7 @@ fetch('https://randomuser.me/api/')
     list.forEach((movie) => {
       const HTMLString = movieRecommendedItemTemplate(movie);
       const movieElement = createTemplate(HTMLString);
-      $container.append(movieElement); 
+      $container.append(movieElement);
     })
   }
   // console.log(videoItemTemplate('src/images/covers/bitcoin.jpg', 'Bitcoin'));
@@ -228,15 +228,15 @@ fetch('https://randomuser.me/api/')
     var cacheObject = { timestamp: nowTimestamp, data: object };
     window.localStorage.setItem(name, JSON.stringify(cacheObject));
   }
-  function cacheTimeIsCorrect(timestamp){
-    const timestampCorrect = new Date().getTime()- (5*60000);
-    return(timestamp > timestampCorrect)
+  function cacheTimeIsCorrect(timestamp) {
+    const timestampCorrect = new Date().getTime() - (5 * 60000);
+    return (timestamp > timestampCorrect)
   }
-  function getCacheReady(listName){
+  function getCacheReady(listName) {
     const cacheList = window.localStorage.getItem(listName);
-    if(cacheList) {
+    if (cacheList) {
       const cacheListParsed = JSON.parse(cacheList);
-      if(cacheTimeIsCorrect(cacheListParsed.timestamp))
+      if (cacheTimeIsCorrect(cacheListParsed.timestamp))
         return cacheListParsed.data;
     }
     return null;
@@ -244,8 +244,8 @@ fetch('https://randomuser.me/api/')
   async function cacheMovieListExist(category) {
     listName = `${category}List`;
     const data = getCacheReady(listName);
-    if(!data) {
-      const  { data: { movies: movies } } = await getData(`${BASE_API}list_movies.json?genre=${category}`);
+    if (!data) {
+      const { data: { movies: movies } } = await getData(`${BASE_API}list_movies.json?genre=${category}`);
       saveInCache(listName, movies);
       return movies;
     }
@@ -256,22 +256,22 @@ fetch('https://randomuser.me/api/')
   //saveInLocalStorage('actionList', actionList);
   const $actionContainer = document.querySelector('#action');
   renderMovieList(actionList, $actionContainer, 'action');
-  
+
   const dramaList = await cacheMovieListExist('drama');
   //saveInLocalStorage('dramaList', dramaList);
   const $dramaContainer = document.getElementById('drama');
   renderMovieList(dramaList, $dramaContainer, 'drama');
-  
+
   const animationList = await cacheMovieListExist('animation');
   //saveInLocalStorage('animationList', animationList);
   const $animationContainer = document.getElementById('animation');
   renderMovieList(animationList, $animationContainer, 'animation');
 
-  const {results: userList } = await getDataUser(`${BASE_API_USERLIST}?results=20`)
+  const { results: userList } = await getDataUser(`${BASE_API_USERLIST}?results=20`)
   const $userContainer = document.getElementById('friends');
   renderUserList(userList, $userContainer);
 
-  const { data: {movies} } = await getData(`${BASE_API}list_movies.json?sort=rating&limit=15`);
+  const { data: { movies } } = await getData(`${BASE_API}list_movies.json?sort=rating&limit=15`);
   const $recommendedContainer = document.getElementById('recommendedMovies');
   renderRecommendedMovieList(movies, $recommendedContainer);
 

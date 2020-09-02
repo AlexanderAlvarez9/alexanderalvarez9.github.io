@@ -1,9 +1,0 @@
-Curso de WPO: Optimización de Carga de Sitios Web
-
--Cargar los recursos al final del documento
--Minificar el CSS
--Critical CSS o Critical Path CSS - Cargar unicamente el css del (above the fold) - lo que se ve apenas carga la pagina
--Optimizar imagenes
---https://resizeimage.net/ -- para redimensionar
---https://tinypng.com/ -- para comprimir
--Sub imagenes para pantallas de retina usando srcset para mostrar imgs de doble de tamaño en pantallas "buenas"
