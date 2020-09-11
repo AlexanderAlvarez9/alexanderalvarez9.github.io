@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>intranet</title>
-  <link rel="stylesheet" href="./css/blue.css.">
-  <link rel="stylesheet" href="./css/Site.css.">
+  <title>INTRANET</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <style>
     * {
       /* background-color: #FAFAFA; */
@@ -23,6 +22,7 @@
       position: fixed;
       width: 100%;
       top: 0;
+      border: 1px solid #999999;
     }
 
     .header__image {
@@ -35,22 +35,21 @@
     .section__links {
       background-image: url('./bg_image.jpg');
       background-repeat: no-repeat;
-      /* background-color: red; */
       margin-top: 3em;
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: center;
-      padding: 0 10%;
+      padding: 3em 10%;
     }
 
-    .sectionContainer {
+    .section__Container {
       display: grid;
-      border-radius: 0.5em;
-      padding: 1em;
+      padding: 3em;
       grid-template-columns: 30% 1fr;
-      margin: 1em;
       width: auto;
       font-size: 1.5em;
+      border-bottom: 1px solid #99999999;
+      border-right: 1px solid #99999999;
       background-color: #fff;
     }
 
@@ -68,7 +67,40 @@
       border-top: 3px solid #E20A16;
     }
 
-    .footer-conteiner {}
+    .footerInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footerInfo--image {
+      margin: 0.5em;
+    }
+
+    .footer__Info__data--item {
+      padding: 3em 0;
+    }
+
+
+    .email {
+      color: red;
+      font-size: 2em;
+    }
+
+    .footerNetworkImgs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .socialImage {
+      margin: 0.4em;
+    }
+
+    .qr {
+      height: 100px;
+    }
   </style>
 </head>
 
@@ -81,7 +113,7 @@
   </header>
 
   <section class="section__links">
-    <div class="sectionContainer">
+    <div class="section__Container">
       <span>Enlaces</span>
       <ul>
         <li>Autoreporte condiciones de salud</li>
@@ -93,7 +125,7 @@
         <li>Formulario de queja presunto acoso laboral</li>
       </ul>
     </div>
-    <div class="sectionContainer">
+    <div class="section__Container">
       <span>Parte I</span>
       <ul>
         <li>Fundamentos HSEQ</li>
@@ -106,7 +138,7 @@
         <li>Peligro mecanico</li>
       </ul>
     </div>
-    <div class="sectionContainer">
+    <div class="section__Container">
       <span>Parte II</span>
       <ul>
         <li>Planificación HSEQ</li>
@@ -119,8 +151,8 @@
         <li>Prevención del riesgo osteomuscular </li>
       </ul>
     </div>
-    <div class="sectionContainer">
-      <span>Parte I</span>
+    <div class="section__Container">
+      <span>Parte III</span>
       <ul>
         <li>Cap. 8 Operación HSEQ</li>
         <li>Cap. 9 Evaluación desempeño</li>
@@ -132,7 +164,7 @@
         <li>Prevención del riesgo osteomuscular</li>
       </ul>
     </div>
-    <div class="sectionContainer">
+    <div class="section__Container">
       <span>Parte IV</span>
       <ul>
         <li>Copasst</li>
@@ -145,23 +177,22 @@
 
   <section class="footer">
     <div class="footerInfo">
-      <img src="./índice.png" alt="">
+      <img class="footerInfo--image"" src=" ./índice.png" alt="">
       <div class="footerInfoData">
-        GeoSpatial SASCarrera 32 A # 25 A 47<br>
-        Bogotá, ZIP: 110931, Colombia<br>
-        Tel. (57-1) 745 00 44<br>
-        info@geospatial.com.co<br>
-        ®GeoSpatial 2017<br>
+        <em class="footer__Info__data--item">Carrera 32 A # 25 A 47</em><br>
+        <em class="footer__Info__data--item">Bogotá, ZIP: 110931, Colombia</em><br>
+        <em class="footer__Info__data--item">Tel. (57-1) 745 00 44</em><br>
+        <a href="mailto:info@geospatial.com.co" class="footer__Info__data--item email">info@geospatial.com.co</a><br>
       </div>
     </div>
     <div class="footerNetwork">
       <span>Síganos en: </span>
       <div class="footerNetworkImgs">
-        <img src="" alt="social">
-        <img src="" alt="social">
-        <img src="" alt="social">
-        <img src="" alt="social">
-        <img src="" alt="social">
+        <img class="socialImage qr" src="./qr_code.png" alt="social">
+        <img class="socialImage" src="./facebook.png" alt="social">
+        <img class="socialImage" src="./tiwtter.png" alt="social">
+        <img class="socialImage" src="./youtube.png" alt="social">
+        <img class="socialImage" src="./google.png" alt="social">
       </div>
     </div>
   </section>
