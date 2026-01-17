@@ -1,438 +1,887 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10779585-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-10779585-3');
-  </script>
-  <meta charset="utf-8">
-  <title>Portafolio - Alexander Alvarez</title>
-  <link rel="icon" type="image/png" href="src/imgs/favicon.png">
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Indie+Flower&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="src/media.css" media="screen and (max-width:768px)"/> -->
-  <link rel="stylesheet" href="src/baseIcons.css">
-  <link rel="stylesheet" href="src/estilos.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alexander Alvarez - Software Engineer Senior | Full Stack Developer especializado en Golang, React, Node.js y Cloud Security">
+  <meta name="keywords" content="Software Engineer, Full Stack Developer, Golang, React, TypeScript, AWS, GCP, Azure, Cloud Security">
+  <meta name="author" content="Alexander Alvarez">
+  
+  <meta property="og:title" content="Alexander Alvarez - Software Engineer Senior">
+  <meta property="og:description" content="Full Stack Developer | Cloud & Security Specialist">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alexanderalvarez.js.org">
+  
+  <title>Alexander Alvarez | Software Engineer Senior</title>
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
-covid map
-
 <body>
-  <header class="header">
+  <nav>
     <div class="container">
-      <span class="icon-menu botonmenu" id="botonmenu"></span>
-      <figure class="logo">
-        <img src="src/imgs/paltzilogo.webp" alt="Logo de Platzi" height="70">
-      </figure>
-      <nav class="menu" id="menub">
-        <span class="close">&times;</span>
-        <ol class="menu-content">
-          <li>
-            <a href="#Portafolio">Portafolio</a>
-          </li>
-          <li>
-            <a href="#Experiencia">Experiencia</a>
-          </li>
-          <li>
-            <a href="#Contacto">Trabajemos Juntos</a>
-          </li>
-          <li>
-            <a href="#antiguos">Desarrollos Antiguos</a>
-          </li>
-          <li>
-            <a href="https://github.com/AlexanderAlvarez9" target="_blank">Repositorio Git</a>
-          </li>
-          <li>
-            <button id="share">Compartir</button>
-          </li>
-        </ol>
-      </nav>
+      <a href="#" class="nav-logo">alexander.dev</a>
+      <ul class="nav-links">
+        <li><a href="#about" data-i18n="nav.about">sobre-mi</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">skills</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">experiencia</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">proyectos</a></li>
+        <li><a href="#certifications" data-i18n="nav.certifications">certs</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">contacto</a></li>
+      </ul>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Menu">☰</button>
     </div>
-  </header>
-  <section class="hero">
-    <div class="container">
-      <h1>
-        Hola soy <strong>Alexander Alvarez</strong> <br> programador <strong>Frontend</strong>
-        <br>en tecnologias UI y UX,
-        <br>buscando nuevos retos y conocimientos
-        <br>para mejorar y aportar mas
-        <br>Y ademas Papito de <strong>Sofia</strong>
-      </h1>
-      <img class="hero-img" src="src/imgs/hero.png" width="500" height="300" alt="Imagen Principal">
-    </div>
-  </section>
-  <section class="Portfolio" id="Portafolio">
-    <div class="container">
-      <h2>PORTAFOLIO (Proyectos Destacados)</h2>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Troud</h3>
-          <h6 class="project-course">Aplicacion WEB</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> Agosto 2020</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>React, JavaScript, Sass, Travis, Firebase,
-                NodeJS, Netlify, Vercel, MongoDB </small></a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a href="https://troud.netlify.app/"
-                target="_blank">Troud</small> </a></p>
-          <p class="project-description"><small>Aplicacion Web para intercambio de prendas entre 2 usuarios, de tal
-              forma que al tener match entre estas puedan intercambiar sin costo su prenda.</small></p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image"
-            src="https://raw.githubusercontent.com/MasterSecondChance/Troud-Front/master/preview.png"
-            alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Itil-Support</h3>
-          <h6 class="project-course">Aplicacion WEB</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> Julio 2020</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>React, JavaScript, Sass, Travis, Firebase,
-                MongoDB
-            </small></a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a
-                href="https://alexanderalvarez.js.org/Itil-Support/" target="_blank">Itil-Support</small> </a></p>
-          <p class="project-description"><small>Sistema de reporte de casos para gestionar las incidencias o fallas que
-              se puedan presentar en una organizacion, mediante un sistema de tickets donde cada usuario reportara su
-              incidencia y un tecnico atendera esta.</small></p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image"
-            src="https://raw.githubusercontent.com/AlexanderAlvarez9/Itil-Support/master/preview.png"
-            alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Romaro.ca</h3>
-          <h6 class="project-course">E-Commerce</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> Septiembre 2020</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>React, JavaScript, Sass, Travis, Firebase,
-                MongoDB
-            </small></a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a href="https://romaro.ca"
-                target="_blank">Romaro.ca</small>
-            </a></p>
-          <p class="project-description"><small>Tienda online, para venta de partes y repuestos FPV.</small></p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image"
-            src="https://raw.githubusercontent.com/AlexanderAlvarez9/romaro.ca/master/preview.png?token=AM62NNCWLXEX4FUZPNEZZEK7OYECS"
-            alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">MasterEats</h3>
-          <h6 class="project-course">E-Commerce</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> Junio 2020</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>React, JavaScript, Sass, Travis, Firebase,
-                MongoDB
-            </small></a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a
-                href="https://mastereatsplatzi.github.io/Master-Eats/" target="_blank">MasterEats</small>
-            </a></p>
-          <p class="project-description"><small>Tienda online, para venta de alimentos y productos de mercado.</small>
-          </p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image"
-            src="https://raw.githubusercontent.com/MasterEatsPlatzi/Master-Eats/development/preview.png"
-            alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Platino-Abogados</h3>
-          <h6 class="project-course">E-Commerce</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> Septiembre 2020</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>React, JavaScript, Sass, Travis, Firebase,
-                MongoDB
-            </small></a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a
-                href="https://alexanderalvarez.js.org/platino-abogados/" target="_blank">Platino-Abogados</small>
-            </a></p>
-          <p class="project-description"><small>Pagina de referencia y consulta de procesos realizados en casa de
-              abogados.</small>
-          </p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image"
-            src="https://raw.githubusercontent.com/AlexanderAlvarez9/platino-abogados/master/preview.png"
-            alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">E-commerce Store</h3>
-          <h6 class="project-course">E-Commerce</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> Agosto 2020</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>JavaScript, HTML y CSS
-            </small></a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a
-                href="https://alexanderalvarez.js.org/e-commerce/views/index.html" target="_blank">E-commerce
-                Store</small>
-            </a></p>
-          <p class="project-description"><small>Pagina de tienda Online hecha en Javascript Puro y css.</small>
-          </p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image"
-            src="https://raw.githubusercontent.com/AlexanderAlvarez9/e-commerce/master/preview.png"
-            alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Asambleas VivoVien</h3>
-          <h6 class="project-course">Aplicacion WEB</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> Febrero 2019</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>DumboPHP, JavaScript, Sass</small></a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a
-                href="https://asamblea.vivovien.com/admin/login" target="_blank">Asamblea vivovien</small> </a></p>
-          <p class="project-description"><small>Aplicacion Web para conjuntos residenciales, donde podran llevar a cabo
-              las asambleas que exige el conjunto residencial de manera electronica o presencial, ya que permite la
-              participacion tanto completamente remota o asiste la presencial.</small></p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="src/imgs/asamblea.png" alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">ReclamoDirecto.com</h3>
-          <h6 class="project-course">Aplicacion WEB</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 01/09/2019</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>DumboPHP, JavaScript, Sass</small> </a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a href="https://www.ReclamoDirecto.com"
-                target="_blank">ReclamoDirecto.com</small> </a></p>
-          <p class="project-description"><small>Pagina web con funcionalidad para uso de buffet de abogados que ayudara
-              a determinar si los casos que les llegan son viables para tomarlos y poderlos ejecutar ganando el caso, se
-              usan varias tecnologias como, php, html, scss, css, bases de datos, preprocesadores, JavaScript</small>
-          </p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="src/imgs/rcd-dash.png" alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Consulta de Cursos por Usuario en Platzi</h3>
-          <h6 class="project-course">Pagina de Consulta de cursos</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 08/05/2020</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>HTML5, CSS3, JavaScript</small> </a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a href="platziScript/index.html"
-                target="_blank">Este
-                Link</small> </a></p>
-          <p class="project-description"><small>Pagina de consulta de cursos de usuario en Platzi <b>En
-                construccion</b></small></p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="src/imgs/platziUsers.png" alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Cursos en Platzi</h3>
-          <h6 class="project-course">Estudios Online</h6>
-          <p class="project-date"><small><strong>Fecha: </strong>Desde 10/08/2019 - Actual</small></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a
-                href="https://platzi.com/@jhonalexanderalvarezromero/" target="_blank">Platzi.com/Alexander</small> </a>
-          </p>
-          <p class="project-description"><small>Cursos realizados con dedicacion y muchas ganas de aprender, ademas
-              espero poder lograr crear muchas aplicaciones web para ayudar primero a quienes lo necesitan, impulsar sus
-              proyectos y aumentar mi desarrollo profesional.</small></p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="src/imgs/platziProfile.png" alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Juego Simon</h3>
-          <h6 class="project-course">Juego</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 16/10/2019</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>HTML5, CSS3, JavaScript</small> </a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a
-                href="Javascript\FundamentosJavaScript\Juego Simon\clase42 - comenzando el juego.html"
-                target="_blank">Este Link</small> </a></p>
-          <p class="project-description"><small>Juego Simon dice, juego que trata de memorizar secuencias de colores,
-              aumentando la dificultad en cada nivel</small></p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="src/imgs/simon.png" alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Villa Sofia</h3>
-          <h6 class="project-course">Mini-Juego Infantil</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 16/10/2019</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>Canvas y Javascript</small> </a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a href="Javascript\Villa Sofy\villah.html"
-                target="_blank">Este Link</small> </a></p>
-          <p class="project-description"><small>Juego donde esta Sofia paseando por una granja, acompañada de
-              animalitos</small></p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="src/imgs/villa.png" alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Pizzarra WEB</h3>
-          <h6 class="project-course">Componente Web</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 10/08/2019</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>Canvas y Javascript</small> </a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a href="Javascript\teclas\mouse.html"
-                target="_blank">Este Link</small> </a></p>
-          <p class="project-description"><small>Pizzarra web, en html, JavaScript con canvas, desde la cual podras
-              escribir, firmar o dibujar, boton de reset de el dibugo.</small></p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="src/imgs/whiteboard.png" alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Platzi Video</h3>
-          <h6 class="project-course">Layout Video-Web</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 29/10/2019</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>HTML5, CSS3</small> </a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a href="Javascript\platziVideo\video.html"
-                target="_blank">Este Link</small> </a></p>
-          <p class="project-description"><small>Platzi Video es un proyecto de desarrollo Web frontend en donde
-              mostramos un template de una pagina web con login y registro para acceder a un sistema de videos de forma
-              visualmente amigable.</small></p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="src/imgs/platzivideo.png" alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Santa Reyes</h3>
-          <h6 class="project-course">Landing Page</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 03/12/2019</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>HTML, CSS</small> </a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a
-                href="Html y CSS\Ejercicios\SantaReyes\index.html" target="_blank">Este Link</small> </a></p>
-          <p class="project-description"><small>Land Page para campaña publicitaria de la marca Santa Reyes, en el cual
-              los clientes de la marca podran consultar el sitio mas cercano donde podran encontrar un punto de
-              venta</small></p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="src/imgs/santareyes.png" alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Blog Personal</h3>
-          <h6 class="project-course">Proyecto de Curso Práctico de Maquetación en CSS</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 13/05/2020</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>HTML5, CSS3</small> </a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a href="/blog/blogs.html" target="_blank">Este
-                Link</small> </a></p>
-          <p class="project-description"><small>Desarrollo de un Blog Personal en CSS y HTML, usando Grid
-              Layaout</small></p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="src/imgs/blog.png" alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Clon de Google</h3>
-          <h6 class="project-course">Proyecto del Curso Práctico de HTML y CSS </h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 15/05/2020</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a>HTML5, CSS3</small> </a></p>
-          <p class="project-url"><small><strong>Visitalo en: </strong><a href="/Html y CSS/googleClon/index.html"
-                target="_blank">Este
-                Link</small> </a></p>
-          <p class="project-description"><small>Maqueteando el home de Google</small></p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="src/imgs/googleclon.png" alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <!-- DESARROLLOS ANTIGUOS -->
-      <h2 id="antiguos">PRIMEROS DESARROLLOS - AÑO 2006</h2>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Sastreria</h3>
-          <h6 class="project-course">Pagina Web</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 03/12/2014</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a
-                href="Html y CSS\Desarrollos Antiguos\Sastreria\index.html" target="_blank">HTML, CSS</small> </a></p>
-          <p class="project-description"><small>Primeros desarrollos realizados en HTML y CSS en el año 2006. Trata de
-              una pagina informativa para empresa que distribuia sus productos y servicios</small></p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="src/imgs/sastreria.png" alt="imagen de proyecto" />
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Cristina Mejia</h3>
-          <h6 class="project-course">Pagina Web</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 03/06/2015</small></p>
-          <p class="project-url"><small><strong>Realizado en: </strong><a
-                href="Html y CSS\Desarrollos Antiguos\CristinaMejia\index.htm" target="_blank">HTML, CSS</small> </a>
-          </p>
-          <p class="project-description"><small>Primeros desarrollos realizados en HTML y CSS en el año 2006. Trata de
-              una pagina informativa para empresa que distribuia sus productos y servicios</small></p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="src/imgs/CristinaMejia.png" alt="imagen de proyecto" />
-        </figure>
-      </article>
-    </div>
-  </section>
-  <div class="container">
-    <h2 class="event-list-title">Mas Sobre mi Experiencia - Cursos - Certificados <i class="totalCourses">|</i></h2>
-  </div>
-  <section id="Experiencia" class="eventos">
-    <div class="container" id="cursosid">
+  </nav>
 
-    </div>
-  </section>
-  <section id="Contacto" class="contact">
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
     <div class="container">
-      <form action="gmail.com" class="form-email">
-        <label class="trabajemos" for="email">Creamos algo juntos?</br></label>
-        <input type="datetime" name="" id="email" value="" placeholder="Dejame tu email">
-        <button type="submit" name="Enviar" class="submit">Enviar</button>
-      </form>
-      <div class="social">
-        <a target="_blank" href="mailto:jhonalexander9@gmail.com" class="icon-envelop social-link instagram"></a>
-        <a target="_blank" href="https://www.linkedin.com/in/jhon-alexander-alvarez-romero-94a63028/"
-          class="icon-linkedin social-link instagram"></a>
-        <a target="_blank" href="https://github.com/AlexanderAlvarez9/AlexanderAlvarez9.github.io"
-          class="icon-github social-link github"></a>
-        <a target="_blank" href="https://AlexanderAlvarez9.github.io/" class="icon-whatsapp social-link instagram"></a>
-        <a target="_blank" href="https://www.skype.com/alexander.9." class="icon-skype social-link instagram"></a>
-        <a target="_blank" href="https://open.spotify.com/user/12139848167?si=I8pm2ckCT4auPRa-qBmGEw"
-          class="icon-spotify social-link instagram"></a>
+      <div class="hero-content">
+        <div class="hero-terminal">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">alexander@portfolio ~ </span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-prompt">→</span>
+            <span class="terminal-command">whoami</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-output" data-i18n="hero.name">Alexander Alvarez</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-prompt">→</span>
+            <span class="terminal-command">cat role.txt</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-output" data-i18n="hero.role">Software Engineer Senior</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-prompt">→</span>
+            <span class="terminal-command">echo $STACK</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-output">Golang | React | Node.js | AWS | GCP | Azure</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-prompt">→</span>
+            <span class="terminal-command">./start-journey.sh</span>
+            <span class="typing-cursor"></span>
+          </div>
+        </div>
+        
+        <h1 class="hero-title" data-i18n="hero.name">Alexander Alvarez</h1>
+        <p class="hero-subtitle terminal-text" data-i18n="hero.subtitle">Desarrollador Full Stack | Especialista en Cloud & Seguridad</p>
+        
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero.cta.contact">Contáctame</a>
+          <a href="https://www.linkedin.com/in/alexander-alvarez9" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn →</a>
+        </div>
       </div>
     </div>
   </section>
-  <footer class="footer">
+
+  <section id="about">
     <div class="container">
-      <div>
-        <p>Carrera de Frontend developer en JavaScript 2019 <img src="./src/imgs/platzi.png" width="80px"
-            alt="Logo Platzi"> </p>
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="about.tag">Sobre Mí</span>
+        <h2 class="section-title" data-i18n="about.title">Construyendo Soluciones Digitales</h2>
+        <p class="section-subtitle" data-i18n="about.subtitle">Ingeniero de Software con amplia experiencia liderando arquitecturas de alta escala.</p>
       </div>
-      <div>
-        <p>Creado por Alexander con ayuda de Platzi</p>
+      
+      <div class="about-grid">
+        <div class="about-text slide-in-left">
+          <p data-i18n="about.description1">Software Engineer Senior con amplia trayectoria liderando arquitecturas de alta escala y optimizando el ciclo de vida de desarrollo (SDLC) mediante AI-Augmented Development (Cursor, n8n, MCP). Especialista en soluciones FullStack (Golang, React, Node.js, Python) con un enfoque estratégico en seguridad multicloud —respaldado por certificaciones como AWS Solutions Architect Associate y Azure Fundamentals— y entrega de alto impacto de negocio. Experto en transformar requerimientos complejos en sistemas escalables y eficientes.</p>
+          
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label" data-i18n="about.stats.experience">Años Exp.</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">20+</div>
+              <div class="stat-label" data-i18n="about.stats.projects">Proyectos</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">150+</div>
+              <div class="stat-label" data-i18n="about.stats.certifications">Certificaciones</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-image slide-in-right">
+          <div class="code-window">
+            <div class="code-header">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span>developer.json</span>
+            </div>
+            <div class="code-body">
+              <div class="code-line"><span class="line-number">1</span><span class="code-keyword">{</span></div>
+              <div class="code-line"><span class="line-number">2</span>&nbsp;&nbsp;<span class="code-property">"name"</span>: <span class="code-string">"Alexander Alvarez"</span>,</div>
+              <div class="code-line"><span class="line-number">3</span>&nbsp;&nbsp;<span class="code-property">"role"</span>: <span class="code-string">"Software Engineer Senior"</span>,</div>
+              <div class="code-line"><span class="line-number">4</span>&nbsp;&nbsp;<span class="code-property">"location"</span>: <span class="code-string">"Bogotá, Colombia"</span>,</div>
+              <div class="code-line"><span class="line-number">5</span>&nbsp;&nbsp;<span class="code-property">"languages"</span>: [<span class="code-string">"ES"</span>, <span class="code-string">"EN"</span>],</div>
+              <div class="code-line"><span class="line-number">6</span>&nbsp;&nbsp;<span class="code-property">"available"</span>: <span class="code-value">true</span></div>
+              <div class="code-line"><span class="line-number">7</span><span class="code-keyword">}</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="skills.tag">Stack Tecnológico</span>
+        <h2 class="section-title" data-i18n="skills.title">Habilidades & Tecnologías</h2>
+        <p class="section-subtitle" data-i18n="skills.subtitle">Herramientas y tecnologías con las que trabajo diariamente</p>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skill-category fade-in" data-delay="0.1s">
+          <div class="skill-icon">💻</div>
+          <h3 data-i18n="skills.categories.languages.title">Lenguajes & Runtimes</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Golang</span>
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">PHP</span>
+          </div>
+        </div>
+        
+        <div class="skill-category fade-in" data-delay="0.2s">
+          <div class="skill-icon">🎨</div>
+          <h3 data-i18n="skills.categories.frontend.title">Ecosistema Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">Redux</span>
+            <span class="skill-tag">Context API</span>
+            <span class="skill-tag">Sass/CSS</span>
+            <span class="skill-tag">PWA</span>
+          </div>
+        </div>
+        
+        <div class="skill-category fade-in" data-delay="0.3s">
+          <div class="skill-icon">⚙️</div>
+          <h3 data-i18n="skills.categories.backend.title">Backend & Arquitectura</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Microservicios</span>
+            <span class="skill-tag">API Design</span>
+            <span class="skill-tag">NestJS</span>
+            <span class="skill-tag">Gin</span>
+            <span class="skill-tag">REST</span>
+            <span class="skill-tag">GraphQL</span>
+          </div>
+        </div>
+        
+        <div class="skill-category fade-in" data-delay="0.4s">
+          <div class="skill-icon">☁️</div>
+          <h3 data-i18n="skills.categories.cloud.title">Cloud & DevOps</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">GCP</span>
+            <span class="skill-tag">Azure</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">GitHub Actions</span>
+        </div>
+        </div>
+        
+        <div class="skill-category fade-in" data-delay="0.5s">
+          <div class="skill-icon">🗄️</div>
+          <h3 data-i18n="skills.categories.data.title">Bases de Datos</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Spanner</span>
+            <span class="skill-tag">DynamoDB</span>
+            <span class="skill-tag">MariaDB</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Redis</span>
+          </div>
+        </div>
+        
+        <div class="skill-category fade-in" data-delay="0.6s">
+          <div class="skill-icon">🤖</div>
+          <h3 data-i18n="skills.categories.ai.title">IA & Productividad</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Cursor AI</span>
+            <span class="skill-tag">MCP</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">n8n</span>
+            <span class="skill-tag">LLMs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="experience.tag">Trayectoria</span>
+        <h2 class="section-title" data-i18n="experience.title">Experiencia Profesional</h2>
+        <p class="section-subtitle" data-i18n="experience.subtitle">Mi camino en el desarrollo de software</p>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title" data-i18n="experience.jobs.meli.title">Software Engineer</h3>
+                <p class="timeline-company" data-i18n="experience.jobs.meli.company">Mercado Libre</p>
+              </div>
+              <span class="timeline-date" data-i18n="experience.jobs.meli.date">Dic 2022 - Actual</span>
+            </div>
+            <p class="timeline-description" data-i18n="experience.jobs.meli.description">Liderando desarrollo de API CSPM para detección automatizada de vulnerabilidades en AWS, GCP y Azure. Construyendo microservicios de alta concurrencia en Golang y arquitecturas frontend escalables en React/TypeScript.</p>
+            <div class="timeline-tech">
+              <span>Golang</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>AWS</span>
+              <span>GCP</span>
+              <span>Azure</span>
+              <span>Docker</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title" data-i18n="experience.jobs.teleperformance.title">Software Engineer II</h3>
+                <p class="timeline-company" data-i18n="experience.jobs.teleperformance.company">Teleperformance CO</p>
+              </div>
+              <span class="timeline-date" data-i18n="experience.jobs.teleperformance.date">Nov 2021 - Dic 2022</span>
+            </div>
+            <p class="timeline-description" data-i18n="experience.jobs.teleperformance.description">Lideré plataforma de comunicación para &lt;1,000 agentes, integrando servicios de IA para traducción y dictado en tiempo real. Diseñé interfaces en Angular y microservicios en Golang en Azure/GCP.</p>
+            <div class="timeline-tech">
+              <span>Angular</span>
+              <span>Golang</span>
+              <span>TypeScript</span>
+              <span>Azure</span>
+              <span>GCP</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title" data-i18n="experience.jobs.amaris.title">Desarrollador FullStack</h3>
+                <p class="timeline-company" data-i18n="experience.jobs.amaris.company">Amaris Consulting</p>
+              </div>
+              <span class="timeline-date" data-i18n="experience.jobs.amaris.date">Nov 2020 - Nov 2021</span>
+            </div>
+            <p class="timeline-description" data-i18n="experience.jobs.amaris.description">Desarrollé aplicativo web para cotización, emisión y pagos de pólizas de seguros. Construí Frontend y Backend para tuseguro.libertyseguros.co usando arquitectura hexagonal.</p>
+            <div class="timeline-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>TypeScript</span>
+              <span>AWS</span>
+              <span>Docker</span>
+              <span>Hexagonal Arch</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="projects.tag">Portafolio</span>
+        <h2 class="section-title" data-i18n="projects.title">Proyectos Destacados</h2>
+        <p class="section-subtitle" data-i18n="projects.subtitle">Algunos de mis trabajos recientes</p>
+      </div>
+      
+      <div class="projects-grid">
+        <article class="project-card fade-in">
+          <div class="project-image">
+            <img src="https://raw.githubusercontent.com/MasterSecondChance/Troud-Front/master/preview.png" alt="Troud App" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title" data-i18n="projects.items.troud.title">Troud</h3>
+            <p class="project-description" data-i18n="projects.items.troud.description">Aplicación web para intercambio de prendas entre usuarios. Sistema de match para intercambio sin costo.</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Firebase</span>
+              <span>Sass</span>
+            </div>
+            <div class="project-links">
+              <a href="https://troud.netlify.app/" target="_blank" rel="noopener">
+                <span>🔗</span> <span data-i18n="projects.items.troud.link">Ver Proyecto</span>
+              </a>
+              <a href="https://github.com/MasterSecondChance/Troud-Front" target="_blank" rel="noopener">
+                <span>📁</span> GitHub
+              </a>
+            </div>
+          </div>
+      </article>
+        
+        <article class="project-card fade-in">
+          <div class="project-image">
+            <img src="assets/images/ITIL-Support.png" alt="ITIL Support" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">ITIL-Support</h3>
+            <p class="project-description">Sistema de tickets para gestión de incidencias usando framework ITIL. Integración con Firebase Auth y Firestore.</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Firebase</span>
+              <span>Firestore</span>
+              <span>Sass</span>
+              <span>Jest</span>
+            </div>
+            <div class="project-links">
+              <a href="https://itil-support.web.app/" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+              <a href="https://github.com/AlexanderAlvarez9/Itil-Support" target="_blank" rel="noopener">
+                <span>📁</span> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="project-card fade-in">
+          <div class="project-image">
+            <img src="assets/images/romaro.png" alt="Romaro.ca E-commerce" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Romaro.ca</h3>
+            <p class="project-description">E-commerce para venta de partes y repuestos FPV. Carrito de compras, administración de productos y órdenes.</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>Sass</span>
+              <span>Firebase</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://romaro.ca" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="project-card fade-in">
+          <div class="project-image">
+            <img src="assets/images/asamblea.png" alt="Asambleas VivoVien" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Asambleas VivoVien</h3>
+            <p class="project-description">Aplicación web para conjuntos residenciales. Gestión de asambleas electrónicas o presenciales con participación remota.</p>
+            <div class="project-tech">
+              <span>PHP</span>
+              <span>JavaScript</span>
+              <span>Sass</span>
+              <span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://asamblea.vivovien.com/admin/login" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="project-card fade-in">
+          <div class="project-image">
+            <img src="assets/images/rcd-dash.png" alt="ReclamoDirecto" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">ReclamoDirecto.com</h3>
+            <p class="project-description">Sistema para buffet de abogados. Determina viabilidad de casos legales y automatiza procesos de gestión.</p>
+            <div class="project-tech">
+              <span>PHP</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Sass</span>
+              <span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.ReclamoDirecto.com" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+      
+      <div class="projects-more">
+        <button class="projects-toggle-btn" id="toggleMoreProjects">
+          <span data-i18n-toggle>Ver más proyectos</span>
+          <span class="arrow">▼</span>
+        </button>
+      </div>
+      
+      <div class="projects-hidden" id="moreProjects">
+        <article class="project-card">
+          <div class="project-image">
+            <img src="https://raw.githubusercontent.com/MasterEatsPlatzi/Master-Eats/development/preview.png" alt="MasterEats" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">MasterEats</h3>
+            <p class="project-description">Tienda online para venta de alimentos y productos de mercado.</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>Firebase</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://mastereatsplatzi.github.io/Master-Eats/" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+              <a href="https://github.com/MasterEatsPlatzi/Master-Eats" target="_blank" rel="noopener">
+                <span>📁</span> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="project-card">
+          <div class="project-image">
+            <img src="https://raw.githubusercontent.com/AlexanderAlvarez9/platino-abogados/master/preview.png" alt="Platino Abogados" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Platino-Abogados</h3>
+            <p class="project-description">Página de referencia y consulta de procesos realizados en casa de abogados.</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>Firebase</span>
+              <span>Sass</span>
+            </div>
+            <div class="project-links">
+              <a href="https://alexanderalvarez.js.org/platino-abogados/" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+              <a href="https://github.com/AlexanderAlvarez9/platino-abogados" target="_blank" rel="noopener">
+                <span>📁</span> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="project-card">
+          <div class="project-image">
+            <img src="https://raw.githubusercontent.com/AlexanderAlvarez9/e-commerce/master/preview.png" alt="E-commerce Store" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">E-commerce Store</h3>
+            <p class="project-description">Tienda Online hecha en JavaScript Puro y CSS.</p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://alexanderalvarez.js.org/e-commerce/views/index.html" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+              <a href="https://github.com/AlexanderAlvarez9/e-commerce" target="_blank" rel="noopener">
+                <span>📁</span> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/platziUsers.png" alt="Consulta Cursos Platzi" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Consulta Cursos Platzi</h3>
+            <p class="project-description">Página de consulta de cursos de usuario en Platzi.</p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="archived-exercises/platziScript/index.html" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/simon.png" alt="Juego Simon" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Juego Simon</h3>
+            <p class="project-description">Juego de memorizar secuencias de colores, aumentando dificultad en cada nivel.</p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="archived-exercises/Javascript/FundamentosJavaScript/Juego Simon/clase42 - comenzando el juego.html" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/villa.png" alt="Villa Sofia" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Villa Sofia</h3>
+            <p class="project-description">Mini-juego infantil donde Sofia pasea por una granja acompañada de animalitos.</p>
+            <div class="project-tech">
+              <span>Canvas</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="archived-exercises/Javascript/Villa Sofy/villah.html" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/whiteboard.png" alt="Pizarra WEB" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Pizarra WEB</h3>
+            <p class="project-description">Pizarra web con canvas para escribir, firmar o dibujar con botón de reset.</p>
+            <div class="project-tech">
+              <span>Canvas</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="archived-exercises/Javascript/teclas/mouse.html" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+            </div>
+        </div>
+      </article>
+        
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/platzivideo.png" alt="Platzi Video" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+          <h3 class="project-title">Platzi Video</h3>
+            <p class="project-description">Template de plataforma de video con login y registro para sistema de videos.</p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="archived-exercises/Javascript/platziVideo/video.html" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+            </div>
+        </div>
+      </article>
+        
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/santareyes.png" alt="Santa Reyes" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+          <h3 class="project-title">Santa Reyes</h3>
+            <p class="project-description">Landing Page para campaña publicitaria de la marca Santa Reyes.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="archived-exercises/Html y CSS/Ejercicios/SantaReyes/index.html" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+            </div>
+        </div>
+      </article>
+        
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/blog.png" alt="Blog Personal" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+          <h3 class="project-title">Blog Personal</h3>
+            <p class="project-description">Desarrollo de un Blog Personal usando Grid Layout.</p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Grid</span>
+            </div>
+            <div class="project-links">
+              <a href="archived-exercises/Html y CSS/Ejercicios/blog/blogs.html" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+            </div>
+        </div>
+      </article>
+        
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/googleclon.png" alt="Clon de Google" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+          <h3 class="project-title">Clon de Google</h3>
+            <p class="project-description">Maquetando el home de Google - Proyecto del Curso Práctico de HTML y CSS.</p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="archived-exercises/Html y CSS/googleClon/index.html" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+            </div>
+        </div>
+      </article>
+        
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/sastreria.png" alt="Sastrería" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Sastrería (2006)</h3>
+            <p class="project-description">Primeros desarrollos realizados en HTML y CSS en el año 2006.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="archived-exercises/Html y CSS/Desarrollos Antiguos/Sastreria/index.html" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+            </div>
+        </div>
+      </article>
+        
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/CristinaMejia.png" alt="Cristina Mejia" loading="lazy">
+            <div class="project-overlay"></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Cristina Mejia (2006)</h3>
+            <p class="project-description">Página informativa para empresa que distribuía productos y servicios.</p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="archived-exercises/Html y CSS/Desarrollos Antiguos/CristinaMejia/index.htm" target="_blank" rel="noopener">
+                <span>🔗</span> Ver Proyecto
+              </a>
+            </div>
+        </div>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+  <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="certifications.tag">Credenciales</span>
+        <h2 class="section-title" data-i18n="certifications.title">Certificaciones</h2>
+        <p class="section-subtitle" data-i18n="certifications.subtitle">Certificaciones y credenciales profesionales</p>
+      </div>
+      
+      <div class="certs-grid">
+        <div class="cert-card featured fade-in">
+          <span class="cert-pin" title="Featured">📌</span>
+          <div class="cert-icon aws">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="white">
+              <path d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335a.383.383 0 0 1-.208.072c-.08 0-.16-.04-.239-.112a2.47 2.47 0 0 1-.287-.375 6.18 6.18 0 0 1-.248-.471c-.622.734-1.405 1.101-2.347 1.101-.67 0-1.205-.191-1.596-.574-.391-.384-.59-.894-.59-1.533 0-.678.239-1.23.726-1.644.487-.415 1.133-.623 1.955-.623.272 0 .551.024.846.064.296.04.6.104.918.176v-.583c0-.607-.127-1.03-.375-1.277-.255-.248-.686-.367-1.3-.367-.28 0-.567.032-.863.104a6.348 6.348 0 0 0-.862.288 2.29 2.29 0 0 1-.28.104.488.488 0 0 1-.127.024c-.112 0-.168-.08-.168-.247v-.391c0-.128.016-.224.056-.288a.596.596 0 0 1 .216-.144 4.473 4.473 0 0 1 .958-.335 4.87 4.87 0 0 1 1.197-.144c.91 0 1.573.206 1.998.615.424.415.635 1.046.635 1.893v2.494h.001zm-3.25 1.214c.263 0 .534-.048.822-.143.287-.096.543-.271.758-.51a1.26 1.26 0 0 0 .32-.567c.055-.216.087-.471.087-.767v-.368a6.715 6.715 0 0 0-.735-.136 6.027 6.027 0 0 0-.75-.048c-.534 0-.926.104-1.188.32-.263.215-.39.518-.39.917 0 .375.095.654.295.846.191.2.47.296.782.296h-.001zm6.432.982c-.144 0-.24-.024-.304-.08-.064-.048-.12-.16-.168-.311L7.586 5.55a1.398 1.398 0 0 1-.072-.32c0-.128.064-.2.191-.2h.783c.151 0 .255.024.31.08.065.048.113.16.16.312l1.342 5.284 1.245-5.284c.04-.16.088-.264.151-.312a.549.549 0 0 1 .32-.08h.638c.152 0 .256.024.32.08.063.048.12.16.151.312l1.261 5.348 1.381-5.348c.048-.16.104-.264.16-.312a.52.52 0 0 1 .311-.08h.743c.127 0 .2.064.2.2 0 .04-.009.08-.017.128a1.137 1.137 0 0 1-.056.2l-1.923 6.17c-.048.16-.104.263-.168.311a.51.51 0 0 1-.303.08h-.687c-.151 0-.255-.024-.32-.08-.063-.056-.119-.16-.15-.32L12.54 6.659l-1.229 5.204c-.04.16-.088.264-.152.32a.548.548 0 0 1-.319.08h-.687v.001zm10.109.26a4.75 4.75 0 0 1-1.092-.12 3.67 3.67 0 0 1-.83-.264c-.128-.072-.216-.152-.256-.24-.04-.088-.056-.184-.056-.28v-.407c0-.168.064-.248.184-.248.048 0 .096.008.144.024s.12.048.2.08c.271.12.566.216.886.28.328.063.647.095.983.095.52 0 .926-.088 1.205-.264.28-.176.424-.432.424-.767a.85.85 0 0 0-.232-.599c-.152-.168-.44-.32-.862-.463l-1.237-.39c-.622-.2-1.085-.495-1.373-.886a2.006 2.006 0 0 1-.44-1.212c0-.351.08-.66.232-.926.152-.272.352-.503.6-.695a2.76 2.76 0 0 1 .878-.44 3.749 3.749 0 0 1 1.062-.151c.183 0 .375.008.567.032.2.024.383.056.567.096.175.048.343.096.503.16.16.064.288.128.384.2a.8.8 0 0 1 .231.24.569.569 0 0 1 .072.295v.375c0 .168-.064.256-.184.256a.922.922 0 0 1-.336-.112 4.09 4.09 0 0 0-1.717-.352c-.471 0-.846.072-1.108.224-.263.152-.399.392-.399.727 0 .224.08.416.24.567.16.152.455.304.878.44l1.213.383c.614.2 1.062.48 1.332.838.271.36.399.766.399 1.213 0 .36-.072.686-.208.974-.144.287-.336.535-.583.742a2.583 2.583 0 0 1-.87.479 3.64 3.64 0 0 1-1.085.16h-.012z"/>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <h4 data-i18n="certifications.items.awsArch.title">AWS Solutions Architect</h4>
+            <p data-i18n="certifications.items.awsArch.issuer">Amazon Web Services</p>
+            <p class="cert-level">Associate</p>
+          </div>
+        </div>
+        
+        <div class="cert-card featured fade-in">
+          <span class="cert-pin" title="Featured">📌</span>
+          <div class="cert-icon aws">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="white">
+              <path d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335a.383.383 0 0 1-.208.072c-.08 0-.16-.04-.239-.112a2.47 2.47 0 0 1-.287-.375 6.18 6.18 0 0 1-.248-.471c-.622.734-1.405 1.101-2.347 1.101-.67 0-1.205-.191-1.596-.574-.391-.384-.59-.894-.59-1.533 0-.678.239-1.23.726-1.644.487-.415 1.133-.623 1.955-.623.272 0 .551.024.846.064.296.04.6.104.918.176v-.583c0-.607-.127-1.03-.375-1.277-.255-.248-.686-.367-1.3-.367-.28 0-.567.032-.863.104a6.348 6.348 0 0 0-.862.288 2.29 2.29 0 0 1-.28.104.488.488 0 0 1-.127.024c-.112 0-.168-.08-.168-.247v-.391c0-.128.016-.224.056-.288a.596.596 0 0 1 .216-.144 4.473 4.473 0 0 1 .958-.335 4.87 4.87 0 0 1 1.197-.144c.91 0 1.573.206 1.998.615.424.415.635 1.046.635 1.893v2.494h.001zm-3.25 1.214c.263 0 .534-.048.822-.143.287-.096.543-.271.758-.51a1.26 1.26 0 0 0 .32-.567c.055-.216.087-.471.087-.767v-.368a6.715 6.715 0 0 0-.735-.136 6.027 6.027 0 0 0-.75-.048c-.534 0-.926.104-1.188.32-.263.215-.39.518-.39.917 0 .375.095.654.295.846.191.2.47.296.782.296h-.001zm6.432.982c-.144 0-.24-.024-.304-.08-.064-.048-.12-.16-.168-.311L7.586 5.55a1.398 1.398 0 0 1-.072-.32c0-.128.064-.2.191-.2h.783c.151 0 .255.024.31.08.065.048.113.16.16.312l1.342 5.284 1.245-5.284c.04-.16.088-.264.151-.312a.549.549 0 0 1 .32-.08h.638c.152 0 .256.024.32.08.063.048.12.16.151.312l1.261 5.348 1.381-5.348c.048-.16.104-.264.16-.312a.52.52 0 0 1 .311-.08h.743c.127 0 .2.064.2.2 0 .04-.009.08-.017.128a1.137 1.137 0 0 1-.056.2l-1.923 6.17c-.048.16-.104.263-.168.311a.51.51 0 0 1-.303.08h-.687c-.151 0-.255-.024-.32-.08-.063-.056-.119-.16-.15-.32L12.54 6.659l-1.229 5.204c-.04.16-.088.264-.152.32a.548.548 0 0 1-.319.08h-.687v.001zm10.109.26a4.75 4.75 0 0 1-1.092-.12 3.67 3.67 0 0 1-.83-.264c-.128-.072-.216-.152-.256-.24-.04-.088-.056-.184-.056-.28v-.407c0-.168.064-.248.184-.248.048 0 .096.008.144.024s.12.048.2.08c.271.12.566.216.886.28.328.063.647.095.983.095.52 0 .926-.088 1.205-.264.28-.176.424-.432.424-.767a.85.85 0 0 0-.232-.599c-.152-.168-.44-.32-.862-.463l-1.237-.39c-.622-.2-1.085-.495-1.373-.886a2.006 2.006 0 0 1-.44-1.212c0-.351.08-.66.232-.926.152-.272.352-.503.6-.695a2.76 2.76 0 0 1 .878-.44 3.749 3.749 0 0 1 1.062-.151c.183 0 .375.008.567.032.2.024.383.056.567.096.175.048.343.096.503.16.16.064.288.128.384.2a.8.8 0 0 1 .231.24.569.569 0 0 1 .072.295v.375c0 .168-.064.256-.184.256a.922.922 0 0 1-.336-.112 4.09 4.09 0 0 0-1.717-.352c-.471 0-.846.072-1.108.224-.263.152-.399.392-.399.727 0 .224.08.416.24.567.16.152.455.304.878.44l1.213.383c.614.2 1.062.48 1.332.838.271.36.399.766.399 1.213 0 .36-.072.686-.208.974-.144.287-.336.535-.583.742a2.583 2.583 0 0 1-.87.479 3.64 3.64 0 0 1-1.085.16h-.012z"/>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <h4 data-i18n="certifications.items.awsPract.title">AWS Cloud Practitioner</h4>
+            <p data-i18n="certifications.items.awsPract.issuer">Amazon Web Services</p>
+            <p class="cert-level">Foundational</p>
+          </div>
+        </div>
+        
+        <div class="cert-card featured fade-in">
+          <span class="cert-pin" title="Featured">📌</span>
+          <div class="cert-icon azure">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="white">
+              <path d="M5.483 21.3H24L14.025 4.013l-3.038 8.347 5.836 6.938L5.483 21.3zM13.23 2.7L6.105 8.677 0 19.253h5.505l7.725-16.553z"/>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <h4 data-i18n="certifications.items.azure.title">Azure Fundamentals</h4>
+            <p data-i18n="certifications.items.azure.issuer">Microsoft Azure</p>
+            <p class="cert-level">AZ-900</p>
+          </div>
+        </div>
+        
+        <div class="cert-card fade-in">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="#4ade80">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.5 4.5l7 4.5-7 4.5v-9zm0 10.5l7 4.5H4.5l7-4.5z"/>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <h4>React.js & Frontend Development</h4>
+            <p>Platzi</p>
+          </div>
+        </div>
+        
+        <div class="cert-card fade-in">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="#4ade80">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.5 4.5l7 4.5-7 4.5v-9zm0 10.5l7 4.5H4.5l7-4.5z"/>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <h4>Golang, Node.js & Microservices</h4>
+            <p>Platzi</p>
+          </div>
+        </div>
+        
+        <div class="cert-card fade-in">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="#4ade80">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.5 4.5l7 4.5-7 4.5v-9zm0 10.5l7 4.5H4.5l7-4.5z"/>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <h4>DevOps & Cloud Architecture</h4>
+            <p>Platzi</p>
+          </div>
+        </div>
+  </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="contact.tag">Contacto</span>
+        <h2 class="section-title" data-i18n="contact.title">Trabajemos Juntos</h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+      </div>
+      
+      <div class="contact-content fade-in">
+        <div class="contact-terminal">
+          <div class="terminal-line">
+            <span class="terminal-prompt">→</span>
+            <span class="terminal-command">cat contact.txt</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-output">📧 jhonalexander9@gmail.com</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-output">📍 Bogotá, Colombia</span>
+          </div>
+          <div class="terminal-line">
+            <span class="terminal-output">📱 +57 320 388 9058</span>
+          </div>
+        </div>
+        
+        <div class="contact-links">
+          <a href="mailto:jhonalexander9@gmail.com" class="contact-link">
+            <span>📧</span>
+            <span data-i18n="contact.email">Email</span>
+          </a>
+          <a href="https://www.linkedin.com/in/alexander-alvarez9" target="_blank" rel="noopener" class="contact-link">
+            <span>💼</span>
+            <span data-i18n="contact.linkedin">LinkedIn</span>
+          </a>
+          <a href="https://github.com/AlexanderAlvarez9" target="_blank" rel="noopener" class="contact-link">
+            <span>🐙</span>
+            <span data-i18n="contact.github">GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p class="footer-text">
+        <span data-i18n="footer.made">Hecho con</span> 💚 <span data-i18n="footer.by">por Alexander Alvarez</span> © <span id="current-year">2024</span>
+      </p>
+      <div class="footer-links">
+        <a href="https://github.com/AlexanderAlvarez9" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/alexander-alvarez9" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+      </div>
       </div>
   </footer>
-  <script src="src/funcScript.js"></script>
-</body>
 
+  <script src="assets/js/main.js"></script>
+</body>
 </html>

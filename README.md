@@ -1,16 +1,50 @@
-# Portafolio Alexander Alvarez
+# Portfolio - Alexander Alvarez
 
-Programacion enfocada a frontend, desarrollando habilidaddes en *HTML, CSS, JavaScript* con conocimientos en areas transversales, dispuesto a aprender por siempre y seguir aprendiendo lo que se necesite, demostrando una gran capacidad para temas y logicas optimizadas para cualquier proceso.
+Software Engineer Senior specializing in Full Stack Development with expertise in Golang, React, Node.js, and Cloud Security (AWS, GCP, Azure).
 
+## 🚀 Live Demo
 
-Recopilacion de los proyectos realizados durante los cursos en Platzi y desarrollos realizados durante el aprendizaje de desarrollo WEB
+Visit the portfolio: [alexanderalvarez.js.org](https://alexanderalvarez.js.org/)
 
-## Demo
+## 🛠️ Tech Stack
 
-You can see the demo live, [here](https://AlexanderAlvarez9.github.io/)
+- **HTML5** - Semantic markup
+- **CSS3** - Custom properties, Grid, Flexbox, Animations
+- **JavaScript (ES6+)** - Vanilla JS with i18n support
+- **Design** - Terminal/Developer dark theme
 
-## Image Preview
+## 📁 Project Structure
 
-![Image Preview](preview.png)
+```
+├── index.html              # Main page
+├── assets/
+│   ├── css/
+│   │   └── styles.css      # Main styles
+│   ├── js/
+│   │   └── main.js         # Interactions & i18n
+│   ├── images/             # Static images
+│   └── fonts/              # Custom fonts
+├── archived-exercises/     # Learning projects & exercises
+├── CNAME                   # Custom domain config
+└── README.md
+```
 
-### Constantly update
+## ✨ Features
+
+- 🌐 Bilingual support (Spanish/English)
+- 🌙 Dark terminal-style theme
+- 📱 Fully responsive design
+- ⚡ Smooth scroll animations
+- 🎯 SEO optimized
+- 🔒 Security certifications showcase (AWS, Azure)
+
+## 👤 Author
+
+**Alexander Alvarez**
+- LinkedIn: [alexander-alvarez9](https://www.linkedin.com/in/alexander-alvarez9)
+- GitHub: [AlexanderAlvarez9](https://github.com/AlexanderAlvarez9)
+- Email: jhonalexander9@gmail.com
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
