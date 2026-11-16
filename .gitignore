@@ -13,3 +13,16 @@ node_modules/
 **/node_modules/
 package-lock.json
 **/package-lock.json
+
+# Environment variables & secrets
+.env
+*.env
+.env.*.local
+.env.local
+*.local
+
+# IDE & Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
