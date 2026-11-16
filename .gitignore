@@ -15,11 +15,10 @@ package-lock.json
 **/package-lock.json
 
 # Environment variables & secrets
-.env
+.env*
 *.env
-.env.*.local
-.env.local
 *.local
+!.env.example
 
 # IDE & Editor configs
 .vscode/
